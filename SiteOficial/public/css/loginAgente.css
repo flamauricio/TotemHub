@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+/* .clear{
+     clear: both; 
+} */
+
+.logo{
+    width: 300px;
+    height: 50px;
+    /* float: left; */
+    background-image: url(../img/TotemHub.svg);
+    background-repeat: no-repeat;
+    /* font-size: 15rem; */
+}
+
+.background-login{
+    background-image: url(../img/subway-1209419.jpg);
+    background-position: center;
+    background-size: cover;
+    float: right;
+    height: 100%;
+    width: 50%;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+}
+
+nav{
+    float: right;
+    margin: 2% 0 0 0;
+}
+
+nav.desktop-menu ul{
+    list-style-type: none;
+}
+
+nav.mobile-menu{
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/menu.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+nav.mobile-menu ul{
+    /* opacity: 0; */
+    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 85px;
+    list-style: none;
+    text-align: center;
+
+}
+
+nav.mobile-menu ul li{
+    border-bottom: 0.5px solid black;
+    transition: 0.4s;
+    padding: 8px 0; 
+    
+}
+
+nav.mobile-menu ul li:hover{
+    background-color: #ffc802bb;
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* nav.mobile-menu:hover ul{
+    opacity: 1;
+} */
+
+nav.desktop-menu li{
+   float: left;
+    margin: 15px 20px;
+    font-weight: bold;
+
+}
+
+nav.desktop-menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop-menu ul li a:hover{
+    color: #FFC702;
+    transition: 1s ease;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form .input-field:first-child{
+    margin-bottom: 1.5rem;
+    
+}
+HEAD
+.sub_title{
+    color: white;
+    font-family: 'PoPPins', sans-serif;
+    font-size: 35px;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+.login_text{
+    background-color: rgba(17, 16, 16, 0.507);
+    border-radius: 20px;
+    width: 40%;
+    height: 270px;
+    float: right;
+    margin-top: 35px;
+    margin-right: 380px;
+    text-align: center;
+    box-shadow: #ffc80281 5px 5px;   
+}
+ 
+/* o elemento ".underline" se refere a linha abaixo do ipt. O ipt permanece ali, só que flutuando */
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: #FFC702;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+/* O til(~), mais conhecido como seletor, pega o elemento .underline::after depois de clicado */
+
+.caixa-login{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(43, 35, 35, 0.856);
+    left: 0;
+    top: 0;
+    padding: 2rem;
+}
+
+.form-login{
+    
+    margin: 170px auto;
+}
+
+.form-login h2{
+    font-weight: 600;
+    /* margin-bottom: 2rem; */
+    position: relative;
+    color: wheat;
+    margin: 8% 0;
+}
+
+.form-login h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    bottom: 1px;
+    left: 0;
+    border-radius: 8px;
+    background-color: #FFC702;
+}
+
+.input-field{
+    position: relative;
+}
+
+
+
+.input-field input{
+    outline: none;
+    border: none;
+    /* border-bottom: 2px solid white; */
+    background-color: var(--bck_login);
+    color: white;
+    font-size: 0.9rem;
+    background-color: rgba(240, 248, 255, 0);
+    color: wheat;
+}
+
+.input-field input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    background-image: url(../img/o-email.png);
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #FFC702, rgb(174, 174, 15));
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #FFC702, rgb(174, 174, 15));
+}
+
+.login-footer{
+    color: white;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav.desktop-menu{
+        display: none;
+    }
+
+    .form-login{
+        margin: 200px auto;
+    }
+
+    nav.mobile-menu{
+        display: block;
+    }
+
+    .logo{
+        width: 200px;
+        height: 50px;
+        float: left;
+        background-image: url(../img/TotemHub.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .caixa-login{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.679);
+        padding: 2rem;
+        /* border-radius: 10px; */
+        /* margin: 0 auto; */ 
+    }
+    
+    .background-login{
+        background-image: url();
+        /* float: right; */
+        height: 0;
+        width: 0;
+        /* border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; */
+    }
+
+@media screen and (max-width: 390px){
+    .form-login{
+        margin: 210px auto;
+    }
+    }
+}

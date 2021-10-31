@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    background-image: url(../img/bbb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F6FAFF;
+}
+
+.fundo_login {
+    background-color: #23232300;
+    width: 100%;
+    height: 60px;
+} 
+
+  ul {
+    list-style: none;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+
+ul li {
+    color: #FFC702;
+    display: inline;
+    font-size: 20px;
+    }
+
+.nav_header a{
+    text-decoration: none;
+    color: white;   
+    font-family: 'Squada One', cursive;
+    font-size: 40px;
+}
+
+.nav_header a:hover{
+    transform: scale(2.0);
+    color:  #FFC702;
+}
+
+.fundo_login nav {
+        float: right;
+    }
+
+li {
+    margin: 0 20px;
+    font-size: large;
+}
+
+.caixa {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 40px; 
+}
+
+.sub_title {
+    color: white;
+    font-family: 'PoPPins', sans-serif;
+    font-size: 35px;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.login_text{
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 20px;
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    box-shadow: rgb(255, 199, 2, 0.8) 4px 4px;
+    opacity: 0.9;
+    margin: 11vh auto;
+    padding: 2vh;
+}
+
+.placeholder {
+    color: white;
+    font-weight: 800px;
+    font-family: 'PoPPins', sans-serif;
+}
+
+.grid-cad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2vh;
+}
+
+.ipt{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color:rgba(255, 255, 255, 0);
+    font-size: 25px;
+    color: white;
+    
+}
+.btn-cad{
+    height: 45px;
+    width: 180px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #a020db;
+    box-shadow: inset 0 0 0 0 #ffc702;
+    transition: ease-out 0.3s;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'PoPPins', sans-serif;
+}
+
+#form_login button:hover{
+    box-shadow: inset 180px 0 0 0 #DAA520;
+}
+
+#olho_login {
+    float: right;
+    margin-right: 1px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/menu-responsivo.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+    <title>Home Page</title>
+</head>
+
+<body>
+    <section class="bg-img">
+        <div class="container">
+
+            <div class="logo-mobile">
+                <img class="logo-mobile-size" src="./img/TotemHub.svg" alt="Logo da TotemHub">
+            </div>
+
+            <header>
+                <nav class="nav-bar">
+                    <ul>
+                        <li>inicio</li>
+                        <li><a href="#sobre">sobre</a></li>
+                        <li><a href="#servico">serviço</a></li>
+                        <li><a href="#contato">contato</a></li>
+                        <div class="dropdown">
+                            <li><span>Login</span></li>
+                            <div class="dropdown-content">
+                                <a class="agente-hover" href="./html/loginAgente.html">Login Agente</a>
+                                <a class="gerente-hover" href="./html/login.html">Login Gerente</a>
+                                </div>
+                            </div>
+                    </ul>
+                </nav>
+
+                <nav class="mobile-menu">
+                    <ul>
+                        
+                        <li><a href="#sobre">sobre</a></li>
+                        <li><a href="#servico">serviço</a></li>
+                        <li><a href="#contato">contato</a></li>
+                        <li><a href="">login</a></li>
+                    </ul>
+                </nav>
+                <!--nav-bar-->
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="logo">
+                <img class="logo-home" src="./img/logo-home.svg">
+            </div>
+
+            <div class="mobile-slogan">
+                <div class="slogan">
+                    Improving your <br>
+                    <span class="exp">experience</span>
+                </div>
+            </div>
+        </div>
+        <!--container-->
+    </section>
+    <!--bg-img-->
+
+    <section id="servico" class="about-us">
+        <div class="div-grid grid-template-columns">
+            <div class="div-items">
+                <img class="icons" src="./img/settings-icon.png" alt="">
+
+                <h3>Trabalho</h3>
+
+                <p>Empresa que trabalha para poder alinhar os negócios com as expectativas do cliente.</p>
+            </div>
+            <div class="div-items">
+                <img class="icons" src="./img/user.png" alt="">
+
+                <h3>Perfil</h3>
+
+                <p>Um perfil para cada monitor poder fazer os acompanhamentos de tela.</p>
+            </div>
+            <div class="div-items">
+                <img class="icons" src="./img/warning.png" alt="">
+
+                <h3>Alerta</h3>
+
+                <p>Recebimento de alertas toda vez que o totem estiver com intabilidade por desempenho.</p>
+            </div>
+            <div class="div-items">
+                <img class="icons" src="./img/dashboard.png" alt="">
+
+                <h3>Dashboard</h3>
+
+                <p>Acompanhe em tempo real o desempenho dos totens através dos dashboards.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="queue">
+        <div class="bg-queue">
+            <div class="page-container">
+                <p class="content-bg-queue">
+                    Make good choices <br>
+                    Choose <span class="yellow">TotemHub.</span>
+                </p>
+                <p class="second-content-bg-queue">
+                    Without queue, <br>
+                    Without problems.
+                </p>
+            </div>
+        </div>
+        <div id="sobre"></div>
+    </section>
+
+    <section class="just-about">
+        <div class="content-about-us">
+
+            <div class="bg-yellow-about">
+                <div class="content-about">
+                    Sobre
+                </div>
+            </div>
+
+            <div class="content-about-us-text" style="color: black;">
+
+                TotemHub é uma StartUp voltada a inovar a utilização dos transportes públicos,
+                mais precisamente estações de trêm e metrô do Brasil e futuramente do mundo. Nossa equipe é formada
+                por potenciais profissionais que tem como intuito transformar o futuro da tecnologia através da
+                <b><a href="#abrirModal1" class="openmod">
+                        experimentação e inovação
+                    </a></b>
+                em todos os âmbitos da sociedade, em prol de facilitar a visualização dos totens das estações por meio
+                de
+                <b><a href="#abrirModal2" class="openmod">
+                        dashboards e notificações
+                    </a></b>
+                enviadas diretamente ao responsável pela organização e sustentação dos mesmos.
+            </div>
+
+
+        </div>
+
+        <div id="abrirModal1" class="modal">
+
+            <!-- conteúdo do modal aqui -->
+            <div class="background-modal">
+                <h1>Por uma equipe revolucionária</h1>
+                <div class="equipe">
+                    <div class="perfil">
+                        <img src="./integrantes/Bruno.png" alt="">
+                        <h2> Bruno </h2>
+                        <p> Front-end </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="./integrantes/Flavio.png" alt="">
+                        <h2> Flavio </h2>
+                        <p> Back-end </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="./integrantes/Jorge.png" alt="">
+                        <h2> Jorge </h2>
+                        <p> Analista </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="./integrantes/Nicolas.png" alt="">
+                        <h2> Nicolas </h2>
+                        <p> Analista </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="./integrantes/Pedro.png" alt="">
+                        <h2> Pedro </h2>
+                        <p> Front-end </p>
+                    </div>
+                    <div class="perfil">
+                        <img src="./integrantes/Herculano.png" alt="">
+                        <h2> Vitor </h2>
+                        <p>Scrum Master</p>
+                    </div>
+                </div>
+
+                <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+            </div>
+        </div>
+
+        <div id="abrirModal2" class="modal">
+            <div class="background-modal">
+                <h1>Monitore o funcionamento dos seus totens na palma da sua mão</h1>
+                <div class="grid-exemplares">
+                    <img class="img-exemplares"
+                        src="https://media.discordapp.net/attachments/875134794483245119/884839543004622909/Group_136.png?width=642&height=427"
+                        alt="">
+                    <img class="img-exemplares2"
+                        src="https://media.discordapp.net/attachments/875134794483245119/884839494879166535/Group_135.png"
+                        alt="">
+                </div>
+
+                <a href="#fechar" title="fechar" class="fechar">x</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contato" class="contato">
+
+        <div class="left-contact">
+
+            <div class="container-left-contact">
+                <h2>Fale Conosco!</h2>
+                <p>
+                    Preencha o formulário ao lado caso queira tirar dúvidas ou se preferir, nos envie um e-mail ou nos
+                    ligue.
+                </p>
+
+                <div class="email-contact">
+                    <img class="icon-email" src="./img/o-email.png" alt="">
+                    <p>support@totemhub.atlassian.net</p>
+                </div>
+
+                <div class="tel-contact">
+                    <img class="icon-tel" src="./img/tel-icon.svg" alt="">
+                    <p>+55 11 99999-9999</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <!--left-contact-->
+
+        <div class="form-contact">
+            <form action="">
+
+                <fieldset>
+                    <div class="form-wrap">
+                        <input placeholder="nome" type="text">
+                    </div>
+
+                    <div class="form-wrap">
+                        <input placeholder="e-mail" type="text">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="form-wrap">
+                        <textarea placeholder="Digite seu texto aqui"></textarea>
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset>
+                    <div class="form-wrap">
+                        <button>Enviar</button>
+                    </div>
+                </fieldset>
+
+
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <p class="text-left">TotemHub.</p>
+            <p class="text-right">TODOS OS DIREITOS RESERVADOS © 2021</p>
+        </div>
+    </footer>
+   
+</body>
+
+
+</html>

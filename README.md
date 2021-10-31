@@ -1,4 +1,4 @@
-![Alt text](/SiteOficial/img/TotemHub.svg?raw=true "Logo")
+![Alt text](/SiteOficial/public/img/TotemHub.svg?raw=true "Logo")
 
 # Sobre 
 Projeto referente ao 2º semestre do curso de Analise e Desenvolvimento de Sistemas

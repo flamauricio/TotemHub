@@ -1,4 +1,4 @@
-![Alt text](/SiteOficial/img/TotemHub.svg?raw=true "Logo")
+![Alt text](/SiteOficial/public/img/TotemHub.svg?raw=true "Logo")
 
 # Ambiente de Desenvolvimento 🖥️
 Branche dedicada para desenvolver toda a aplicação

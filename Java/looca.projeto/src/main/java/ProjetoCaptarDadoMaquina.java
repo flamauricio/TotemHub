@@ -16,9 +16,21 @@ public class ProjetoCaptarDadoMaquina {
    
     public static void main(String[] args) { 
         Looca looca = new Looca();
+        LogsArquivo arquivo = new LogsArquivo();
+        
+        
         Sistema sistema = looca.getSistema();
        
+        
         System.out.println(looca.getMemoria());
+        
+        arquivo.gerarLog("C:\\Users\\Caroline e Pedro\\Desktop\\GitTh\\TotemHub\\Java\\looca.projeto\\src\\main\\java");
+        
+        
+        
+        
     }
+    
+    
     
 }

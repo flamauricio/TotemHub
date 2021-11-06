@@ -1,0 +1,92 @@
+
+.form{
+    height: 500px;
+    /* display: flex; */
+}
+
+.contato{
+    display: flex;
+    margin: 0 0 9% 0;
+}
+
+.left-contact{
+    height: 500px;
+    width: 50%;
+}
+
+
+.left-contact .container-left-contact{
+    margin: 45px 90px;
+}
+
+.left-contact h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.left-contact p{
+    font-size: 1.4rem;
+}
+
+.left-contact .email-contact{
+    margin-top: 50px;
+}
+
+.left-contact .email-contact .icon-email{
+    width: 50px;
+    font-weight: 600;
+}
+
+.left-contact .tel-contact .icon-tel{
+    width: 50px;
+}
+
+.left-contact .tel-contact{
+    margin-top: 50px;
+}
+
+
+.form-contact{
+    width: 50%;
+    height: 500px;
+    float: right;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset:nth-child(1){
+    display: flex;
+}
+
+fieldset:nth-child(3){
+    margin-top: 10px;
+}
+
+.form-wrap input{
+    margin: 10px 10px;
+    width: calc(100% - 10px);
+    border: none;
+    height: 30px;
+    padding-left: 5px;
+}
+
+textarea{
+    width: calc(100% - 10px); 
+    margin: 10px 10px;
+    height: 250px;
+    padding-left: 5px;
+}
+
+button{
+    margin: 10px 10px;
+    width: 80px;
+    height: 30px;
+    background-color: var(--button);
+    border-radius: 10px;
+}

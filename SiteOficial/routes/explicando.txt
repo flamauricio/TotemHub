@@ -1,0 +1,2 @@
+Os arquivos dentro de ROUTES são responsáveis por realizar os meus comandos do MySQL, da mesma forma que o nome Routes,
+que significa rotas, ou seja, quais os caminhos que existem na minha aplicação.

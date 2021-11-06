@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(34, 31, 31, 0.8);
+    opacity: 0;
+    transition: opacity 400ms ease-in;  /*define a transição para apresentar e sair a modal*/
+    pointer-events: none;
+}
+
+.modal:target {  /* define qual é o "alvo" que irá finalizar a minha modal, */
+    opacity: 1;
+    pointer-events: auto;   /* onde é representado pela referência "#" no index dentro da div criada na classe modal */
+}
+
+.background-modal {
+    width: min-content;
+    position: relative;
+    text-align: center;
+    margin: 7% auto;
+    padding: 15px 20px;
+    background: var(--white);
+    width: 60vw;
+    height: 80vh;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.openmod {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.background-modal h1 {
+    font-family: 'Squada One', cursive;
+    font-size: 3rem;
+    margin: 1rem auto;
+}
+
+.equipe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px
+}
+
+.perfil{
+    padding: 10px;
+    
+}
+
+.perfil img {
+    height: 13rem;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+    transition: 600ms ease-in-out;
+}
+
+.perfil img:hover {
+    transform: translateY(-10px);
+    -webkit-filter: none;
+    filter: none;
+}
+
+.perfil > p {
+    font-size: 1.4rem;
+}
+
+.grid-exemplares{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 4rem;
+    align-items: center;
+}
+
+.img-exemplares {
+    height: 60%;
+    margin: auto;
+}
+
+.img-exemplares2 {
+    height: 75%;
+    margin: auto;
+}
+
+.img-exemplares:hover {
+    transition: 300ms linear;
+    height: 80%;
+}
+
+.img-exemplares2:hover{
+    transition: 300ms linear;
+    height: 105%;
+}

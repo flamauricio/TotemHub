@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 ![Alt text](logo-totem-hub.svg?raw=true "Logo")
+=======
+![Alt text](/SiteOficial/public/img/TotemHub.svg?raw=true "Logo")
+
+# Ambiente de Desenvolvimento 🖥️
+Branche dedicada para desenvolver toda a aplicação
+>>>>>>> dev
 
 # Sobre 
 Projeto referente ao 2º semestre do curso de Analise e Desenvolvimento de Sistemas
@@ -16,7 +23,10 @@ $ npm install
 # Instalação de Dependencias
 ```bash
 $ npm install morgan 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev
 $ npm install nodemon 
 ```
 # Linguaguens e Frameworks 

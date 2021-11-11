@@ -6,6 +6,7 @@ import java.time.format.DateTimeFormatter;
 /**
  *
  * @author jotal
+ * @author Flavio
  */
 public class LogsArquivo {
     

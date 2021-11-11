@@ -11,6 +11,7 @@ import com.github.britooo.looca.api.group.sistema.Sistema;
 /**
  *
  * @author jotal
+ * @author Flavio
  */
 public class ProjetoCaptarDadoMaquina {
    

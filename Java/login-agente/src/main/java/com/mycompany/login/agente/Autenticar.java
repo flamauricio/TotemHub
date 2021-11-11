@@ -33,7 +33,7 @@ public class Autenticar {
                 JOptionPane.showMessageDialog(null, "Login Realizado com sucesso");
                 return true;
             } else {
-                JOptionPane.showMessageDialog(null, "Login ERRADDOOOOO");
+                JOptionPane.showMessageDialog(null, "Login Errado");
                 return false;
             }
         }

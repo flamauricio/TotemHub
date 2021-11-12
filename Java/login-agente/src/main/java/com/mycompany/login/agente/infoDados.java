@@ -164,7 +164,6 @@ public class infoDados extends javax.swing.JFrame {
         // TODO add your handling code here:
         Looca looca = new Looca();
         Sistema sistema = looca.getSistema();
-
         JOptionPane.showMessageDialog(null, sistema);
 
     }//GEN-LAST:event_btnMostrarDadosActionPerformed

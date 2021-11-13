@@ -1,4 +1,4 @@
-* {
+*,p {
     font-family: 'Poppins', sans-serif;
     padding: 0;
     border: 0;
@@ -8,6 +8,7 @@
     list-style: none;
    
 }
+
 
 body{
     width: 100%;
@@ -237,67 +238,16 @@ ul li{
     clear: both;
 }
 
-@media screen and (max-width: 1050px) {
-
-    section .div-grid {
-        display: grid !important;
-        grid-template-columns: repeat(2, 300px);
-        row-gap: 60px;
-        margin-top: 35px;
-    }
-
-    .icons {
-        display: block !important;
-        margin: 0 auto !important;
-        width: 50px !important;
-        margin-bottom: 10px !important;
-    }
-
-    .queue .bg-queue {
-        height: 400px !important;
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width: 650px){
-    section .div-grid {
-        display: grid !important;
-        grid-template-columns: repeat(1, 300px);
-        row-gap: 60px;
-        margin-top: 35px;
-    }
-
-    .icons {
-        display: block !important;
-        margin: 0 auto !important;
-        width: 60px !important;
-        margin-bottom: 10px !important;
-    }
-
-    .about-us{ 
-        height: 850px !important;
-        overflow: hidden;
-    }
-
-    .page-container p{
-        font-size: 30px !important ;
-    }
-
-    .page-container p:nth-child(2){
-        font-size: 20px !important ;
-    }
-
-    
 
 
-}
 
 /* Second Page */
 .about-us{ 
-    height: 550px;
+    height: 620px;
     overflow-x: hidden;
 }
+
+
 
 section .div-grid{
     display: flex;
@@ -332,6 +282,12 @@ section .div-grid .icons{
     height: 35vh;
 }
 
+.just-about-mobile{
+    margin: 10vh auto;
+    height: 35vh;
+    height: 550px;
+    display: none;
+}
 
 .queue .bg-queue{
     background-image: url(../img/queue.svg);
@@ -352,7 +308,7 @@ section .div-grid .icons{
     color: var(--white);
     font-size: 4.2vw;
     font-weight: 600;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .queue .bg-queue .page-container .second-content-bg-queue{
@@ -366,6 +322,13 @@ section .div-grid .icons{
     display: flex; 
     align-items: center;
     margin: 10% auto;
+}
+
+.content-about-us-mobile{
+     
+    align-items: center;
+    text-align: justify;
+    
 }
 
 .bg-yellow-about{
@@ -392,6 +355,14 @@ section .div-grid .icons{
     font-size: 1.8rem;
 }
 
+.content-about-us-text-mobile{
+    color: black;
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.8rem;
+}
+
 
 /* FOOTER: */
 
@@ -400,6 +371,7 @@ section .div-grid .icons{
     background-color: var(--footer);
     color: var(--yellow);
     vertical-align: text-top;
+    overflow: hidden;
 }
 
 .footer .container-footer{
@@ -421,6 +393,98 @@ section .div-grid .icons{
    margin-top: 30px;
 }
 
+@media screen and (max-width: 1050px) {
+
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 60px;
+        margin-top: 35px;
+    }
+
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .queue .bg-queue {
+        height: 400px !important;
+        text-align: center;
+    }
+    
+
+    .just-about{
+        display: none;
+    }
+
+    .just-about-mobile{
+        margin: 10vh auto;
+        height: 35vh;
+        height: 550px;
+        display: block;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer-mobile{
+        display: block;
+        height: 14vh;
+    background-color: var(--footer);
+    text-align: center;
+    color: var(--yellow);
+    overflow: hidden;
+    }
+
+    .footer-mobile p{
+        margin-top: 10px;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .footer-mobile p:nth-child(2){
+        font-size: 1.0rem;
+    color: var(--white);
+    }
+
+    
+  
+}
 
 
+@media screen and (max-width: 650px){
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 60px;
+        margin-top: 35px;
+    }
+
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 60px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .about-us{ 
+        height: 850px !important;
+        overflow: hidden;
+    }
+
+    .page-container p{
+        font-size: 30px !important ;
+    }
+
+    .page-container p:nth-child(2){
+        font-size: 20px !important ;
+    }
+
+    
+
+
+}
 

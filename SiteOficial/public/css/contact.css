@@ -49,12 +49,23 @@
 .form-contact{
     width: 50%;
     height: 500px;
-    float: right;
     background-color: var(--yellow);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+.form-contact-mobile{
+    display: none;
+    height: 500px;
+    background-color: var(--yellow);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 fieldset{
     border: none;
@@ -70,23 +81,87 @@ fieldset:nth-child(3){
 
 .form-wrap input{
     margin: 10px 10px;
-    width: calc(100% - 10px);
+    width: calc(100% - 5px);
     border: none;
     height: 30px;
     padding-left: 5px;
 }
 
 textarea{
-    width: calc(100% - 10px); 
+    width: calc(100% - 5px); 
     margin: 10px 10px;
     height: 250px;
     padding-left: 5px;
 }
 
+
+
 button{
-    margin: 10px 10px;
-    width: 80px;
+    margin-left: 40%;
+    width: 150px;
     height: 30px;
     background-color: var(--button);
     border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 1010px) {
+    .left-contact{
+       margin-top: 20px;
+        width: 100%;
+        background-image: linear-gradient(rgb(233, 233, 233), white);
+        
+    }
+
+    .left-contact p:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .form-contact{
+        display: none;
+    }
+
+    .form-contact-mobile{
+        
+            display: block;
+            display: flex;
+      
+      
+    }
+
+    
+  
+
+   
+}
+
+@media screen and (max-width: 650px){
+    .left-contact{
+        text-align: center;
+        
+    }
+
+    .left-contact h2{
+    text-align: center;
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Squada One';
+    }
+
+    .left-contact .container-left-contact{
+        margin: 45px 5%;
+    }
+
+    
+
+
+
+    
+
+
+    
+
+    
 }

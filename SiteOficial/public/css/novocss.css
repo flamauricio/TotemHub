@@ -1,0 +1,90 @@
+body{
+    text-align: center;
+    background-color: rgb(214, 211, 211);
+}
+.Img_centro{
+    padding-top: 170px;
+    height: 320px;
+}
+.enunciado h1{
+    color: black;
+    font-size: 30px;
+    font-family: "PoPPins", sans-serif;
+    padding-bottom: 15px;
+}
+.botao_um button{
+    background-color: #FFC702;
+    width: 450px;
+    border-radius: 15px;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    font-family: "PoPPins", sans-serif;
+    transition: ease-out 0.3s;
+    
+}
+.botao_um :hover{
+    background-color: slateblue;
+}
+.botao_um{
+    padding-bottom: 20px;
+}
+.botao_dois button{
+    background-color: #FFC702;
+    width: 450px;
+    border-radius: 15px;
+    height: 45px;
+    color: white;
+    font-size: 20px;
+    font-family: "PoPPins", sans-serif;
+    transition: ease-out 0.3s;
+}
+.botao_dois :hover{
+    background-color: slateblue;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(34, 31, 31, 0.8);
+    opacity: 0;
+    transition: opacity 400ms ease-in;  /*define a transição para apresentar e sair a modal*/
+    pointer-events: none;
+}
+
+.modal:target {  /* define qual é o "alvo" que irá finalizar a minha modal, */
+    opacity: 1;
+    pointer-events: auto;   /* onde é representado pela referência "#" no index dentro da div criada na classe modal */
+}
+
+.background-modal {
+    width: min-content;
+    position: relative;
+    text-align: center;
+    margin: 7% auto;
+    padding: 15px 20px;
+    background: var(--white);
+    width: 60vw;
+    height: 80vh;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}

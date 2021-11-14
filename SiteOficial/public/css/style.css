@@ -103,7 +103,7 @@ nav.mobile-menu{
     display: none;
     width: 32px;
     height: 32px;
-    background-image: url(./img/menu.png);
+    background-image: url(../img/menu.png);
     background-size: 100% 100%;
     cursor: pointer;
     margin-top: 35px;
@@ -264,7 +264,7 @@ ul li{
     content: '';
         position: absolute;
         height: 6px;
-        width: 138px;
+        width: 110px;
         bottom: 1px;
         border-radius: 8px;
         background-color: var(--yellow);
@@ -380,7 +380,7 @@ section .div-grid .icons{
         content: '';
         position: absolute;
         height: 6px;
-        width: 92px;
+        width: 75px;
         bottom: 1px;
         border-radius: 8px;
         background-color: var(--yellow);
@@ -518,7 +518,7 @@ section .div-grid .icons{
     }
 
     .about-us{ 
-        height: 950px !important;
+        height: 805px !important;
         overflow: hidden;
     }
 

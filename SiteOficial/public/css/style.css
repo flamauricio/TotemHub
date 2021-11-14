@@ -1,4 +1,4 @@
-*,p {
+*{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     border: 0;
@@ -243,9 +243,33 @@ ul li{
 
 /* Second Page */
 .about-us{ 
-    height: 620px;
+    height: 650px;
     overflow-x: hidden;
+
 }
+
+.about-us h2{
+  position: relative;
+  text-align: center;
+  color: black;
+    text-align: center;
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Squada One';
+}
+
+.about-us h2::before{
+    content: '';
+        position: absolute;
+        height: 6px;
+        width: 138px;
+        bottom: 1px;
+        border-radius: 8px;
+        background-color: var(--yellow);
+}
+
 
 
 
@@ -325,7 +349,7 @@ section .div-grid .icons{
 }
 
 .content-about-us-mobile{
-     
+    position: relative;
     align-items: center;
     text-align: justify;
     
@@ -342,9 +366,26 @@ section .div-grid .icons{
     text-align: center;
     margin-top: 46px;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 700;
     font-family: 'Squada One';
+}
+
+.content-about{
+    position: relative;
+}
+
+.content-about::before{
+    
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: 92px;
+        bottom: 1px;
+        border-radius: 8px;
+        background-color: var(--yellow);
+    
+
 }
 
 
@@ -360,7 +401,7 @@ section .div-grid .icons{
     margin-top: 40px;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 
@@ -372,6 +413,10 @@ section .div-grid .icons{
     color: var(--yellow);
     vertical-align: text-top;
     overflow: hidden;
+}
+
+.footer-mobile{
+    display: none;
 }
 
 .footer .container-footer{
@@ -392,6 +437,8 @@ section .div-grid .icons{
     color: var(--white);
    margin-top: 30px;
 }
+
+
 
 @media screen and (max-width: 1050px) {
 
@@ -421,8 +468,8 @@ section .div-grid .icons{
 
     .just-about-mobile{
         margin: 10vh auto;
-        height: 35vh;
-        height: 550px;
+        height: 30vh;
+        min-height: 450px;
         display: block;
     }
 
@@ -440,7 +487,7 @@ section .div-grid .icons{
     }
 
     .footer-mobile p{
-        margin-top: 10px;
+        margin: 1% 0 1% 0;
         font-size: 3.2rem;
         font-weight: 600;
     }
@@ -460,7 +507,7 @@ section .div-grid .icons{
         display: grid !important;
         grid-template-columns: repeat(1, 300px);
         row-gap: 60px;
-        margin-top: 35px;
+        margin-top: 60px;
     }
 
     .icons {
@@ -471,7 +518,7 @@ section .div-grid .icons{
     }
 
     .about-us{ 
-        height: 850px !important;
+        height: 950px !important;
         overflow: hidden;
     }
 
@@ -481,6 +528,15 @@ section .div-grid .icons{
 
     .page-container p:nth-child(2){
         font-size: 20px !important ;
+    }
+
+    .slogan{
+        font-size: 2.8rem;
+        
+    }
+    
+    .exp{
+        font-size: 3.6rem;
     }
 
     

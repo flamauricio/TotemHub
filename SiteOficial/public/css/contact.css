@@ -12,6 +12,7 @@
 .left-contact{
     height: 500px;
     width: 50%;
+    
 }
 
 
@@ -22,6 +23,7 @@
 .left-contact h2{
     font-size: 3.2rem;
     font-weight: 600;
+    
 }
 
 .left-contact p{
@@ -67,37 +69,28 @@
 
 
 
-fieldset{
-    border: none;
-}
 
-fieldset:nth-child(1){
-    display: flex;
-}
-
-fieldset:nth-child(3){
-    margin-top: 10px;
-}
 
 .form-wrap input{
-    margin: 10px 10px;
-    width: calc(100% - 5px);
+    margin: 5px auto;
+    width: 40vw;
     border: none;
     height: 30px;
     padding-left: 5px;
 }
 
-textarea{
-    width: calc(100% - 5px); 
-    margin: 10px 10px;
-    height: 250px;
-    padding-left: 5px;
+textarea.txt{
+    margin: 5px auto;
+    width: 40vw; 
+    outline: none;
+    resize: none;
+
 }
 
 
 
 button{
-    margin-left: 40%;
+    margin: 0 30%;
     width: 150px;
     height: 30px;
     background-color: var(--button);
@@ -109,7 +102,7 @@ button{
     .left-contact{
        margin-top: 20px;
         width: 100%;
-        background-image: linear-gradient(rgb(233, 233, 233), white);
+        background-image: linear-gradient(rgb(213, 212, 212), white);
         
     }
 
@@ -122,12 +115,23 @@ button{
     }
 
     .form-contact-mobile{
-        
             display: block;
             display: flex;
-      
-      
     }
+
+    .form-contact-mobile .ipt-mobile{
+        width: 60vw;
+        min-width: 345px;
+    }
+
+
+    .form-contact-mobile .txt{
+        height: 30vh;
+        width: 60vw;
+        min-width: 345px;
+    }
+
+    
 
     
   
@@ -138,7 +142,6 @@ button{
 @media screen and (max-width: 650px){
     .left-contact{
         text-align: center;
-        
     }
 
     .left-contact h2{
@@ -148,6 +151,17 @@ button{
     font-size: 3.2rem;
     font-weight: 700;
     font-family: 'Squada One';
+    position: relative;
+    }
+
+    .left-contact h2::before{
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: 125px;
+        bottom: 1px;
+        border-radius: 8px;
+        background-color: var(--yellow);
     }
 
     .left-contact .container-left-contact{
@@ -155,13 +169,6 @@ button{
     }
 
     
-
-
-
     
-
-
-    
-
     
 }

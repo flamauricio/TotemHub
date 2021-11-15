@@ -1,0 +1,190 @@
+    body {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* background-color: rgb(214, 211, 211); */
+        background-image: url(../img/back_cadEmpresa.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .fundo {
+        background-color: rgba(128, 128, 128, 0.9);
+        border-radius: 15px;
+        height: 554px;
+        max-width: 700px;
+        text-align: center;
+        align-content: center;
+        margin: 35px 70px 117px 350px;
+        margin-top: 50px;
+    }
+    
+    .Img_centro {
+        padding-top: 40px;
+        height: 275px;
+    }
+    
+    .enunciado h1 {
+        color: black;
+        font-size: 25px;
+        font-family: "PoPPins", sans-serif;
+        padding-bottom: 10px;
+    }
+    
+    .botao_um button {
+        background-color: #FFC702;
+        width: 450px;
+        border-radius: 15px;
+        height: 45px;
+        color: white;
+        font-size: 20px;
+        font-family: "PoPPins", sans-serif;
+        transition: ease-out 0.3s;
+    }
+    
+    .botao_um :hover {
+        background-color: slateblue;
+    }
+    
+    .botao_um {
+        padding-bottom: 20px;
+    }
+    
+    .botao_dois button {
+        background-color: #FFC702;
+        width: 450px;
+        border-radius: 15px;
+        height: 45px;
+        color: whitesmokes;
+        font-size: 20px;
+        font-family: "PoPPins", sans-serif;
+        transition: ease-out 0.3s;
+    }
+    
+    .botao_dois :hover {
+        background-color: slateblue;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(34, 31, 31, 0.8);
+        opacity: 0;
+        transition: opacity 400ms ease-in;
+        /*define a transição para apresentar e sair a modal*/
+        pointer-events: none;
+    }
+    
+    .modal:target {
+        /* define qual é o "alvo" que irá finalizar a minha modal, */
+        opacity: 1;
+        pointer-events: auto;
+        /* onde é representado pela referência "#" no index dentro da div criada na classe modal */
+    }
+    
+    .background-modal {
+        width: min-content;
+        position: relative;
+        text-align: center;
+        margin: 7% auto;
+        padding: 15px 20px;
+        background: var(--footer);
+        width: 60vw;
+        height: 80vh;
+        border-radius: 15px;
+        padding: 20px;
+        padding: 5px;
+        margin: 70px 285px;
+    }
+    
+    .fechar {
+        position: absolute;
+        width: 33px;
+        right: 0px;
+        top: -20px;
+        /* text-align: center; */
+        line-height: 32px;
+        margin-top: 5px;
+        background: #ff4545;
+        border-radius: 50%;
+        font-size: 16px;
+        margin: 90px 250px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 22px;
+        border: 3px black;
+        display: none;
+    }
+    
+    .openmod {
+        text-decoration: none;
+        color: black;
+        font-family: "PoPPins", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .logo_modal {
+        position: absolute;
+    }
+    
+    .form-login {
+        padding-top: 150px;
+    }
+    
+    .btnEntrar_agente {
+        background-color: #FFC702;
+        width: 100px;
+        border-radius: 15px;
+        height: 31px;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: "PoPPins", sans-serif;
+        transition: all 0.3s ease;
+        margin-top: 115px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btnEntrar_agente :hover {
+        background-color: slateblue;
+    }
+    
+    .btnEntrar_agente {
+        padding-bottom: 20px;
+    }
+    
+    .btnEntrar_gerente {
+        background-color: #FFC702;
+        width: 100px;
+        border-radius: 15px;
+        height: 31px;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: "PoPPins", sans-serif;
+        transition: all 0.3s ease;
+        margin-top: 115px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .btnEntrar_gerente :hover {
+        background-color: slateblue;
+    }
+    
+    .input-field {
+        position: relative;
+    }
+    
+    form .input-field:first-child {
+        margin-bottom: 1.5rem;
+    }

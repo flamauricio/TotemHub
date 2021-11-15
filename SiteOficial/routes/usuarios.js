@@ -112,4 +112,25 @@ router.post('/autenticar', function(req, res, next) {
   	});
 });
 
+router.get('/:idUsuario', function(req, res, next) {
+	console.log('Recuperando todas as publicações');
+
+	var idUsuario = req.params.idUsuario;
+
+    let instrucaoSql = `SELECT * from agente_de_estacao 
+	where id_agente= 10001`;
+	
+	sequelize.query(instrucaoSql, {
+		model: Usuario,
+		mapToModel: true 
+	})
+	.then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		res.json(resultado);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
 module.exports = router;

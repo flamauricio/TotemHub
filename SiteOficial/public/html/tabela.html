@@ -79,7 +79,8 @@
 								<label for="checkbox1"></label>
 							</span>
 						</td>
-						<td>Thomas Hardy</td>
+						<td> <div id="feed_container"></div>
+							<div id="divNome"></div></td>
 						<td>thomashardy@mail.com</td>
 						<td>89 Chiaroscuro Rd, Portland, USA</td>
 						<td><img src="../img/on.png" style="width: 20px;"></td>
@@ -292,4 +293,53 @@
             }
         });
     });
+
+	function obterPublicacoes(idUsuario) {
+        // aguardar();
+		alert("isso é um super teste")
+        var idUsuario = sessionStorage.id_usuario_meuapp;
+        fetch(`/usuarios/${idUsuario}`)
+            .then(resposta => {
+                if (resposta.ok) {
+                    resposta.json().then(function (resposta) {
+                        atualizarFeed(resposta);
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        alert('Sua viagem foi cadastrada com sucesso!')
+                        ipt_destino.value = '';
+                        
+                        // alert('obterPublicacoes')
+                        // finalizarAguardar();
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    alert('nao foi aqui')
+
+                    // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+
+                }
+            })
+            .catch(function (error) {
+
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
+    }
+
+	function atualizarFeed(usuarios) {
+		alert('Isso é um teste')
+        var feed = document.getElementById("feed_container");
+        feed.innerHTML = "";
+        for (let contador = 0; contador < consultas.length; contador++) {
+            var usuario = usuarios[contador];
+            
+            var divConsulta = document.createElement("div")
+            var divNome = document.createElement("div")
+
+            divNome.innerHTML = `${usuario.nome_agente}.`;
+            divConsulta.appendChild(divNome);
+
+            feed.appendChild(divConsulta);
+
+
+        }
+    }
     </script>

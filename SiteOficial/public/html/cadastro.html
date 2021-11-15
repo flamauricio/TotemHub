@@ -91,6 +91,8 @@ function cadastrar() {
             if (response.ok) {
                 window.location.href = 'tabela.html';
                 console.log("Cadastro efetuado com sucesso");
+                obterPublicacoes("cadastro/idUsuario");
+
 
             } else {
                 alert('Erro de cadastro!');
@@ -103,5 +105,39 @@ function cadastrar() {
 
         return false;
     }
+
+    function obterPublicacoes(idUsuario) {
+        // aguardar();
+		alert("teste")
+        var idUsuario = sessionStorage.id_usuario_meuapp;
+        fetch(`/usuarios/${idUsuario}`)
+        
+            .then(resposta => {
+                
+                if (resposta.ok) {
+                    
+                    resposta.json().then(function (resposta) {
+                        atualizarFeed(resposta);
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        
+                        alert("aqui tem outro teste")
+                        
+                        // alert('obterPublicacoes')
+                        // finalizarAguardar();
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    alert('nao foi aqui')
+
+                    // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+
+                }
+            })
+            .catch(function (error) {
+                alert("aviso")
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
+    }
+
 
 </script>

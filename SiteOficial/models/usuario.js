@@ -6,9 +6,9 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 */
 
 module.exports = (sequelize, DataTypes) => {
-    let agente_de_estacao = sequelize.define('agente_de_estacao',{
-		id_agente: {
-			field: 'id_agente',
+    let Usuario = sequelize.define('Usuario',{
+		id: {
+			field: 'id',
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
@@ -42,5 +42,5 @@ module.exports = (sequelize, DataTypes) => {
 		timestamps: false,
 	});
 
-    return agente_de_estacao;
+    return Usuario;
 };

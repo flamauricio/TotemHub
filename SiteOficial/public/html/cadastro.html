@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
     <script src="../js/jquery.js"></script>
     <script src="../js/menu-responsivo.js"></script>
+    <script src="../js/functions.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -35,7 +36,6 @@
         </div><!--container-->
 
         <div  class="clear"></div>
-
         <div class="form-login">
             <h2>Cadastre seu Agente</h2>
             <form  id="form_cadastro" method="post">
@@ -82,16 +82,16 @@
 function cadastrar() {
    
         var formulario = new URLSearchParams(new FormData(form_cadastro));
-        
+        var idUsuario = sessionStorage.id_usuario_meuapp;
         fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario
             
         }).then(function (response) {
             if (response.ok) {
-                window.location.href = 'tabela.html';
-                console.log("Cadastro efetuado com sucesso");
-                obterPublicacoes("cadastro/idUsuario");
+                // window.location.href = 'tabela.html';
+                alert("Cadastro efetuado com sucesso");
+                obterPublicacoes();
 
 
             } else {
@@ -106,38 +106,65 @@ function cadastrar() {
         return false;
     }
 
-    function obterPublicacoes(idUsuario) {
-        // aguardar();
-		alert("teste")
-        var idUsuario = sessionStorage.id_usuario_meuapp;
-        fetch(`/usuarios/${idUsuario}`)
+    // function obterPublicacoes(idUsuario) {
+    //     // aguardar();
+	// 	alert("teste")
+    //     var idUsuario = sessionStorage.id_usuario_meuapp;
+    //     fetch(`/usuarios`)
         
-            .then(resposta => {
+    //         .then(resposta => {
                 
-                if (resposta.ok) {
+    //             if (resposta.ok) {
                     
-                    resposta.json().then(function (resposta) {
-                        atualizarFeed(resposta);
-                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+    //                 resposta.json().then(function (resposta) {
+    //                     atualizarFeed(resposta);
+    //                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                         
-                        alert("aqui tem outro teste")
+    //                     alert("aqui tem outro teste")
                         
-                        // alert('obterPublicacoes')
-                        // finalizarAguardar();
-                    });
-                } else {
-                    console.error('Nenhum dado encontrado ou erro na API');
-                    alert('nao foi aqui')
+    //                     // alert('obterPublicacoes')
+    //                     // finalizarAguardar();
+    //                 });
+    //             } else {
+    //                 console.error('Nenhum dado encontrado ou erro na API');
+    //                 alert('nao foi aqui')
 
-                    // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+    //                 // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
 
-                }
-            })
-            .catch(function (error) {
-                alert("aviso")
-                console.error(`Erro na obtenção das publicações: ${error.message}`);
-            });
-    }
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             alert("aviso")
+    //             console.error(`Erro na obtenção das publicações: ${error.message}`);
+    //         });
+    // }
 
+    // function atualizarFeed(usuarios) {
+	// 	alert('Isso é um teste')
+    //     var feed = document.getElementById("feed_container");
+    //     feed.innerHTML = "";
+    //     for (let contador = 0; contador < usuarios.length; contador++) {
+    //         var usuario = usuarios[contador];
+            
+    //         var divConsulta = document.createElement("div")
+    //         var divNome = document.createElement("div")
+    //         var divEndereco = document.createElement("div");
+
+
+    //         divNome.innerHTML = `${usuario.nome_agente}.`;
+    //         divConsulta.appendChild(divNome);
+
+    //         divEndereco.innerHTML = `${usuario.fk_estacao}.`;
+    //         divConsulta.appendChild(divEndereco);
+    //         if(usuario.fk_estacao == 10000){
+    //             divConsulta = "Barueri";
+
+    //         }
+
+    //         feed.appendChild(divConsulta);
+
+
+    //     }
+    // }
 
 </script>

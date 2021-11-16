@@ -14,8 +14,9 @@
 <link rel="stylesheet" href="../css/tabela.css">
 <script src="../jquery/jquery.js"></script>
     <script src="../jquery/menu-responsivo.js"></script>
+	<script src="../js/functions.js"></script>
 </head>
-<body>
+<body onload="obterPublicacoes()">
 
     <header>
 
@@ -58,45 +59,37 @@
 			<table class="table table-striped table-hover">
 				<thead>
 					<tr>
-						<th>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="selectAll">
-								<label for="selectAll"></label>
-							</span>
-						</th>
+						<th>id</th>
 						<th>Nome</th>
 						<th>Email</th>
 						<th>Estação</th>
-						<th>Status</th>
-						<th>Actions</th>
+						<!-- <th>Status</th>
+						<th>Actions</th> -->
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox1" name="options[]" value="1">
-								<label for="checkbox1"></label>
-							</span>
+							<div id="feed_id"></div>
 						</td>
-						<td> <div id="feed_container"></div>
-							<div id="divNome"></div></td>
-						<td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
-						<td><img src="../img/on.png" style="width: 20px;"></td>
-						<td>
+						<td> <div id="feed_container"></div></td>
+						<td><div id="feed_login"></div></td>
+						<td><div id="feed_estacao"></div></td>
+
+						<!-- <td><img src="../img/on.png" style="width: 20px;"></td> -->
+						<!-- <td>
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
+						</td> -->
 					</tr>
 					<tr>
 						<td>
-							<span class="custom-checkbox">
+							<!-- <span class="custom-checkbox">
 								<input type="checkbox" id="checkbox2" name="options[]" value="1">
 								<label for="checkbox2"></label>
-							</span>
+							</span> -->
 						</td>
-						<td>Dominique Perrier</td>
+						<!-- <td>Dominique Perrier</td>
 						<td>dominiqueperrier@mail.com</td>
 						<td>Obere Str. 57, Berlin, Germany</td>
 						<td><img src="../img/off.png" style="width: 20px;"></td>
@@ -152,7 +145,7 @@
 							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
 						</td>
-					</tr> 
+					</tr>  -->
 				</tbody>
 			</table>
 			<!-- <div class="clearfix">
@@ -294,52 +287,58 @@
         });
     });
 
-	function obterPublicacoes(idUsuario) {
-        // aguardar();
-		alert("isso é um super teste")
-        var idUsuario = sessionStorage.id_usuario_meuapp;
-        fetch(`/usuarios/${idUsuario}`)
-            .then(resposta => {
-                if (resposta.ok) {
-                    resposta.json().then(function (resposta) {
-                        atualizarFeed(resposta);
-                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                        alert('Sua viagem foi cadastrada com sucesso!')
-                        ipt_destino.value = '';
+	function obterPublicacoes();
+
+	function atualizarFeed();
+
+	// function obterPublicacoes(idUsuario) {
+    //     // aguardar();
+	// 	alert("isso é um super teste")
+    //     var idUsuario = sessionStorage.id_usuario_meuapp;
+    //     fetch(`/usuarios/`)
+    //         .then(resposta => {
+    //             if (resposta.ok) {
+    //                 resposta.json().then(function (resposta) {
+    //                     atualizarFeed(resposta);
+    //                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+    //                     alert('Sua viagem foi cadastrada com sucesso!')
+    //                     ipt_destino.value = '';
                         
-                        // alert('obterPublicacoes')
-                        // finalizarAguardar();
-                    });
-                } else {
-                    console.error('Nenhum dado encontrado ou erro na API');
-                    alert('nao foi aqui')
+    //                     // alert('obterPublicacoes')
+    //                     // finalizarAguardar();
+    //                 });
+    //             } else {
+    //                 console.error('Nenhum dado encontrado ou erro na API');
+    //                 alert('nao foi aqui')
 
-                    // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+    //                 // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
 
-                }
-            })
-            .catch(function (error) {
+    //             }
+    //         })
+    //         .catch(function (error) {
 
-                console.error(`Erro na obtenção das publicações: ${error.message}`);
-            });
-    }
+    //             console.error(`Erro na obtenção das publicações: ${error.message}`);
+    //         });
+    // }
 
-	function atualizarFeed(usuarios) {
-		alert('Isso é um teste')
-        var feed = document.getElementById("feed_container");
-        feed.innerHTML = "";
-        for (let contador = 0; contador < consultas.length; contador++) {
-            var usuario = usuarios[contador];
+	// function atualizarFeed(usuarios) {
+	// 	alert('Isso é um teste')
+    //     var feed = document.getElementById("feed_container");
+    //     feed.innerHTML = "";
+    //     for (let contador = 0; contador < consultas.length; contador++) {
+    //         var usuario = usuarios[contador];
             
-            var divConsulta = document.createElement("div")
-            var divNome = document.createElement("div")
+    //         var divConsulta = document.createElement("div")
+    //         var divNome = document.createElement("div")
+	// 		var divEndereco = `document.createElement("div")`;
 
-            divNome.innerHTML = `${usuario.nome_agente}.`;
-            divConsulta.appendChild(divNome);
+    //         divNome.innerHTML = `${usuario.nome_agente}.`;
+	// 		divEndereco.innerHTML = `${usuario.estacao}.`;
+    //         divConsulta.appendChild(divNome);
 
-            feed.appendChild(divConsulta);
+    //         feed.appendChild(divConsulta);
 
 
-        }
-    }
+    //     }
+    // }
     </script>

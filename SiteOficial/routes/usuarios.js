@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
-var agente_de_estacao = require('../models').agente_de_estacao;
+var Usuario = require('../models').Usuario;
 
 let sessoes = [];
 
@@ -9,7 +9,7 @@ let sessoes = [];
 router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
 	
-	agente_de_estacao.create({
+	Usuario.create({
 		nome_agente : req.body.nome,
 		login_agente : req.body.email,
 		fk_estacao: req.body.estacao,
@@ -117,8 +117,7 @@ router.get('/:idUsuario', function(req, res, next) {
 
 	var idUsuario = req.params.idUsuario;
 
-    let instrucaoSql = `SELECT * from agente_de_estacao 
-	where id_agente= 10001`;
+    let instrucaoSql = `SELECT * from agente_de_estacao join estacao;`;
 	
 	sequelize.query(instrucaoSql, {
 		model: Usuario,

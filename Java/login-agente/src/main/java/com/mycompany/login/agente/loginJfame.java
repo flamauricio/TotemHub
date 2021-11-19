@@ -7,8 +7,13 @@ package com.mycompany.login.agente;
 
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.sistema.Sistema;
+import com.mycompany.login.agente.slack.Slack;
 import java.awt.Color;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import org.json.JSONObject;
 
 /**
  *
@@ -191,7 +196,38 @@ public class loginJfame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEsqueceuSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueceuSenhaActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here
+
+        JSONObject json = new JSONObject();
+        JSONObject jsonTeste = new JSONObject();
+        JSONObject jsonAlert = new JSONObject();
+
+        json.put("text", "Fácil :ghost:");
+        jsonTeste.put("text", "Teste em outra JsonObjetc Mandando via outro pacote:rocket:");
+        jsonAlert.put("text", "A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!");
+
+        try {
+            Slack.sendMessage(json);
+        } catch (IOException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            Slack.sendMessage(jsonTeste);
+        } catch (IOException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            Slack.sendMessage(jsonAlert);
+        } catch (IOException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         JOptionPane.showMessageDialog(null, "Envie e-mail ao nosso suporte support@totemhub.atlassian.net");
     }//GEN-LAST:event_btnEsqueceuSenhaActionPerformed
 
@@ -240,8 +276,8 @@ public class loginJfame extends javax.swing.JFrame {
 
     private void iptSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iptSenhaActionPerformed
         // TODO add your handling code here:
-       
-        
+
+
     }//GEN-LAST:event_iptSenhaActionPerformed
 
     /**

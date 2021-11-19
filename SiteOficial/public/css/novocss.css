@@ -11,7 +11,8 @@
     }
     
     .fundo {
-        background-color: rgba(128, 128, 128, 0.9);
+        background-color: rgba(0, 0, 0, 0.062);
+        backdrop-filter: blur(20px);
         border-radius: 15px;
         height: 554px;
         max-width: 700px;
@@ -27,7 +28,7 @@
     }
     
     .enunciado h1 {
-        color: black;
+        color: whitesmoke;
         font-size: 25px;
         font-family: "PoPPins", sans-serif;
         padding-bottom: 10px;
@@ -57,7 +58,7 @@
         width: 450px;
         border-radius: 15px;
         height: 45px;
-        color: whitesmokes;
+        color: whitesmoke;
         font-size: 20px;
         font-family: "PoPPins", sans-serif;
         transition: ease-out 0.3s;
@@ -174,10 +175,6 @@
         padding-top: 5px;
     }
     
-    .btnEntrar_gerente :hover {
-        background-color: slateblue;
-    }
-    
     .input-field {
         position: relative;
     }
@@ -185,11 +182,13 @@
     form .input-field:first-child {
         margin-bottom: 1.5rem;
     }
-    #agerente h1{
+    
+    #agerente h1 {
         font-family: 'Squada One', cursive;
         font-size: 40px;
     }
-    .form-login h1{
+    
+    .form-login h1 {
         font-family: 'Squada One', cursive;
         font-size: 40px;
     }

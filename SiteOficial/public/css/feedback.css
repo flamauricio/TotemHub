@@ -142,7 +142,8 @@
         .form-login {
             max-width: 350px;
             min-height: 40vh;
-            background-color: rgba(0, 0, 0, 0.679);
+            background-color: rgba(0, 0, 0, 0.589);
+            backdrop-filter: blur(20px);
             margin: 5rem auto;
             padding: 2rem;
             border-radius: 10px;

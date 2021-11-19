@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,19 @@
     <script src="../js/functions.js"></script>
     <title>Cadastro</title>
 </head>
+
 <body>
     <header>
 
         <div class="container">
             <div class="logo">
                 <!-- <img src="img/TotemHub.svg" alt=""> -->
-            </div><!--logo-->
+            </div>
+            <!--logo-->
             <nav class="desktop-menu">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a style="color: #FFC702;" >Cadastrar</a></li>
+                    <li><a style="color: #FFC702;">Cadastrar</a></li>
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -33,12 +36,13 @@
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
-        </div><!--container-->
+        </div>
+        <!--container-->
 
-        <div  class="clear"></div>
+        <div class="clear"></div>
         <div class="form-login">
             <h2>Cadastre seu Agente</h2>
-            <form  id="form_cadastro" method="post">
+            <form id="form_cadastro" method="post">
                 <div class="input-field">
                     <input type="text" name="nome" id="nome" placeholder="Nome Completo">
                     <img src="../img/user_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
@@ -57,37 +61,35 @@
                     <div class="underline"></div>
                 </div>
 
-                <select style="width: 100%;" name="estacao" id="estacao">
+                <select class="select_estacao" name="estacao" id="estacao">
                     <option value="">Escolha a estação</option>
                     <option value="1000">Barueri</option>
                     <option value="1001">Pnheiros</option>
                     <option value="1002">Republica</option>
                 </select>
 
-                <button onclick="return cadastrar()" name="form_cadastro" 
-                method="POST" class="btn_cadastrar_agente">Registrar</button>
+                <button onclick="return cadastrar()" name="form_cadastro" method="POST" class="btn_cadastrar_agente">Registrar</button>
 
             </form>
         </div>
 
 
     </header>
-    
+
 </body>
+
 </html>
 
 <script>
+    function cadastrar() {
 
-
-function cadastrar() {
-   
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         var idUsuario = sessionStorage.id_usuario_meuapp;
         fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario
-            
-        }).then(function (response) {
+
+        }).then(function(response) {
             if (response.ok) {
                 // window.location.href = 'tabela.html';
                 alert("Cadastro efetuado com sucesso");
@@ -96,7 +98,7 @@ function cadastrar() {
 
             } else {
                 alert('Erro de cadastro!');
-                response.text().then(function (resposta) {
+                response.text().then(function(resposta) {
                     div_erro.innerHTML = resposta;
                 });
                 finalizar_aguardar();
@@ -108,20 +110,20 @@ function cadastrar() {
 
     // function obterPublicacoes(idUsuario) {
     //     // aguardar();
-	// 	alert("teste")
+    // 	alert("teste")
     //     var idUsuario = sessionStorage.id_usuario_meuapp;
     //     fetch(`/usuarios`)
-        
+
     //         .then(resposta => {
-                
+
     //             if (resposta.ok) {
-                    
+
     //                 resposta.json().then(function (resposta) {
     //                     atualizarFeed(resposta);
     //                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                        
+
     //                     alert("aqui tem outro teste")
-                        
+
     //                     // alert('obterPublicacoes')
     //                     // finalizarAguardar();
     //                 });
@@ -140,12 +142,12 @@ function cadastrar() {
     // }
 
     // function atualizarFeed(usuarios) {
-	// 	alert('Isso é um teste')
+    // 	alert('Isso é um teste')
     //     var feed = document.getElementById("feed_container");
     //     feed.innerHTML = "";
     //     for (let contador = 0; contador < usuarios.length; contador++) {
     //         var usuario = usuarios[contador];
-            
+
     //         var divConsulta = document.createElement("div")
     //         var divNome = document.createElement("div")
     //         var divEndereco = document.createElement("div");
@@ -166,5 +168,4 @@ function cadastrar() {
 
     //     }
     // }
-
 </script>

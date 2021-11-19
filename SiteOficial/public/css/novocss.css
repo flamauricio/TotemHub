@@ -74,7 +74,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: rgba(34, 31, 31, 0.8);
+        background: rgba(240, 240, 240, 0.8);
         opacity: 0;
         transition: opacity 400ms ease-in;
         /*define a transição para apresentar e sair a modal*/
@@ -94,7 +94,7 @@
         text-align: center;
         margin: 7% auto;
         padding: 15px 20px;
-        background: var(--footer);
+        background: white;
         width: 60vw;
         height: 80vh;
         border-radius: 15px;
@@ -141,40 +141,37 @@
     
     .btnEntrar_agente {
         background-color: #FFC702;
-        width: 100px;
+        width: 150px;
         border-radius: 15px;
         height: 31px;
         color: black;
-        font-weight: bold;
-        font-size: 12px;
-        font-family: "PoPPins", sans-serif;
-        transition: all 0.3s ease;
-        margin-top: 115px;
+        font-size: 18px;
+        font-family: 'Squada One', cursive;
+        transition: ease-out 0.3s;
+        margin-top: 30px;
         text-align: center;
         cursor: pointer;
+        padding-top: 5px;
+        padding-bottom: 20px;
     }
     
     .btnEntrar_agente :hover {
         background-color: slateblue;
     }
     
-    .btnEntrar_agente {
-        padding-bottom: 20px;
-    }
-    
     .btnEntrar_gerente {
         background-color: #FFC702;
-        width: 100px;
+        width: 150px;
         border-radius: 15px;
         height: 31px;
         color: black;
-        font-weight: bold;
-        font-size: 12px;
-        font-family: "PoPPins", sans-serif;
-        transition: all 0.3s ease;
-        margin-top: 115px;
+        font-size: 18px;
+        font-family: 'Squada One', cursive;
+        transition: ease-out 0.3s;
+        margin-top: 30px;
         text-align: center;
         cursor: pointer;
+        padding-top: 5px;
     }
     
     .btnEntrar_gerente :hover {
@@ -187,4 +184,12 @@
     
     form .input-field:first-child {
         margin-bottom: 1.5rem;
+    }
+    #agerente h1{
+        font-family: 'Squada One', cursive;
+        font-size: 40px;
+    }
+    .form-login h1{
+        font-family: 'Squada One', cursive;
+        font-size: 40px;
     }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/novocss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="../css/root.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="Img_centro">
+        <img src="../img/logo_totem.png" alt="logo">
+    </div>
+    <div class="enunciado">
+        <h1>Realizar login como:</h1>
+    </div>
+    <div class="botao_um">
+        <button><a  href="#modalLogin_agente" class="openmod">Login Agente</a></button>
+    </div>
+    <div class="botao_dois">
+    <button><a  href="#modalLogin_gerente" class="openmod">Login Gerente</a></button>
+    </div>
+    <div id="modalLogin_gerente" class="modal">
+
+        <!-- conteúdo do modal aqui -->
+        <div class="background-modal">
+            <div class="form-login">
+                <h2>Login Gerente</h2>
+                <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
+                    <div class="input-field">
+                        <input type="text" name="login" id="login" placeholder="Email">
+                        <div class="underline"></div>
+                    </div>
+    
+                    <div class="input-field">
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <div class="underline"></div>
+                    </div>
+    
+                    <input type="submit" value="Enter" id="btn_login">
+                </form>
+    
+                <div class="login-footer">
+                    <span>Esqueceu sua senha? 
+                        <a style="color: white;" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1"> Clique Aqui! </a></span>
+                </div>
+            </div>
+        </div>
+
+            <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+        </div>
+    </div>
+
+    <div id="modalLogin_agente" class="modal">
+
+        <!-- conteúdo do modal aqui -->
+        <div class="background-modal">
+            <div class="form-login">
+                <h2>Login Agente</h2>
+                <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
+                    <div class="input-field">
+                        <input type="text" name="login" id="login" placeholder="Email">
+                        <div class="underline"></div>
+                    </div>
+    
+                    <div class="input-field">
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <div class="underline"></div>
+                    </div>
+    
+                    <input type="submit" value="Enter" id="btn_login">
+                </form>
+    
+                <div class="login-footer">
+                    <span>Esqueceu sua senha? 
+                        <a style="color: white;" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1"> Clique Aqui! </a></span>
+                </div>
+            </div>
+        </div>
+
+            <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

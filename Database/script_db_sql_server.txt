@@ -39,6 +39,8 @@ create table empresa(
     primary key(cnpj_empresa)
 );
 
+- insert into empresa(nome_empresa) values ("Bandtec"); 
+
 create table estacao(
     id_estacao int identity(1000,1),
     fk_empresa int,
@@ -47,6 +49,8 @@ create table estacao(
     primary key (id_estacao),
     foreign key (fk_empresa) references empresa(cnpj_empresa)
 );
+
+- insert into estacao(fk_empresa, nome_estacao, qnt_totem) values (1, 'Consolação');
 
     
 
@@ -62,6 +66,7 @@ create table agente_de_estacao(
     foreign key(fk_estacao) references estacao(id_estacao),
     foreign key(fk_empresa) references empresa(cnpj_empresa)
 );
+insert into agente_estacao(fk_estacao, fk_empresa, nome_agente, login_agente, senha_agente, isGerente) values (1000, 1, "Luis Souza", "agente@bandtec.com.br", "123456", true);
 
 create table totem(
     id_totem int identity(100000,1),
@@ -69,7 +74,7 @@ create table totem(
     primary key(id_totem),
     foreign key(fk_estacao) references estacao(id_estacao)
 );
-
+- insert into totem(fk_estacao) values (1000);
 
 create table historico_totem(
     id_historico int identity(1000000,1),

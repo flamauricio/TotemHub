@@ -51,9 +51,9 @@
                         <option value="1">Máquina 1</option>
                         <option value="2">Máquina 2</option>
                         <option value="3">Máquina 3</option>
-                      </select>
+                    </select>
                 </a>
-                
+
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
@@ -175,19 +175,20 @@
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Chart2 TotemHub</h6>
                                 </div>
+
                                 <div class="card-body">
                                     <div class="chart-pie pt-4 pb-2">
                                         <canvas id="myPieChart"></canvas>
                                     </div>
                                     <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Legenda
+                                        <span>
+                                            <i class="fas fa-circle" style="color: #4e73df;"></i> Legenda1
                                         </span>
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Legenda
+                                            <i class="fas fa-circle" style="color: #1cc88a;"></i> Legenda2
                                         </span>
                                         <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Legenda
+                                            <i class="fas fa-circle" style="color: #36b9cc;"></i> Legenda3
                                         </span>
                                     </div>
                                 </div>
@@ -207,9 +208,13 @@
         </div>
 
 
-        <!-- Bootstrap core JavaScript-->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="vendor/chart.js/Chart.min.js"></script>
+        <script src="../js/demo/chart-area-demo.js"></script>
+        <script src="../js/demo/chart-pie-demo.js"></script>
+
 
 </body>
 

@@ -246,28 +246,28 @@
         <!--left-contact-->
 
         <div class="form-contact">
-            <form action="">
+            <form id="form_cadastro_lead" method="post">
 
 
                 <div class="form-wrap">
-                    <input placeholder="nome" type="text">
+                    <input placeholder="nome" name="nome_lead" id="nome_lead" type="text">
                 </div>
 
                 <div class="form-wrap">
-                    <input placeholder="e-mail" type="text">
+                    <input placeholder="e-mail" name="email_lead" id="email_lead" type="text">
                 </div>
-
-
 
                 <div>
-                    <textarea class="txt" placeholder="Digite o texto aqui" id="" cols="30" rows="10"></textarea>
+                    <textarea 
+                        class="txt" 
+                        name="descricao_lead" 
+                        id="descricao_lead" 
+                        placeholder="Digite o texto aqui"
+                        cols="30" rows="10">
+                    </textarea>
                 </div>
 
-
-
-
-
-                <button>Enviar</button>
+                <button onclick="return cadastrar_lead()" name="form_cadastro" method="POST">Enviar</button>
 
 
 
@@ -278,7 +278,7 @@
 
 
     </section>
-
+<!-- 
     <div class="form-contact-mobile">
         <form action="">
 
@@ -298,17 +298,13 @@
                 </div>
             </fieldset>
 
-
-
             <div class="btn">
                 <button>Enviar</button>
             </div>
 
-
-
             </fieldset>
         </form>
-    </div>
+    </div> -->
 
     <footer class="footer">
         <div class="container-footer">
@@ -326,3 +322,26 @@
 
 
 </html>
+<script>
+        function cadastrar_lead() {
+
+            var formulario = new URLSearchParams(new FormData(form_cadastro_lead));
+           
+            fetch("/usuarios/cadastrar_lead", {
+                method: "POST",
+                body: formulario
+
+            }).then(function (response) {
+                if (response.ok) {
+                    alert("Cadastro efetuado com sucesso");
+                  
+                } else {
+                    alert('Erro de cadastro!');
+                    
+                    finalizar_aguardar();
+                }
+            });
+
+            return false;
+        }
+</script>

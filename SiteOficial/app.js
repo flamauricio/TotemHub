@@ -1,4 +1,4 @@
-process.env.NODE_ENV = 'dev'; // altere para 'production' ou 'dev'
+process.env.NODE_ENV = 'production'; // altere para 'production' ou 'dev'
 
 var express = require('express');
 var path = require('path');
@@ -19,6 +19,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);
-// app.use('/leituras', leiturasRouter);
 
 module.exports = app;

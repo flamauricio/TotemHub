@@ -2,10 +2,10 @@ module.exports = {
   // Insira aqui seus dados do banco NA NUVEM AZURE
   production: {
     // altere APENAS username, password, database e host.
-    username: '',
-    password: '',
-    database: 'database-iot',
-    host: '',
+    username: 'totemHub',
+    password: '#Gfgrupo2',
+    database: 'sprintTotemhub',
+    host: 'totem-hub.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {

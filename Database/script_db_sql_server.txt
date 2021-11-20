@@ -1,0 +1,95 @@
+ <div class="form-login">
+            <h2>Cadastre seu Agente</h2>
+            <form id="form_cadastro" method="post">
+                <div class="input-field">
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                    <img src="../img/user_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
+                    <div class="underline"></div>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <img src="../img/o-email.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
+                    <div class="underline"></div>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <img src="../img/senha_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
+                    <div class="underline"></div>
+                </div>
+
+                <select class="select_estacao" name="estacao" id="estacao">
+                    <option value="">Escolha a estação</option>
+                    <option value="1000">Barueri</option>
+                    <option value="1001">Pnheiros</option>
+                    <option value="1002">Republica</option>
+                </select>
+
+                <button onclick="return cadastrar()" name="form_cadastro" method="POST" class="btn_cadastrar_agente">Registrar</button>
+
+            </form>
+        </div>
+
+
+
+create table empresa(
+    cnpj_empresa int identity,
+    nome_empresa varchar(45),
+    primary key(cnpj_empresa)
+);
+
+create table estacao(
+    id_estacao int identity(1000,1),
+    fk_empresa int,
+    nome_estacao varchar(45),
+    qnt_totem int,
+    primary key (id_estacao),
+    foreign key (fk_empresa) references empresa(cnpj_empresa)
+);
+
+    
+
+create table agente_de_estacao(
+    id int identity(10000,1),
+    fk_estacao int,
+    fk_empresa int,
+    nome_agente varchar(45),
+    login_agente varchar(50),
+    senha_agente varchar(20),
+    isGerente smallint,
+    primary key(id),
+    foreign key(fk_estacao) references estacao(id_estacao),
+    foreign key(fk_empresa) references empresa(cnpj_empresa)
+);
+
+create table totem(
+    id_totem int identity(100000,1),
+    fk_estacao int,
+    primary key(id_totem),
+    foreign key(fk_estacao) references estacao(id_estacao)
+);
+
+
+create table historico_totem(
+    id_historico int identity(1000000,1),
+    fk_agente int,
+    fk_totem int,
+    cpu_totem int,
+    memoria_ram_totem int,
+    horario_totem datetime2(0),
+    funcionamento_totem smallint,
+    isAtivo smallint,
+    primary key(id_historico),
+    foreign key(fk_agente) references agente_de_estacao(id),
+    foreign key(fk_totem) references totem(id_totem)
+);
+
+
+create table leads(
+    id_lead int identity (1000000, 1),
+    nome_lead varchar(45),
+    email_lead varchar(45),
+    descricao_lead varchar(200),
+    primary key(id_lead)
+);

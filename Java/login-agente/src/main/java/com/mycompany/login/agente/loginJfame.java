@@ -18,6 +18,7 @@ import org.json.JSONObject;
 /**
  *
  * @author vitor.herculano
+ * @author flavio <flavio.valerio@bandtec.com.br>
  */
 public class loginJfame extends javax.swing.JFrame {
 
@@ -199,22 +200,13 @@ public class loginJfame extends javax.swing.JFrame {
         // TODO add your handling code here
 
         JSONObject json = new JSONObject();
-        JSONObject jsonTeste = new JSONObject();
         JSONObject jsonAlert = new JSONObject();
 
-        json.put("text", "Fácil :ghost:");
-        jsonTeste.put("text", "Teste em outra JsonObjetc Mandando via outro pacote:rocket:");
-        jsonAlert.put("text", "A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!");
+        json.put("text", ":pushpin: Requisição de senha ");
+        jsonAlert.put("text", "Para solicitar sua troca de senha abra um chamado <https://totemhub-bandtec.freshdesk.com/support/tickets/new |clicando aqui!>");
 
         try {
             Slack.sendMessage(json);
-        } catch (IOException ex) {
-            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        try {
-            Slack.sendMessage(jsonTeste);
         } catch (IOException ex) {
             Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InterruptedException ex) {
@@ -228,7 +220,7 @@ public class loginJfame extends javax.swing.JFrame {
             Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        JOptionPane.showMessageDialog(null, "Envie e-mail ao nosso suporte support@totemhub.atlassian.net");
+        JOptionPane.showMessageDialog(null, "Verifique o canal suporte no Slack");
     }//GEN-LAST:event_btnEsqueceuSenhaActionPerformed
 
     private void iptEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_iptEmailFocusGained

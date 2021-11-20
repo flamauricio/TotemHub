@@ -4,8 +4,16 @@ PURPLE='0;35'
 NC='\033[0m' 
 VERSAO=11
 	
-echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Buenas, Buenas!!! Serei seu assistente para instalação do Java!;"
-
+	echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Buenas, Buenas!!! Serei seu assistente para instalação do Java!;"
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Qual seu nome?"
+	read userName
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Olá,${userName}! Podemos iniciar? (S/N)" 
+	read inicio
+	if [ \"$inicio\" == \"s\" ]
+	then
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Então bora lá ${userName}..."
+	echo ""
+	fi
 	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja atualizar suas dependências? (S/N)?"
 	read mensage
 	if [ \"$mensage\" == \"s\" ]
@@ -13,7 +21,8 @@ echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Buenas, Buenas!!! Serei seu
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendi, irei atualizar agora para você!"
 		sudo apt upgrade && sudo apt update
 	fi		
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não atualizar suas dependências."\
+		echo ""
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não atualizar suas dependências."
 		echo ""
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Agora, iremos começar a verificar o seu JAVA."
 

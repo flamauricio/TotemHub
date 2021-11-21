@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/novocss.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/root.css">
@@ -41,15 +42,22 @@
 
                 <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
 
-                    <div class="input-field">
-                        <input type="text" name="login" id="login" placeholder="Email">
-                        <div class="underline"></div>
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label style="font-size: 17px; font-weight: bold;">E-mail</label>
+                        </div>
+                        <br>
+                        <div class="input-data">
+                            <input type="password" required>
+                            <div class="underline"></div>
+                            <label style="font-size: 17px;">Senha</label>
+                        </div>
                     </div>
 
-                    <div class="input-field">
-                        <input class="" type="password" name="senha" id="senha" placeholder="Senha">
-                        <div class="underline"></div>
-                    </div>
+
+
 
                     <button class="btnEntrar_gerente" onclick="entrar_gerente()" type="submit" value="Enter">Entrar</button>
                 </form>
@@ -80,14 +88,19 @@
                 <h1 class="txt_logins">Login Agente</h1>
 
                 <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
-                    <div class="input-field">
-                        <input type="text" name="login" id="login" placeholder="Email">
-                        <div class="underline"></div>
-                    </div>
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
 
-                    <div class="input-field">
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
-                        <div class="underline"></div>
+                            <label style="font-size: 17px;">E-mail</label>
+                        </div>
+                        <br>
+                        <div class="input-data">
+                            <input type="password" required>
+                            <div class="underline"></div>
+                            <label style="font-size: 17px;">Senha</label>
+                        </div>
                     </div>
 
                     <button class="btnEntrar_agente" type="submit" value="Enter">Entrar</button>

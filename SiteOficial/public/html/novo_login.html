@@ -40,17 +40,17 @@
             <div id="gerente" class="form-login">
                 <h1 class="txt_logins">Login Gerente</h1>
 
-                <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
+                <form action="" id="form_login_gerente" method="post" onsubmit="return entrar_login_gerente()">
 
                     <div class="wrapper">
                         <div class="input-data">
-                            <input type="text" required>
+                            <input type="text" required id="login" name="login">
                             <div class="underline"></div>
                             <label style="font-size: 17px; font-weight: bold;">E-mail</label>
                         </div>
                         <br>
                         <div class="input-data">
-                            <input type="password" required>
+                            <input type="password" required id="senha" name="senha">
                             <div class="underline"></div>
                             <label style="font-size: 17px;">Senha</label>
                         </div>
@@ -59,7 +59,7 @@
 
 
 
-                    <button class="btnEntrar_gerente" onclick="entrar_gerente()" type="submit" value="Enter">Entrar</button>
+                    <button class="btnEntrar_gerente"  type="submit" value="Enter">Entrar</button>
                 </form>
                 <br>
                 <div class="login-footer">
@@ -87,17 +87,17 @@
             <div class="form-login">
                 <h1 class="txt_logins">Login Agente</h1>
 
-                <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
+                <form action="" id="form_login_agente" method="post" onsubmit="return entrar_login_agente()">
                     <div class="wrapper">
                         <div class="input-data">
-                            <input type="text" required>
+                            <input type="text" required id="login" name="login">
                             <div class="underline"></div>
 
                             <label style="font-size: 17px;">E-mail</label>
                         </div>
                         <br>
                         <div class="input-data">
-                            <input type="password" required>
+                            <input type="password" required id="senha" name="senha">
                             <div class="underline"></div>
                             <label style="font-size: 17px;">Senha</label>
                         </div>
@@ -145,4 +145,73 @@
         document.getElementById("fechar_agente").style.display = 'none';
 
     }
+
+    function entrar_login_agente() {
+
+var formulario = new URLSearchParams(new FormData(form_login_agente));
+
+fetch("/usuarios/autenticar", {
+    method: "POST",
+    body: formulario
+}).then(resposta => {
+
+    if (resposta.ok) {
+
+        resposta.json().then(json => {
+
+            window.location.href = 'dashboard.html';
+
+            sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id;
+        });
+
+    } else {
+
+        console.log('Erro de login!');
+        alert('Login incorreto');
+
+        resposta.text().then(texto => {
+            console.error(texto);
+        });
+    }
+});
+
+return false;
+}
+
+function entrar_login_gerente() {
+
+var formulario = new URLSearchParams(new FormData(form_login_gerente));
+
+fetch("/usuarios/autenticar", {
+    method: "POST",
+    body: formulario
+}).then(resposta => {
+
+    if (resposta.ok) {
+
+        resposta.json().then(json => {
+
+            window.location.href = 'cadastro.html';
+
+            sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id;
+        });
+
+    } else {
+
+        console.log('Erro de login!');
+        alert('Login incorreto');
+
+        resposta.text().then(texto => {
+            console.error(texto);
+        });
+    }
+});
+
+return false;
+}
+
 </script>

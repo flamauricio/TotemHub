@@ -9,13 +9,15 @@ VERSAO=11
 	read userName
 	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Olá,${userName}! Podemos iniciar? (S/N)" 
 	read inicio
-	if [ \"$inicio\" == \"s\" ]
+	if [ \"$inicio\" == \"n\" ]
 	then
-	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Então bora lá ${userName}..."
-	echo ""
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não iniciar o programa, até a próxima ${userName}!"
+		exit
 	fi
-	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja atualizar suas dependências? (S/N)?"
-	read mensage
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Então bora lá ${userName}..."
+		echo ""
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja atualizar suas dependências? (S/N)?"
+		read mensage
 	if [ \"$mensage\" == \"s\" ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendido, irei atualizar agora para você!"
@@ -27,9 +29,9 @@ VERSAO=11
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Agora, iremos começar a verificar o seu JAVA."
 
 		echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Verificando..."
-		echo -ne $(tput setaf 10)'#####                     (33%)\r'
+		echo -ne '\e[1;31m #####                     (33%)\r \e[0m'
 		sleep 1
-		echo -ne $(tput setaf 10)'#############             (66%)\r'
+		echo -ne '\e[1;31m #############             (66%)\r \e[0m'
 		sleep 1	
 		echo -ne $(tput setaf 10)'#######################   (100%)\r'
 		echo -ne '\n'
@@ -38,6 +40,8 @@ java -version
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) : Que bacana, você já possui o java instalado!"
+		echo ""
+		echo "Muito obrigado pela sua companhia, espero ter sido útil! valeu ${userName}"
 	else
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Ops! Não encontrei nenhuma versão do Java instalado... "
 		echo ""

@@ -244,13 +244,15 @@
 					
 				</div>
 				<div class="modal-body">					
-					<p>Tem certeza que deseja deletar esse usuário?</p>
-					<p class="text-warning"><small>Digite o id do agente que deseja deletar.</small></p>
-					<input type="text">
-				</div>
-				<div class="modal-footer">
-					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-					<input type="submit" class="btn btn-danger" value="Delete">
+					<form id="form_delete" method="post">
+						<p>Tem certeza que deseja deletar esse usuário?</p>
+						<p class="text-warning"><small>Digite o id do agente que deseja deletar.</small></p>
+						<input id="deleteUser" type="text">
+										</div>
+										<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<button class="btn btn-danger" name="form_delete" method="post" onclick="return deletar()">Deletar</button>
+					</form>
 				</div>
 			</form>
 		</div>
@@ -293,54 +295,31 @@
 
 	function atualizarFeed();
 
-	// function obterPublicacoes(idUsuario) {
-    //     // aguardar();
-	// 	alert("isso é um super teste")
-    //     var idUsuario = sessionStorage.id_usuario_meuapp;
-    //     fetch(`/usuarios/`)
-    //         .then(resposta => {
-    //             if (resposta.ok) {
-    //                 resposta.json().then(function (resposta) {
-    //                     atualizarFeed(resposta);
-    //                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-    //                     alert('Sua viagem foi cadastrada com sucesso!')
-    //                     ipt_destino.value = '';
-                        
-    //                     // alert('obterPublicacoes')
-    //                     // finalizarAguardar();
-    //                 });
-    //             } else {
-    //                 console.error('Nenhum dado encontrado ou erro na API');
-    //                 alert('nao foi aqui')
+	function deletar() {
 
-    //                 // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+var formulario = new URLSearchParams(new FormData(form_delete));
+var idGerente = sessionStorage.id_usuario_meuapp;
 
-    //             }
-    //         })
-    //         .catch(function (error) {
+fetch(`/usuarios/deletar/${idGerente}`, {
+	method: "POST",
+	body: formulario
 
-    //             console.error(`Erro na obtenção das publicações: ${error.message}`);
-    //         });
-    // }
+}).then(function(response) {
+	if (response.ok) {
+		// window.location.href = 'tabela.html';
+		alert("Usuário deletado com sucesso!");
+		obterPublicacoes();
 
-	// function atualizarFeed(usuarios) {
-	// 	alert('Isso é um teste')
-    //     var feed = document.getElementById("feed_container");
-    //     feed.innerHTML = "";
-    //     for (let contador = 0; contador < consultas.length; contador++) {
-    //         var usuario = usuarios[contador];
-            
-    //         var divConsulta = document.createElement("div")
-    //         var divNome = document.createElement("div")
-	// 		var divEndereco = `document.createElement("div")`;
+	} else {
+		alert('Erro no comando!');
+		response.text().then(function(resposta) {
+			div_erro.innerHTML = resposta;
+		});
+		finalizar_aguardar();
+	}
+});
 
-    //         divNome.innerHTML = `${usuario.nome_agente}.`;
-	// 		divEndereco.innerHTML = `${usuario.estacao}.`;
-    //         divConsulta.appendChild(divNome);
+return false;
+}
 
-    //         feed.appendChild(divConsulta);
-
-
-    //     }
-    // }
     </script>

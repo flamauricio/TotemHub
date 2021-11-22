@@ -108,7 +108,7 @@ router.post('/autenticar', function(req, res, next) {
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
-		model: agente_de_estacao
+		model: Usuario
 	}).then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`);
 
@@ -135,7 +135,7 @@ router.get('/:idUsuario', function(req, res, next) {
 
 	var idUsuario = req.params.idUsuario;
 
-    let instrucaoSql = `SELECT * from agente_de_estacao join estacao;`;
+    let instrucaoSql = `SELECT * from agente_de_estacao where ${idUsuario};`;
 	
 	sequelize.query(instrucaoSql, {
 		model: Usuario,

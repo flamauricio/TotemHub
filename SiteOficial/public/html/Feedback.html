@@ -28,7 +28,6 @@
                     <li><a style="color: #FFC702;" href="Feedback.html">Feedback</a></li>
                 </ul>
             </nav>
-
             <nav class="mobile-menu">
                 <ul>
                     <li><a href="../index.html">Conheça nosso Site</a></li>
@@ -41,17 +40,28 @@
         <div class="clear"></div>
 
         <div class="form-login">
-            <h3>Como foi sua experiência conosco?</h3>
+            <h3>Qual estação você está?</h3>
             <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
 
                 <label class="custom-selector">
                     <select name="sample" >
                    <option selected disabled>Selecione</option>
-                   <option value="1">Bom</option>
-                   <option value="2">Indiferente</option>
-                   <option value="3">Ruim</option>
-                     </select>
+                   <option value="1000">Consolacao</option>
+                   <option value="1001">Paulista</option>
+                   <option value="1002">República</option>
+                     </select>  
                     </label>
+
+                <h3>Como foi sua experiência conosco?</h3>
+
+                <label class="custom-selector">
+                        <select name="sample" >                  
+                            <option value="1">Bom</option>
+                            <option value="2">Indiferente</option>
+                            <option value="3">Ruim</option>
+                         </select>
+                        </label>
+
 
                 <h3>Deseja deixar alguma mensagem extra? </h3>
                 <div class="input-field">

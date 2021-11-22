@@ -44,13 +44,13 @@
 
                     <div class="wrapper">
                         <div class="input-data">
-                            <input type="text" required id="login" name="login">
+                            <input type="text" required id="login_gerente" name="login_gerente">
                             <div class="underline"></div>
                             <label style="font-size: 17px; font-weight: bold;">E-mail</label>
                         </div>
                         <br>
                         <div class="input-data">
-                            <input type="password" required id="senha" name="senha">
+                            <input type="password" required id="senha_gerente" name="senha_gerente">
                             <div class="underline"></div>
                             <label style="font-size: 17px;">Senha</label>
                         </div>
@@ -184,9 +184,10 @@ function entrar_login_gerente() {
 
 var formulario = new URLSearchParams(new FormData(form_login_gerente));
 
-fetch("/usuarios/autenticar", {
+fetch("/gerentes/autenticar2", {
     method: "POST",
-    body: formulario
+    body: formulario,
+    alert: alert("teste")
 }).then(resposta => {
 
     if (resposta.ok) {
@@ -196,8 +197,8 @@ fetch("/usuarios/autenticar", {
             window.location.href = 'cadastro.html';
 
             sessionStorage.login_usuario_meuapp = json.login;
-                    sessionStorage.nome_usuario_meuapp = json.nome;
-                    sessionStorage.id_usuario_meuapp = json.id;
+            sessionStorage.nome_usuario_meuapp = json.nome;
+            sessionStorage.id_usuario_meuapp = json.id;
         });
 
     } else {

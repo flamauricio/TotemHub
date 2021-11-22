@@ -44,6 +44,7 @@
         font-family: "PoPPins", sans-serif;
         transition: ease-out 0.3s;
     }
+
     
     .botao_um :hover {
         background-color: slateblue;
@@ -179,6 +180,14 @@
         font-family: 'Squada One', cursive;
         font-size: 40px;
     }
+
+    .login-footer{
+        font-size: 18px;
+        font-family:'Squada One', cursive;
+        color: black;
+    }
+
+   
     
     .form-login h1 {
         font-family: 'Squada One', cursive;

@@ -1,8 +1,10 @@
-function obterPublicacoes(idUsuario) {
+
+function obterPublicacoes(idGerente) {
     // aguardar();
     alert("teste")
-    var idUsuario = sessionStorage.id_usuario_meuapp;
-    fetch(`/usuarios`)
+    var idGerente = sessionStorage.id_usuario_meuapp;
+
+    fetch(`/usuarios/${idGerente}`)
     
         .then(resposta => {
             
@@ -57,8 +59,18 @@ function atualizarFeed(usuarios) {
         divEndereco.innerHTML = `${usuario.login_agente}`;
         divConsulta2.appendChild(divEndereco);
 
+        
+
         divEstacao.innerHTML = `${usuario.fk_estacao}`;
+        if(usuario.fk_estacao == "100"){
+            divEstacao.innerHTML = "Consolação";
+        } else if(usuario.fk_estacao == "101"){
+            divEstacao.innerHTML = "Pinheiros";
+        } else if(usuario.fk_estacao == "102"){
+            divEstacao.innerHTML = "República";
+        }
         divConsulta3.appendChild(divEstacao);
+        
 
         divId.innerHTML = `${usuario.id}`;
         divConsulta4.appendChild(divId);

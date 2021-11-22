@@ -184,7 +184,7 @@ function entrar_login_gerente() {
 
 var formulario = new URLSearchParams(new FormData(form_login_gerente));
 
-fetch("/gerentes/autenticar2", {
+fetch("/gerentes/autenticar", {
     method: "POST",
     body: formulario,
     alert: alert("teste")
@@ -196,9 +196,11 @@ fetch("/gerentes/autenticar2", {
 
             window.location.href = 'cadastro.html';
 
-            sessionStorage.login_usuario_meuapp = json.login;
-            sessionStorage.nome_usuario_meuapp = json.nome;
-            sessionStorage.id_usuario_meuapp = json.id;
+            sessionStorage.login_usuario_meuapp = json.login_gerente;
+            sessionStorage.nome_usuario_meuapp = json.nome_gerente;
+            sessionStorage.id_usuario_meuapp = json.id_gerente;
+            var idGerente = sessionStorage.id_usuario_meuapp;
+
         });
 
     } else {

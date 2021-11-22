@@ -24,14 +24,18 @@ router.post('/cadastrar_lead', function(req, res, next) {
 })
 
 /* Cadastrar usuário */
-router.post('/cadastrar', function(req, res, next) {
+router.post('/cadastrar/:idGerente', function(req, res, next) {
 	console.log('Criando um usuário');
+
+	let idGerente = req.params.idGerente;
+
 	
 	Usuario.create({
 		nome_agente : req.body.nome,
 		login_agente : req.body.email,
 		fk_estacao: req.body.estacao,
 		senha_agente: req.body.senha,
+		fk_gerente: idGerente
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -130,12 +134,12 @@ router.post('/autenticar', function(req, res, next) {
   	});
 });
 
-router.get('/:idUsuario', function(req, res, next) {
+router.get('/:idGerente', function(req, res, next) {
 	console.log('Recuperando todas as publicações');
 
-	var idUsuario = req.params.idUsuario;
+	var idGerente = req.params.idGerente;
 
-    let instrucaoSql = `SELECT * from agente_de_estacao where ${idUsuario};`;
+    let instrucaoSql = `SELECT * from agente_de_estacao where fk_gerente = ${idGerente};`;
 	
 	sequelize.query(instrucaoSql, {
 		model: Usuario,

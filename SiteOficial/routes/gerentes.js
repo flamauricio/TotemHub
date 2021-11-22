@@ -6,7 +6,7 @@ var Gerente = require('../models').Gerente;
 
 let sessoes = [];
 
-router.post('/autenticar2', function(req, res, next) {
+router.post('/autenticar', function(req, res, next) {
 	console.log('Recuperando usuário por login e senha');
 
 	var email_gerente = req.body.login_gerente; // depois de .body, use o nome (name) do campo em seu formulário de login

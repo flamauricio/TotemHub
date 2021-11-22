@@ -84,8 +84,9 @@
     function cadastrar() {
 
         var formulario = new URLSearchParams(new FormData(form_cadastro));
-        var idUsuario = sessionStorage.id_usuario_meuapp;
-        fetch("/usuarios/cadastrar", {
+        var idGerente = sessionStorage.id_usuario_meuapp;
+        
+        fetch(`/usuarios/cadastrar/${idGerente}`, {
             method: "POST",
             body: formulario
 

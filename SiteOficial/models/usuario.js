@@ -33,6 +33,11 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.INTEGER
 			
 		},
+		fk_gerente: {
+			field: 'fk_gerente',
+			type: DataTypes.INTEGER
+			
+		},
 		
 	}, 
 	{

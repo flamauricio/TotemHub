@@ -3,31 +3,28 @@ create database sprintTotemHub;
 use sprintTotemHub;
 
 create table empresa(
-	cnpj_empresa int primary key auto_increment,
+    cnpj_empresa int primary key auto_increment,
     nome_empresa varchar(45)
 );
 
-insert into empresa(nome_empresa) values
-	("TotemHub");
+insert into empresa(nome_empresa) values ("TotemHub");
 
 select * from empresa;
 
 create table estacao(
-	id_estacao int auto_increment,
+    id_estacao int primary key auto_increment,
     fk_empresa int,
     nome_estacao varchar(45),
     qnt_totem int,
-    primary key (id_estacao),
     foreign key (fk_empresa) references empresa(cnpj_empresa)
 )auto_increment = 100;
 
-insert into estacao(fk_empresa, nome_estacao, qnt_Totem) values
-	(1, "Consolação", 4);
+insert into estacao(fk_empresa, nome_estacao, qnt_Totem) values (1, "Consolação", 4);
     
 select * from estacao;
 
 create table gerente(
-	id_gerente int primary key auto_increment,
+    id_gerente int primary key auto_increment,
     nome_gerente varchar(45),
     login_gerente varchar(50),
     senha_gerente varchar(20),
@@ -43,7 +40,7 @@ insert into gerente(fk_estacao, fk_empresa, nome_gerente, login_gerente, senha_g
 select * from gerente join agente_de_estacao;
 
 create table agente_de_estacao(
-	id int primary key auto_increment,
+    id_agente int primary key auto_increment,
     fk_estacao int,
     fk_empresa int,
     fk_gerente int,
@@ -61,24 +58,40 @@ insert into agente_de_estacao(fk_estacao, fk_empresa, fk_gerente, nome_agente, l
 select * from agente_de_estacao;
 
 create table totem(
-	id_totem int auto_increment,
+    id_totem int auto_increment,
     fk_estacao int,
     primary key(id_totem),
     foreign key(fk_estacao) references estacao(id_estacao)
 )auto_increment = 400;
 
 create table historico_totem(
-	id_historico int primary key auto_increment,
+    id_historico int primary key auto_increment,
     fk_agente int,
     fk_totem int,
     cpu_totem int,
     memoria_ram_totem int,
     horario_totem datetime,
     funcionamento_totem char(1),
-    foreign key(fk_agente) references agente_de_estacao(id),
+    foreign key(fk_agente) references agente_de_estacao(id_agente),
     foreign key(fk_totem) references totem(id_totem)
 )auto_increment = 500;
 
 SELECT * from agente_de_estacao join estacao;
+
+create table feedback(
+    id_feedback int primary key auto_increment,
+    fk_estacao int,
+    pontuacao int,
+    mensagem varchar (150),
+    foreign key(fk_estacao) references estacao(id_estacao)
+)auto_increment = 600;
+
+
+create table leads(
+    id_lead int identity int primary key auto_increment,
+    nome_lead varchar(45),
+    email_lead varchar(45),
+    descricao_lead varchar(200),
+)auto_increment = 600;
 
 show tables;

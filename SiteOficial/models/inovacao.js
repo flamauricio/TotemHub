@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    let Feedback = sequelize.define('Feedback', {
+    let feedback = sequelize.define('feedback', {
         idFeedback: {
             field: 'idFeedback',
             type: DataTypes.INTEGER,

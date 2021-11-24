@@ -1,8 +1,15 @@
 package com.mycompany.login.agente;
 
 import com.github.britooo.looca.api.core.Looca;
+import com.github.britooo.looca.api.group.discos.DiscosGroup;
+import com.github.britooo.looca.api.group.memoria.Memoria;
+import com.github.britooo.looca.api.group.processador.Processador;
+import com.github.britooo.looca.api.group.processos.ProcessosGroup;
+import com.github.britooo.looca.api.group.servicos.ServicosGroup;
 import com.github.britooo.looca.api.group.sistema.Sistema;
+import com.github.britooo.looca.api.group.temperatura.Temperatura;
 import com.mycompany.login.agente.loginJfame;
+import java.awt.Cursor;
 import static java.lang.reflect.Array.set;
 import javax.swing.JOptionPane;
 
@@ -32,7 +39,10 @@ public class infoDados extends javax.swing.JFrame {
         titulo1 = new javax.swing.JLabel();
         btnLogout = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        btnMostrarDados = new javax.swing.JButton();
+        btnSO = new javax.swing.JButton();
+        btnMemoria = new javax.swing.JButton();
+        btnProcessador = new javax.swing.JButton();
+        btnTemperatura = new javax.swing.JButton();
 
         titulo.setBackground(new java.awt.Color(0, 0, 0));
         titulo.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
@@ -77,20 +87,73 @@ public class infoDados extends javax.swing.JFrame {
         titulo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         titulo1.setText("Informações do Totem");
 
-        btnLogout.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        btnLogout.setBackground(new java.awt.Color(153, 0, 0));
+        btnLogout.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
         btnLogout.setText("Sair");
         btnLogout.setToolTipText("");
+        btnLogout.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnLogoutMouseMoved(evt);
+            }
+        });
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogoutActionPerformed(evt);
             }
         });
 
-        btnMostrarDados.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
-        btnMostrarDados.setText("Mostrar dados do Totem");
-        btnMostrarDados.addActionListener(new java.awt.event.ActionListener() {
+        btnSO.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        btnSO.setText("Sistemas Operacional");
+        btnSO.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnSOMouseMoved(evt);
+            }
+        });
+        btnSO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMostrarDadosActionPerformed(evt);
+                btnSOActionPerformed(evt);
+            }
+        });
+
+        btnMemoria.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        btnMemoria.setText("Memória");
+        btnMemoria.setMaximumSize(new java.awt.Dimension(121, 27));
+        btnMemoria.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnMemoriaMouseMoved(evt);
+            }
+        });
+        btnMemoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMemoriaActionPerformed(evt);
+            }
+        });
+
+        btnProcessador.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        btnProcessador.setText("Processador");
+        btnProcessador.setPreferredSize(new java.awt.Dimension(185, 27));
+        btnProcessador.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnProcessadorMouseMoved(evt);
+            }
+        });
+        btnProcessador.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProcessadorActionPerformed(evt);
+            }
+        });
+
+        btnTemperatura.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        btnTemperatura.setText("Temperatura");
+        btnTemperatura.setPreferredSize(new java.awt.Dimension(185, 27));
+        btnTemperatura.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnTemperaturaMouseMoved(evt);
+            }
+        });
+        btnTemperatura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTemperaturaActionPerformed(evt);
             }
         });
 
@@ -101,35 +164,43 @@ public class infoDados extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(titulo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnMostrarDados, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(68, 68, 68))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(titulo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(264, 264, 264)
+                                .addComponent(jLabel1)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnSO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnMemoria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnProcessador, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnTemperatura, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(31, 31, 31))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(titulo1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(jLabel1)))
-                .addGap(28, 28, 28)
-                .addComponent(btnMostrarDados, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
-                .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(titulo1)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSO, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnProcessador, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnMemoria, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(btnTemperatura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -137,14 +208,14 @@ public class infoDados extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -160,13 +231,72 @@ public class infoDados extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnLogoutActionPerformed
 
-    private void btnMostrarDadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarDadosActionPerformed
+    private void btnSOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSOActionPerformed
         // TODO add your handling code here:
         Looca looca = new Looca();
         Sistema sistema = looca.getSistema();
         JOptionPane.showMessageDialog(null, sistema);
 
-    }//GEN-LAST:event_btnMostrarDadosActionPerformed
+    }//GEN-LAST:event_btnSOActionPerformed
+
+    private void btnMemoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMemoriaActionPerformed
+        // TODO add your handling code here:
+        Looca looca = new Looca();
+        Memoria memoria = looca.getMemoria();
+        JOptionPane.showMessageDialog(null, memoria);
+        
+        
+
+    }//GEN-LAST:event_btnMemoriaActionPerformed
+
+    private void btnTemperaturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTemperaturaActionPerformed
+        // TODO add your handling code here:
+        Looca looca = new Looca();
+        Temperatura temperatura = looca.getTemperatura();
+     
+        JOptionPane.showMessageDialog(null, temperatura);
+    
+
+    }//GEN-LAST:event_btnTemperaturaActionPerformed
+
+    private void btnProcessadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcessadorActionPerformed
+        // TODO add your handling code here:
+        Looca looca = new Looca();
+        Processador processador = looca.getProcessador();
+     
+        JOptionPane.showMessageDialog(null, processador);
+        
+    }//GEN-LAST:event_btnProcessadorActionPerformed
+
+    private void btnSOMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSOMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        btnSO.setCursor(cur1);
+    }//GEN-LAST:event_btnSOMouseMoved
+
+    private void btnMemoriaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMemoriaMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        btnMemoria.setCursor(cur1);
+    }//GEN-LAST:event_btnMemoriaMouseMoved
+
+    private void btnTemperaturaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTemperaturaMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        btnTemperatura.setCursor(cur1);
+    }//GEN-LAST:event_btnTemperaturaMouseMoved
+
+    private void btnProcessadorMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProcessadorMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        btnProcessador.setCursor(cur1);
+    }//GEN-LAST:event_btnProcessadorMouseMoved
+
+    private void btnLogoutMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogoutMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        btnLogout.setCursor(cur1);
+    }//GEN-LAST:event_btnLogoutMouseMoved
 
     /**
      * @param args the command line arguments
@@ -206,7 +336,10 @@ public class infoDados extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogout;
-    private javax.swing.JButton btnMostrarDados;
+    private javax.swing.JButton btnMemoria;
+    private javax.swing.JButton btnProcessador;
+    private javax.swing.JButton btnSO;
+    private javax.swing.JButton btnTemperatura;
     private javax.swing.JLabel descricao;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

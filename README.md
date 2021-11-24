@@ -4,7 +4,7 @@
 Projeto referente ao 2º semestre do curso de Analise e Desenvolvimento de Sistemas
 
 # Faculdade :school:
-Bandtec 
+SP Tech 
 
 # Grupo 
 Grupo 2 ADS B

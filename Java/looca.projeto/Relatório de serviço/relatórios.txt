@@ -1,0 +1,28 @@
+[2021/11/21 21:15:22] 	 relatórios.txt 
+ {
+	É um arquivo 
+	Não é diretório 
+	Não é um caminho de arquivo 
+	Tamanho do arquivo: 0 
+	Caminho do arquivo: Relatório de serviço\relatórios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\looca.projeto\Relatório de serviço\relatórios.txt 
+	Diretório pai: Relatório de serviço 
+}[2021/11/21 21:16:55] 	 relatórios.txt 
+ {
+	É um arquivo 
+	Não é diretório 
+	Não é um caminho de arquivo 
+	Tamanho do arquivo: 325 
+	Caminho do arquivo: Relatório de serviço\relatórios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\looca.projeto\Relatório de serviço\relatórios.txt 
+	Diretório pai: Relatório de serviço 
+}[2021/11/21 22:31:42] 	 relatórios.txt 
+ {
+	É um arquivo 
+	Não é diretório 
+	Não é um caminho de arquivo 
+	Tamanho do arquivo: 652 
+	Caminho do arquivo: Relatório de serviço\relatórios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\looca.projeto\Relatório de serviço\relatórios.txt 
+	Diretório pai: Relatório de serviço 
+}

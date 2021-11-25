@@ -5,6 +5,7 @@
  */
 package com.mycompany.login.agente;
 
+import br.com.bandtec.cli.integracao.usuario.maquina.Autenticar;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.sistema.Sistema;
 import com.mycompany.login.agente.slack.Slack;

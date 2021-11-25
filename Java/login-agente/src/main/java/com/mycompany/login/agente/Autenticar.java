@@ -1,5 +1,7 @@
 package com.mycompany.login.agente;
 
+import com.mycompany.login.agente.Usuario;
+import com.mycompany.login.agente.conectaBD;
 import java.util.List;
 import javax.swing.JOptionPane;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -18,7 +20,7 @@ public class Autenticar {
 
     conectaBD config = new conectaBD();
     JdbcTemplate con = new JdbcTemplate(config.getBancoDeDados());
-
+    
     public Boolean validar() {
         String loginUser = "";
         String senhaUser = "";

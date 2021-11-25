@@ -22,7 +22,7 @@ VERSAO=11
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendido, irei atualizar agora para você!"
 		sudo apt upgrade && sudo apt update
-	fi		
+			
 	else	
 		echo ""
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não atualizar suas dependências."
@@ -38,7 +38,7 @@ VERSAO=11
 		sleep 1	
 		echo -ne $(tput setaf 10)'#######################   (100%)\r'
 		echo -ne '\n'
-       
+    fi   
 java -version
 if [ $? -eq 0 ]
 	then

@@ -23,9 +23,12 @@ VERSAO=11
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendido, irei atualizar agora para você!"
 		sudo apt upgrade && sudo apt update
 	fi		
+	else	
 		echo ""
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não atualizar suas dependências."
 		echo ""
+
+
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Agora, vamos começar verificar se sua máquina possui JAVA."
 
 		echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Verificando..."

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.bandtec.cli.integracao.usuario.maquina;
 
 import com.github.britooo.looca.api.core.Looca;
@@ -17,53 +12,51 @@ import java.util.Scanner;
  * @author jotal
  */
 public class CliIntegracaoUser {
-    
+
     public static void main(String[] args) {
-        
+
         // objetos looca
         Looca looca = new Looca();
         Memoria memoria = new Memoria();
         Sistema sistema = new Sistema();
         Processador processador = new Processador();
-        
+
         // objetos cli
         Autenticar verif = new Autenticar("", "");
         Conversor converter = new Conversor();
-        
+
         InserirBanco inserir = new InserirBanco(
                 converter.converterDadosProcessador(processador.getUso()),
                 converter.converterDadosMemoriaEmUso(memoria.getEmUso().doubleValue()),
                 converter.converterDadosMemoriaTotal(memoria.getTotal().doubleValue()),
                 converter.converterDadosSistemaOperacional(sistema.getSistemaOperacional())
         );
-        
-        Interagir apresentar = new Interagir();
-        
+
+        inserir.inserirDado();
+
         Scanner leitorUsuario = new Scanner(System.in);
         Scanner leitorOpcoes = new Scanner(System.in);
         Integer escolhaUsuario = 0;
         String senhaUsuario;
         String loginUsuario;
-         
-        inserir.inserirDado();
 
-        apresentar.apresentar();
-        
+        System.out.println("-------------------------------------------------------\n"
+                + "Bem vindo ao controle de dados de máquinas Totemhub\n"
+                + "-------------------------------------------------------");
+
 //        BACKUP:
 //                converter.converterDadosProcessador(processador.getUso()),
 //                converter.converterDadosMemoriaEmUso(memoria.getEmUso().doubleValue()),
 //                converter.converterDadosMemoriaTotal(memoria.getTotal().doubleValue()),
 //                converter.converterDadosSistemaOperacional(sistema.getSistemaOperacional())
-        
-        do
-        {
+        do {
             System.out.println("Digite seu email: ");
             loginUsuario = leitorUsuario.nextLine();
 
             System.out.println("Digite sua senha: ");
             senhaUsuario = leitorUsuario.nextLine();
-            
-        } while(verif.validarCli(loginUsuario, senhaUsuario) == false);
+
+        } while (verif.validarCli(loginUsuario, senhaUsuario) == false);
 
         do {
             System.out.println("\n"

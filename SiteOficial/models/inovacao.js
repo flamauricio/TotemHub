@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     let feedback = sequelize.define('feedback', {
         idFeedback: {
-            field: 'idFeedback',
+            field: 'id_feedback ',
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true

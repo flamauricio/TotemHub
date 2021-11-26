@@ -79,6 +79,14 @@ if [ $? -eq 0 ]
 		else 	
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não instalar o Java por enquanto, até a próxima ${userName}!"
 	fi
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja inicia a aplicação jar? (S/N)?"
+	read docker
+	if [ \"$docker\" == \"s\" ]
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Certo ${userName}, irei iniciar o jar agora para você!"
+	docker start -it dockerfile
+	fi
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Agradeço a paciencia até uma proxima ${userName}"
+	exit
 fi
 
 # ===================================================================

@@ -86,7 +86,7 @@ fi
 	if [ \"$docker\" == \"s\" ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Certo ${userName}, irei iniciar o jar agora para você!"
-		docker start -it dockerfile
+		docker run -it dockerfile
 	fi
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Agradeço a paciencia até uma proxima ${userName}"
 		exit

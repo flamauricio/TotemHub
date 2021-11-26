@@ -4,7 +4,7 @@ PURPLE='0;35'
 NC='\033[0m' 
 VERSAO=11
 	
-	echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Buenas, Buenas!!! Serei seu assistente para instalação do Java!;"
+	echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Buenas, Buenas!!! Serei seu assistente nessa jornada!;"
 	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Como você gostaria de ser chamado (a)?"
 	read userName
 	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Olá,${userName}! Podemos iniciar? (S/N)" 
@@ -20,11 +20,14 @@ VERSAO=11
 		read mensage
 	if [ \"$mensage\" == \"s\" ]
 	then
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendido, irei atualizar agora para você!"
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendido, irei atualizar agora mesmo!"
 		sudo apt upgrade && sudo apt update
 		echo ""
-
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Agora, vamos começar verificar se sua máquina possui JAVA."
+		echo "" 
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  ${userName}, suas dependências estão atualizadas e prontas..."
+		echo ""
+		
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Bom, agora irei verificar se sua máquina possui JAVA instalado."
 
 		echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Verificando..."
 		echo -ne '\e[1;31m #####                     (33%)\r \e[0m'
@@ -39,8 +42,7 @@ VERSAO=11
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não atualizar suas dependências."
 		echo ""
 
-
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Agora, vamos começar verificar se sua máquina possui JAVA."
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Bom, agora irei verificar se sua máquina possui JAVA instalado."
 
 		echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Verificando..."
 		echo -ne '\e[1;31m #####                     (33%)\r \e[0m'
@@ -49,9 +51,9 @@ VERSAO=11
 		sleep 1	
 		echo -ne $(tput setaf 10)'#######################   (100%)\r'
 		echo -ne '\n'
-    fi
-	   
-	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Essa é a versão do Java em sua máquina:" javac -version
+    fi	   
+
+	javac -version
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) : Que bacana, você já possui o java instalado!"
@@ -89,16 +91,21 @@ if [ $? -eq 0 ]
 		else 	
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não instalar o Java por enquanto, até a próxima ${userName}!"
 	fi
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Essa é a versão do Java instalado em sua máquina:" 
+		javac -version
 	
 fi
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja iniciar a aplicação .Jar? (S/N)?"
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Agora chegamos ao momento mais esperado!!!"
+		echo ""
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Você deseja iniciar a aplicação .Jar? (S/N)?" 
 		read docker
+
 	if [ \"$docker\" == \"s\" ]
 	then
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Certo ${userName}, irei iniciar o jar agora para você!"
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Certo ${userName}, irei iniciar o .Jar para você!"
 		docker run -it dockerfile
 	fi
-		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Que pena, agradeço a paciência até a próxima ${userName}!"
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Que pena, agradeço a paciência e até a próxima ${userName}!"
 		exit
 
 # ===================================================================

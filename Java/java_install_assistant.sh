@@ -22,6 +22,17 @@ VERSAO=11
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Entendido, irei atualizar agora para você!"
 		sudo apt upgrade && sudo apt update
+		echo ""
+
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Agora, vamos começar verificar se sua máquina possui JAVA."
+
+		echo  "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Verificando..."
+		echo -ne '\e[1;31m #####                     (33%)\r \e[0m'
+		sleep 1
+		echo -ne '\e[1;31m #############             (66%)\r \e[0m'
+		sleep 1	
+		echo -ne $(tput setaf 10)'#######################   (100%)\r'
+		echo -ne '\n'
 			
 	else	
 		echo ""
@@ -38,8 +49,9 @@ VERSAO=11
 		sleep 1	
 		echo -ne $(tput setaf 10)'#######################   (100%)\r'
 		echo -ne '\n'
-    fi   
-	javac -version
+    fi
+	   
+	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Essa é a versão do Java em sua máquina:" javac -version
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) : Que bacana, você já possui o java instalado!"

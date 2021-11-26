@@ -39,7 +39,7 @@ VERSAO=11
 		echo -ne $(tput setaf 10)'#######################   (100%)\r'
 		echo -ne '\n'
     fi   
-javac -version
+	javac -version
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) : Que bacana, você já possui o java instalado!"
@@ -81,14 +81,15 @@ if [ $? -eq 0 ]
 	fi
 	
 fi
-echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja inicia a aplicação jar? (S/N)?"
-	read docker
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você deseja inicia a aplicação jar? (S/N)?"
+		read docker
 	if [ \"$docker\" == \"s\" ]
-	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Certo ${userName}, irei iniciar o jar agora para você!"
-	docker start -it dockerfile
+	then
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Certo ${userName}, irei iniciar o jar agora para você!"
+		docker start -it dockerfile
 	fi
-	echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Agradeço a paciencia até uma proxima ${userName}"
-	exit
+		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) Agradeço a paciencia até uma proxima ${userName}"
+		exit
 
 # ===================================================================
 # Todos direitos reservados para o autor: Dra. Profa. Marise Miranda.

@@ -84,7 +84,7 @@ if [ $? -eq 0 ]
 					echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) ${userName} Quando for solicitado, Confirme a instalação por favor ;D"
 					sudo apt install default-jre ; apt install openjdk-11-jre-headless; -y
 					clear
-					echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) O Java instalado com sucesso!"
+					echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) O Java foi instalado com sucesso!"
 				fi
 		else 	
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7)  Você optou por não instalar o Java por enquanto, até a próxima ${userName}!"

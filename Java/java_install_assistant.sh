@@ -39,7 +39,7 @@ VERSAO=11
 		echo -ne $(tput setaf 10)'#######################   (100%)\r'
 		echo -ne '\n'
     fi   
-		javac -version
+javac -version
 if [ $? -eq 0 ]
 	then
 		echo "$(tput setaf 10)[botTotemHub]:$(tput setaf 7) : Que bacana, você já possui o java instalado!"

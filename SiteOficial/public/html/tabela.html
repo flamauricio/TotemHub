@@ -42,6 +42,8 @@
         </div><!--container-->
 
         <div  class="clear"></div>
+
+		<button style="width: 400px;" onclick="return testar()">Teste</button>
 		<div class="container-xl">
 	<div class="table-responsive">
 		<div class="table-wrapper">
@@ -237,26 +239,32 @@
 <div id="deleteEmployeeModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form>
+		
 				<div class="modal-header">						
 					<h4 class="modal-title">Deletar Agente</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					
 				</div>
-				<div class="modal-body">					
+				<div class="modal-body">
+
 					<form id="form_delete" method="post">
 						<p>Tem certeza que deseja deletar esse usuário?</p>
 						<p class="text-warning"><small>Digite o id do agente que deseja deletar.</small></p>
-						<input id="deleteUser" type="text">
+						<input name="delete" id="deleteUser" type="text">
 										</div>
 										<div class="modal-footer">
+
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<button class="btn btn-danger" name="form_delete" method="post" onclick="return deletar()">Deletar</button>
+
+						<button onclick="return deletar()" class="btn btn-danger" name="form_delete" method="Post" >Deletar</button>
+
 					</form>
+						
 				</div>
-			</form>
+			
 		</div>
 	</div>
+	
 </div>
 </body>
 </html>
@@ -267,53 +275,55 @@
 
 
 <script>
-    $(document).ready(function(){
-        // Activate tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+
+
+
+    // $(document).ready(function(){
+    //     // Activate tooltip
+    //     $('[data-toggle="tooltip"]').tooltip();
         
-        // Select/Deselect checkboxes
-        var checkbox = $('table tbody input[type="checkbox"]');
-        $("#selectAll").click(function(){
-            if(this.checked){
-                checkbox.each(function(){
-                    this.checked = true;                        
-                });
-            } else{
-                checkbox.each(function(){
-                    this.checked = false;                        
-                });
-            } 
-        });
-        checkbox.click(function(){
-            if(!this.checked){
-                $("#selectAll").prop("checked", false);
-            }
-        });
-    });
+    //     // Select/Deselect checkboxes
+    //     var checkbox = $('table tbody input[type="checkbox"]');
+    //     $("#selectAll").click(function(){
+    //         if(this.checked){
+    //             checkbox.each(function(){
+    //                 this.checked = true;                        
+    //             });
+    //         } else{
+    //             checkbox.each(function(){
+    //                 this.checked = false;                        
+    //             });
+    //         } 
+    //     });
+    //     checkbox.click(function(){
+    //         if(!this.checked){
+    //             $("#selectAll").prop("checked", false);
+    //         }
+    //     });
+    // });
 
-	function obterPublicacoes();
+	
 
-	function atualizarFeed();
-
-	function deletar() {
+function deletar() {
 
 var formulario = new URLSearchParams(new FormData(form_delete));
-var idGerente = sessionStorage.id_usuario_meuapp;
 
-fetch(`/usuarios/deletar/${idGerente}`, {
-	method: "POST",
-	body: formulario
+
+fetch(`/gerentes/deletar/`, {
+	method: "Post",
+	body: formulario,
+	alert:alert("alo")
 
 }).then(function(response) {
 	if (response.ok) {
-		// window.location.href = 'tabela.html';
 		alert("Usuário deletado com sucesso!");
-		obterPublicacoes();
+		atualizarFeed();
 
 	} else {
 		alert('Erro no comando!');
 		response.text().then(function(resposta) {
 			div_erro.innerHTML = resposta;
+			atualizarFeed();
 		});
 		finalizar_aguardar();
 	}
@@ -321,5 +331,11 @@ fetch(`/usuarios/deletar/${idGerente}`, {
 
 return false;
 }
+
+	
+
+	
+
+
 
     </script>

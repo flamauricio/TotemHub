@@ -60,8 +60,30 @@ router.post('/deletar/', function(req, res, next) {
 		console.error(erro);
 		res.status(500).send(erro.message);
   	});
+});
+
+router.post('/update/', function(req, res, next) {
+	console.log('atualizando email e senha do usuário');
+
+	var idUsuario = req.body.id;
+	var email = req.body.email;
+	var senha = req.body.senha;
+
+	// let instrucaoSql = `UPDATE agente_de_estacao set login_agente = "${email}" WHERE ID = ${idUsuario};`;
+	let instrucaoSql = `UPDATE agente_de_estacao SET login_agente = "${email}", senha_agente = "${senha}" where ID = ${idUsuario};`;
 	
-	
+	sequelize.query(instrucaoSql, {
+		model: Usuario,
+		mapToModel: true 
+	})
+	.then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		res.json(resultado[0]);
+    })
+	.catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
 });
 
 router.get('/sessao/:login', function(req, res, next) {
@@ -85,7 +107,6 @@ router.get('/sessao/:login', function(req, res, next) {
 	} else {
 		res.sendStatus(403);
 	}
-	
 });
 
 module.exports = router;

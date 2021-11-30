@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
     <script src="../js/jquery.js"></script>
     <script src="../js/menu-responsivo.js"></script>
+    <script src="../js/functions.js"></script>
     <title>Cadastro</title>
 </head>
+
 <body>
     <header>
 
         <div class="container">
             <div class="logo">
                 <!-- <img src="img/TotemHub.svg" alt=""> -->
-            </div><!--logo-->
+            </div>
+            <!--logo-->
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a style="color: #FFC702;" >Cadastrar</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="../index.html">Tabela de Funcionários</a></li>
+                    <li><a href="../index.html">Feedbacks</a></li>
+                    <li><a style="color: #FFC702;">Cadastrar</a></li>
+                    <li><a href="login.html">Sair</a></li>
                 </ul>
             </nav>
 
@@ -32,13 +37,13 @@
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
-        </div><!--container-->
+        </div>
+        <!--container-->
 
-        <div  class="clear"></div>
-
+        <div class="clear"></div>
         <div class="form-login">
             <h2>Cadastre seu Agente</h2>
-            <form  id="form_cadastro" method="post">
+            <form id="form_cadastro" method="post">
                 <div class="input-field">
                     <input type="text" name="nome" id="nome" placeholder="Nome Completo">
                     <img src="../img/user_icon.png" alt="" aria-hidden="true" style="width: 7%; float: left;">
@@ -57,44 +62,45 @@
                     <div class="underline"></div>
                 </div>
 
-                <select style="width: 100%;" name="estacao" id="estacao">
+                <select class="select_estacao" name="estacao" id="estacao">
                     <option value="">Escolha a estação</option>
-                    <option value="1000">Barueri</option>
-                    <option value="1001">Pnheiros</option>
-                    <option value="1002">Republica</option>
+                    <option value="100">Consolação</option>
+                    <option value="101">Pinheiros</option>
+                    <option value="102">Republica</option>
                 </select>
 
-                <button onclick="return cadastrar()" name="form_cadastro" 
-                method="POST" class="btn_cadastrar_agente">Registrar</button>
+                <button onclick="return cadastrar()" name="form_cadastro" method="POST" class="btn_cadastrar_agente">Registrar</button>
 
             </form>
         </div>
 
 
     </header>
-    
+
 </body>
+
 </html>
 
 <script>
+    function cadastrar() {
 
-
-function cadastrar() {
-   
         var formulario = new URLSearchParams(new FormData(form_cadastro));
+        var idGerente = sessionStorage.id_usuario_meuapp;
         
-        fetch("/usuarios/cadastrar", {
+        fetch(`/usuarios/cadastrar/${idGerente}`, {
             method: "POST",
             body: formulario
-            
-        }).then(function (response) {
+
+        }).then(function(response) {
             if (response.ok) {
                 window.location.href = 'tabela.html';
-                console.log("Cadastro efetuado com sucesso");
+                // alert("Cadastro efetuado com sucesso");
+                obterPublicacoes();
+
 
             } else {
                 alert('Erro de cadastro!');
-                response.text().then(function (resposta) {
+                response.text().then(function(resposta) {
                     div_erro.innerHTML = resposta;
                 });
                 finalizar_aguardar();

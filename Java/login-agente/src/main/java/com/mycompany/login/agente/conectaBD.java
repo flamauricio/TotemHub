@@ -10,7 +10,7 @@ public class conectaBD {
      public conectaBD() {
         this.bancoDeDados = new BasicDataSource();
         this.bancoDeDados.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        this.bancoDeDados.setUrl("jdbc:sqlserver://totem-hub.database.windows.net:1433;database=totem-hub;"
+        this.bancoDeDados.setUrl("jdbc:sqlserver://totem-hub.database.windows.net:1433;database=sprintTotemHub;"
                 + "encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;"); // Link e porta do Azure
         this.bancoDeDados.setUsername("totemHub");
         this.bancoDeDados.setPassword("#Gfgrupo2");

@@ -1,0 +1,76 @@
+create table empresa(
+	cnpj_empresa int primary key identity,
+    nome_empresa varchar(45)
+);
+
+
+select * from empresa;
+
+create table estacao(
+	id_estacao int identity (100, 1),
+    fk_empresa int,
+    nome_estacao varchar(45),
+    qnt_totem int,
+    primary key (id_estacao),
+    foreign key (fk_empresa) references empresa(cnpj_empresa)
+);
+
+    
+select * from estacao;
+
+create table gerente(
+	id_gerente int primary key identity (200, 1),
+    nome_gerente varchar(45),
+    login_gerente varchar(50),
+    senha_gerente varchar(20),
+    fk_empresa int,
+    fk_estacao int,
+    foreign key(fk_estacao) references estacao(id_estacao),
+    foreign key(fk_empresa) references empresa(cnpj_empresa)
+    );
+    
+
+create table agente_de_estacao(
+	id int primary key identity (300, 1),
+    fk_estacao int,
+    fk_empresa int,
+    fk_gerente int,
+    nome_agente varchar(45),
+    login_agente varchar(50),
+    senha_agente varchar(20),
+    foreign key(fk_gerente) references gerente(id_gerente),
+    foreign key(fk_estacao) references estacao(id_estacao),
+    foreign key(fk_empresa) references empresa(cnpj_empresa)
+);
+    
+
+select * from agente_de_estacao;
+
+
+create table totem(
+	id_totem int identity (400, 1),
+    fk_estacao int,
+    primary key(id_totem),
+    foreign key(fk_estacao) references estacao(id_estacao)
+);
+
+
+create table historico_totem(
+	id_historico int primary key identity (500, 1),
+    fk_totem int,
+    cpu_totem_em_uso decimal,
+    memoria_em_uso decimal,
+    memoria_total decimal,
+    sistema_operacional varchar(30),
+    horario_totem datetime2(0),
+    funcionamento_totem char(1),
+    foreign key(fk_totem) references totem(id_totem)
+);
+
+create table leads(
+    id_lead int identity (600, 1),
+    nome_lead varchar(45),
+    email_lead varchar(45),
+    descricao_lead varchar(200),
+    primary key(id_lead)
+);

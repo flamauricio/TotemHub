@@ -5,14 +5,22 @@
  */
 package com.mycompany.login.agente;
 
+import br.com.bandtec.cli.integracao.usuario.maquina.Autenticar;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.sistema.Sistema;
+import com.mycompany.login.agente.slack.Slack;
 import java.awt.Color;
+import java.awt.Cursor;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import org.json.JSONObject;
 
 /**
  *
  * @author vitor.herculano
+ * @author flavio <flavio.valerio@bandtec.com.br>
  */
 public class loginJfame extends javax.swing.JFrame {
 
@@ -40,10 +48,11 @@ public class loginJfame extends javax.swing.JFrame {
         subtitulo = new javax.swing.JLabel();
         iptEmail = new javax.swing.JTextField();
         btnEntrar = new javax.swing.JButton();
-        btnEsqueceuSenha = new javax.swing.JButton();
         logoEmail = new javax.swing.JLabel();
         logoSenha = new javax.swing.JLabel();
         iptSenha = new javax.swing.JPasswordField();
+        txt = new javax.swing.JLabel();
+        esqueceuSenha = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -93,17 +102,19 @@ public class loginJfame extends javax.swing.JFrame {
 
         btnEntrar.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnEntrar.setText("Entrar");
+        btnEntrar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnEntrarMouseMoved(evt);
+            }
+        });
+        btnEntrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnEntrarMouseClicked(evt);
+            }
+        });
         btnEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEntrarActionPerformed(evt);
-            }
-        });
-
-        btnEsqueceuSenha.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        btnEsqueceuSenha.setText("Esqueceu sua Senha?");
-        btnEsqueceuSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEsqueceuSenhaActionPerformed(evt);
             }
         });
 
@@ -115,6 +126,35 @@ public class loginJfame extends javax.swing.JFrame {
         iptSenha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 iptSenhaActionPerformed(evt);
+            }
+        });
+
+        txt.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        txt.setForeground(new java.awt.Color(51, 51, 51));
+        txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txt.setText("Esqueceu sua senha?");
+        txt.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                txtMouseMoved(evt);
+            }
+        });
+        txt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtMouseClicked(evt);
+            }
+        });
+
+        esqueceuSenha.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        esqueceuSenha.setForeground(new java.awt.Color(0, 102, 255));
+        esqueceuSenha.setText("Clique Aqui!");
+        esqueceuSenha.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                esqueceuSenhaMouseMoved(evt);
+            }
+        });
+        esqueceuSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                esqueceuSenhaMouseClicked(evt);
             }
         });
 
@@ -139,16 +179,20 @@ public class loginJfame extends javax.swing.JFrame {
                             .addComponent(logoSenha, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(btnEsqueceuSenha)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(62, 62, 62))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(iptEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(iptSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(45, 45, 45))))))
+                            .addComponent(iptEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(iptSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(45, 45, 45))))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txt, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGap(144, 144, 144)
+                            .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGap(189, 189, 189)
+                            .addComponent(esqueceuSenha))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,11 +209,13 @@ public class loginJfame extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(logoSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
                     .addComponent(iptSenha))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEsqueceuSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(txt)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(esqueceuSenha)
+                .addGap(12, 12, 12))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -189,11 +235,6 @@ public class loginJfame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnEsqueceuSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEsqueceuSenhaActionPerformed
-        // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Envie e-mail ao nosso suporte support@totemhub.atlassian.net");
-    }//GEN-LAST:event_btnEsqueceuSenhaActionPerformed
 
     private void iptEmailFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_iptEmailFocusGained
         // TODO add your handling code here:
@@ -240,9 +281,65 @@ public class loginJfame extends javax.swing.JFrame {
 
     private void iptSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iptSenhaActionPerformed
         // TODO add your handling code here:
-       
-        
+
+
     }//GEN-LAST:event_iptSenhaActionPerformed
+
+    private void txtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_txtMouseClicked
+
+    private void txtMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMouseMoved
+        // TODO add your handling code here:
+
+
+    }//GEN-LAST:event_txtMouseMoved
+
+    private void btnEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEntrarMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_btnEntrarMouseClicked
+
+    private void btnEntrarMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEntrarMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        btnEntrar.setCursor(cur1);
+    }//GEN-LAST:event_btnEntrarMouseMoved
+
+    private void esqueceuSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseClicked
+        // TODO add your handling code here:
+
+        JSONObject json = new JSONObject();
+        JSONObject jsonAlert = new JSONObject();
+
+        json.put("text", ":pushpin: Requisição de senha ");
+        jsonAlert.put("text", "Para solicitar sua troca de senha abra um chamado <https://totemhub-bandtec.freshdesk.com/support/tickets/new |clicando aqui!>");
+
+        try {
+            Slack.sendMessage(json);
+        } catch (IOException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            Slack.sendMessage(jsonAlert);
+        } catch (IOException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(loginJfame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        JOptionPane.showMessageDialog(null, "Verifique o canal suporte no Slack");
+
+    }//GEN-LAST:event_esqueceuSenhaMouseClicked
+
+    private void esqueceuSenhaMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esqueceuSenhaMouseMoved
+        // TODO add your handling code here:
+        Cursor cur1 = new Cursor(Cursor.HAND_CURSOR);
+        esqueceuSenha.setCursor(cur1);
+    }//GEN-LAST:event_esqueceuSenhaMouseMoved
 
     /**
      * @param args the command line arguments
@@ -281,8 +378,8 @@ public class loginJfame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEntrar;
-    private javax.swing.JButton btnEsqueceuSenha;
     private javax.swing.JLabel descricao;
+    private javax.swing.JLabel esqueceuSenha;
     private javax.swing.JTextField iptEmail;
     private javax.swing.JPasswordField iptSenha;
     private javax.swing.JPanel jPanel1;
@@ -292,5 +389,6 @@ public class loginJfame extends javax.swing.JFrame {
     private javax.swing.JLabel logoSenha;
     private javax.swing.JLabel subtitulo;
     private javax.swing.JLabel titulo;
+    private javax.swing.JLabel txt;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html, body{
+html,
+body {
     height: 100%;
-    
 }
 
-header{
+header {
     width: 100;
     height: 100vh;
     padding: 40px 2%;
@@ -21,15 +21,15 @@ header{
     background-repeat: no-repeat;
 }
 
-.container{
+.container {
     margin: 0 auto;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-header .logo{
+header .logo {
     width: 300px;
     height: 50px;
     float: left;
@@ -37,16 +37,15 @@ header .logo{
     background-repeat: no-repeat;
 }
 
-
-header nav{
+header nav {
     float: right;
 }
 
-header nav.desktop-menu ul{
+header nav.desktop-menu ul {
     list-style-type: none;
 }
 
-nav.mobile-menu{
+nav.mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
@@ -56,7 +55,7 @@ nav.mobile-menu{
     margin-top: 10px;
 }
 
-nav.mobile-menu ul{
+nav.mobile-menu ul {
     /* opacity: 0; */
     display: none;
     background-color: rgba(255, 255, 255, 0.5);
@@ -66,58 +65,55 @@ nav.mobile-menu ul{
     top: 85px;
     list-style: none;
     text-align: center;
-
 }
 
-nav.mobile-menu ul li{
+nav.mobile-menu ul li {
     border-bottom: 0.5px solid black;
     transition: 0.4s;
-    padding: 8px 0; 
-    
+    padding: 8px 0;
 }
 
-nav.mobile-menu ul li:hover{
+nav.mobile-menu ul li:hover {
     background-color: #ffc802bb;
 }
 
-nav.mobile-menu ul li a{
+nav.mobile-menu ul li a {
     text-decoration: none;
     color: black;
 }
+
 
 /* nav.mobile-menu:hover ul{
     opacity: 1;
 } */
 
-header nav.desktop-menu li{
-   float: left;
+header nav.desktop-menu li {
+    float: left;
     margin: 15px 20px;
     font-weight: bold;
-
 }
 
-header nav.desktop-menu ul li a{
+header nav.desktop-menu ul li a {
     color: white;
     text-decoration: none;
 }
 
-header nav.desktop-menu ul li a:hover{
+header nav.desktop-menu ul li a:hover {
     color: #FFC702;
     transition: 1s ease;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
 }
 
-form .input-field:first-child{
+form .input-field:first-child {
     margin-bottom: 1.5rem;
-    
 }
 
-.btn_cadastrar_agente{
-    margin-top: 2rem;
+.btn_cadastrar_agente {
+    margin-top: 1.5rem;
     padding: 0.4rem;
     background: linear-gradient(to left, #FFC702, rgb(174, 174, 15));
     border-radius: 10px;
@@ -125,15 +121,17 @@ form .input-field:first-child{
     font-size: 0.9rem;
     transition: all 0.3s ease;
     border: none;
-}    
+}
 
-.btn_cadastrar_agente:hover{
+.btn_cadastrar_agente:hover {
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #FFC702, rgb(174, 174, 15));
 }
- 
+
+
 /* o elemento ".underline" se refere a linha abaixo do ipt. O ipt permanece ali, só que flutuando */
-.input-field .underline::before{
+
+.input-field .underline::before {
     content: '';
     position: absolute;
     height: 1px;
@@ -141,10 +139,9 @@ form .input-field:first-child{
     bottom: -5px;
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);
-    
 }
 
-.input-field .underline::after{
+.input-field .underline::after {
     content: '';
     position: absolute;
     height: 1px;
@@ -157,17 +154,19 @@ form .input-field:first-child{
     transform-origin: left;
 }
 
-.input-field input:focus ~ .underline::after{
+.input-field input:focus~.underline::after {
     transform: scaleX(1);
 }
 
-.input-field input[type=text]{
+.input-field input[type=text] {
     padding-left: 10px;
 }
-.input-field input[type=password]{
+
+.input-field input[type=password] {
     padding-left: 10px;
 }
-.input-field{
+
+.input-field {
     position: relative;
     margin-bottom: 1.5rem;
 }
@@ -175,24 +174,24 @@ form .input-field:first-child{
 
 /* O til(~), mais conhecido como seletor, pega o elemento .underline::after depois de clicado */
 
-.form-login{
+.form-login {
     max-width: 350px;
     min-height: 40vh;
-    background-color: rgba(0, 0, 0, 0.679);
+    background-color: rgba(0, 0, 0, 0.74);
+    backdrop-filter: blur(20px);
     margin: 5rem auto;
     padding: 2rem;
     border-radius: 10px;
 }
 
-.form-login h2{
+.form-login h2 {
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
     color: wheat;
-
 }
 
-.form-login h2::before{
+.form-login h2::before {
     content: '';
     position: absolute;
     height: 4px;
@@ -203,27 +202,24 @@ form .input-field:first-child{
     background-color: #FFC702;
 }
 
-.input-field{
+.input-field {
     position: relative;
-    
 }
 
-
-
-.input-field input{
+.input-field input {
     outline: none;
     border: none;
     font-size: 0.9rem;
     background-color: rgba(240, 248, 255, 0);
-    color: wheat;
+    color: white;
 }
 
-.input-field input::placeholder{
+.input-field input::placeholder {
     color: rgba(255, 255, 255, 0.5);
     background-image: url(../img/o-email.png);
 }
 
-form input[type="submit"]{
+form input[type="submit"] {
     margin-top: 2rem;
     padding: 0.4rem;
     background: linear-gradient(to left, #FFC702, rgb(174, 174, 15));
@@ -234,12 +230,12 @@ form input[type="submit"]{
     border: none;
 }
 
-form input[type="submit"]:hover{
+form input[type="submit"]:hover {
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #FFC702, rgb(174, 174, 15));
 }
 
-.login-footer{
+.login-footer {
     color: white;
     margin-top: 1rem;
     font-size: 0.8rem;
@@ -247,15 +243,13 @@ form input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 768px) {
-    nav.desktop-menu{
+    nav.desktop-menu {
         display: none;
     }
-
-    nav.mobile-menu{
+    nav.mobile-menu {
         display: block;
     }
-
-    header .logo{
+    header .logo {
         width: 200px;
         height: 50px;
         float: left;
@@ -263,4 +257,11 @@ form input[type="submit"]:hover{
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
+}
+
+.select_estacao {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: whitesmoke;
+    height: 37px;
 }

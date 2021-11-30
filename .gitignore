@@ -37,6 +37,9 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# Dependency directories yarn
+yarn.lock
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -102,6 +105,4 @@ dist
 
 # TernJS port file
 .tern-port
-
-#Ignorando o node_modules
-node_modules/
+/Java/cli-integracao-usuario-maquina/target/

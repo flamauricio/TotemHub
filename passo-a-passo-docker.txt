@@ -1,0 +1,29 @@
+- Configurou a AWS para instanciar e atachar volume (fala de memoria, imagem ubuntu, etc)
+- Transformamos nosso java swing em cli para rodar em console
+- conectamos com a Azure (mostrar no netbeans comando)
+- transformamos a aplicação .jar
+- ligamos nossa VM na ec2
+- mudamos para root (assim evitamos problema de acesso, para facilitar o andamento dessas task)
+- clonamos nosso repositorio
+- criamos o arquivo docker file pelo VI para conseguirmos executar nossa aplicacao
+--- COMANDO ---
+vi docker file  (Abrindo VI)
+FROM openjdk:11
+COPY <NomeDoJar>  /<PastaDoContainer>
+WORKDIR <PastaDoContainer>
+ENTRYPOINT [ "java", "-jar", "<NomeDoJar>" ]
+
+salvamos e saimos do vi com a seguinte sequencia de comandos
+esc --> : ---> wq
+
+- pós criação do docker, verificamos se a imagem foi criada com o comando
+docker ps -a
+
+- após verificar, damos o clean neste arquivo docker file, segue comando
+docker build . -t dockerfile
+
+
+-Por fim, faremos o RUN
+docker run -it dockerfile
+
+

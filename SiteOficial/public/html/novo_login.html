@@ -5,86 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/novocss.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/root.css">
+
     <title>Login</title>
 </head>
 
 <body>
-    <div class="Img_centro">
-        <img src="../img/logo_totem.png" alt="logo">
-    </div>
-    <div class="enunciado">
-        <h1>Realizar login como:</h1>
-    </div>
-    <div class="botao_um">
-        <button><a  href="#modalLogin_agente" class="openmod">Login Agente</a></button>
-    </div>
-    <div class="botao_dois">
-    <button><a  href="#modalLogin_gerente" class="openmod">Login Gerente</a></button>
-    </div>
-    <div id="modalLogin_gerente" class="modal">
+    <div class="fundo">
+        <div class="Img_centro">
+            <a href="../index.html"> <img src="../img/logo_totem.png" alt="logo"></a>
+        </div>
+        <div class="enunciado">
+            <h1>Realizar login como:</h1>
+        </div>
+        <div class="botao_um">
+            <button onclick="agente()"><a href="#modalLogin_agente" class="openmod">Login Agente</a></button>
+        </div>
+        <div class="botao_dois">
+            <button onclick="gerente()"><a href="#modalLogin_gerente" class="openmod">Login Gerente</a></button>
+        </div>
 
+    </div>
+
+    <div id="modalLogin_gerente" class="modal">
         <!-- conteúdo do modal aqui -->
         <div class="background-modal">
-            <div class="form-login">
-                <h2>Login Gerente</h2>
-                <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
-                    <div class="input-field">
-                        <input type="text" name="login" id="login" placeholder="Email">
-                        <div class="underline"></div>
+            <div class="logo_modal">
+                <img src="../img/logo-dashboard.svg" alt="logo">
+            </div>
+            <div id="gerente" class="form-login">
+                <h1 class="txt_logins">Login Gerente</h1>
+
+                <form action="" id="form_login_gerente" method="post" onsubmit="return entrar_login_gerente()">
+
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" required id="login_gerente" name="login_gerente">
+                            <div class="underline"></div>
+                            <label style="font-size: 17px; font-weight: bold;">E-mail</label>
+                        </div>
+                        <br>
+                        <div class="input-data">
+                            <input type="password" required id="senha_gerente" name="senha_gerente">
+                            <div class="underline"></div>
+                            <label style="font-size: 17px;  font-weight: bold;">Senha</label>
+                        </div>
                     </div>
-    
-                    <div class="input-field">
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
-                        <div class="underline"></div>
-                    </div>
-    
-                    <input type="submit" value="Enter" id="btn_login">
+
+
+
+
+                    <button class="btnEntrar_gerente" type="submit" value="Enter">Entrar</button>
                 </form>
-    
+                <br>
                 <div class="login-footer">
-                    <span>Esqueceu sua senha? 
-                        <a style="color: white;" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1"> Clique Aqui! </a></span>
+                    <span>Esqueceu sua senha?
+                    <a class="link" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1"> Clique
+                        Aqui! </a></span>
                 </div>
             </div>
         </div>
+    </div>
 
-            <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-        </div>
+    <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
+    <a onclick="fecha_gerente()" id="fechar_gerente" href="#fechar" title="Fechar" class="fechar">x</a>
+
+    </div>
     </div>
 
     <div id="modalLogin_agente" class="modal">
 
         <!-- conteúdo do modal aqui -->
         <div class="background-modal">
+            <div class="logo_modal">
+                <img src="../img/logo-dashboard.svg" alt="logo">
+            </div>
             <div class="form-login">
-                <h2>Login Agente</h2>
-                <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
-                    <div class="input-field">
-                        <input type="text" name="login" id="login" placeholder="Email">
-                        <div class="underline"></div>
+                <h1 class="txt_logins">Login Agente</h1>
+
+                <form action="" id="form_login_agente" method="post" onsubmit="return entrar_login_agente()">
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <input type="text" required id="login" name="login">
+                            <div class="underline"></div>
+
+                            <label style="font-size: 17px; font-weight: 500;">E-mail</label>
+                        </div>
+                        <br>
+                        <div class="input-data">
+                            <input type="password" required id="senha" name="senha">
+                            <div class="underline"></div>
+                            <label style="font-size: 17px; font-weight: 500;">Senha</label>
+                        </div>
                     </div>
-    
-                    <div class="input-field">
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
-                        <div class="underline"></div>
-                    </div>
-    
-                    <input type="submit" value="Enter" id="btn_login">
+
+                    <button class="btnEntrar_agente" type="submit" value="Enter">Entrar</button>
                 </form>
-    
+
                 <div class="login-footer">
-                    <span>Esqueceu sua senha? 
-                        <a style="color: white;" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1"> Clique Aqui! </a></span>
+                    <span>Esqueceu sua senha?
+                        <a style="color: white;" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1">
+                            Clique Aqui! </a></span>
                 </div>
             </div>
         </div>
 
-            <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-        </div>
+        <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
+
+        <a onclick="fecha_agente()" id="fechar_agente" href="#fechar" title="Fechar" class="fechar">x</a>
+    </div>
     </div>
 
 
@@ -92,3 +124,95 @@
 </body>
 
 </html>
+
+<script>
+    function gerente() {
+        document.getElementById("fechar_gerente").style.display = 'block';
+
+    }
+
+    function fecha_gerente() {
+        document.getElementById("fechar_gerente").style.display = 'none'
+    }
+
+    function agente() {
+        document.getElementById("fechar_agente").style.display = 'block';
+
+    }
+
+    function fecha_agente() {
+        document.getElementById("fechar_agente").style.display = 'none';
+
+    }
+
+    function entrar_login_agente() {
+
+        var formulario = new URLSearchParams(new FormData(form_login_agente));
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    window.location.href = 'dashboard.html';
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id;
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+                alert('Login incorreto');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function entrar_login_gerente() {
+
+        var formulario = new URLSearchParams(new FormData(form_login_gerente));
+
+        fetch("/gerentes/autenticar", {
+            method: "POST",
+            body: formulario,
+            alert: alert("teste")
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    window.location.href = 'cadastro.html';
+
+                    sessionStorage.login_usuario_meuapp = json.login_gerente;
+                    sessionStorage.nome_usuario_meuapp = json.nome_gerente;
+                    sessionStorage.id_usuario_meuapp = json.id_gerente;
+                    var idGerente = sessionStorage.id_usuario_meuapp;
+
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+                alert('Login incorreto');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

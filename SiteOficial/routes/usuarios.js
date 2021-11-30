@@ -1,19 +1,41 @@
 var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
-var agente_de_estacao = require('../models').agente_de_estacao;
+var Usuario = require('../models').Usuario;
+var leads = require('../models').leads;
 
 let sessoes = [];
 
+/* Cadastrar leads */
+router.post('/cadastrar_lead', function(req, res, next) {
+	console.log("cadastrando uma lead");
+
+	leads.create({
+		nome_lead : req.body.nome_lead,
+		email_lead : req.body.email_lead,
+		descricao_lead : req.body.descricao_lead,
+	}).then(resultado => {
+		console.log(`Lead criada: ${resultado}`)
+		res.send(resultado);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	})
+})
+
 /* Cadastrar usuário */
-router.post('/cadastrar', function(req, res, next) {
+router.post('/cadastrar/:idGerente', function(req, res, next) {
 	console.log('Criando um usuário');
+
+	let idGerente = req.params.idGerente;
+
 	
-	agente_de_estacao.create({
+	Usuario.create({
 		nome_agente : req.body.nome,
 		login_agente : req.body.email,
 		fk_estacao: req.body.estacao,
 		senha_agente: req.body.senha,
+		fk_gerente: idGerente
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -45,7 +67,6 @@ router.get('/sessao/:login', function(req, res, next) {
 	} else {
 		res.sendStatus(403);
 	}
-	
 });
 
 
@@ -90,7 +111,7 @@ router.post('/autenticar', function(req, res, next) {
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
-		model: agente_de_estacao
+		model: Usuario
 	}).then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`);
 
@@ -110,6 +131,26 @@ router.post('/autenticar', function(req, res, next) {
 		console.error(erro);
 		res.status(500).send(erro.message);
   	});
+});
+
+router.get('/:idGerente', function(req, res, next) {
+	console.log('Recuperando todas as publicações');
+
+	var idGerente = req.params.idGerente;
+
+    let instrucaoSql = `SELECT * from agente_de_estacao where fk_gerente = ${idGerente};`;
+	
+	sequelize.query(instrucaoSql, {
+		model: Usuario,
+		mapToModel: true 
+	})
+	.then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		res.json(resultado);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
 });
 
 module.exports = router;

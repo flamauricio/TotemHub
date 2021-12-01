@@ -14,18 +14,22 @@
 </head>
 
 <body>
+    <div class="botaoHome">
+      <a href="../index.html">  <img src="../img/homeBranco.png" alt="home"> </a>
+    </div>
+
     <div class="fundo">
         <div class="Img_centro">
-            <a href="../index.html"> <img src="../img/logo_totem.png" alt="logo"></a>
+            <img src="../img/logo-totem-hub.svg" alt="logo"></a>
         </div>
         <div class="enunciado">
             <h1>Realizar login como:</h1>
         </div>
         <div class="botao_um">
-            <button onclick="agente()"><a href="#modalLogin_agente" class="openmod">Login Agente</a></button>
+            <a href="#modalLogin_agente" class="openmod"> <button onclick="agente()"> <b> Login Agente </b> </button></a>
         </div>
         <div class="botao_dois">
-            <button onclick="gerente()"><a href="#modalLogin_gerente" class="openmod">Login Gerente</a></button>
+            <a href="#modalLogin_gerente" class="openmod"> <button onclick="gerente()"> <b> Login Gerente </b> </button></a>
         </div>
 
     </div>
@@ -54,16 +58,12 @@
                             <label style="font-size: 17px;  font-weight: bold;">Senha</label>
                         </div>
                     </div>
-
-
-
-
                     <button class="btnEntrar_gerente" type="submit" value="Enter">Entrar</button>
                 </form>
                 <br>
                 <div class="login-footer">
                     <span>Esqueceu sua senha?
-                    <a class="link" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1"> Clique
+                    <a class="link" onclick="nova_senha()"> Clique
                         Aqui! </a></span>
                 </div>
             </div>
@@ -107,7 +107,7 @@
 
                 <div class="login-footer">
                     <span>Esqueceu sua senha?
-                        <a style="color: white;" href="https://totemhub.atlassian.net/servicedesk/customer/portal/1">
+                        <a class="link" onclick="nova_senha()">
                             Clique Aqui! </a></span>
                 </div>
             </div>
@@ -126,6 +126,11 @@
 </html>
 
 <script>
+
+    function nova_senha(){
+        window.open("https://totemhub-bandtec.freshdesk.com/support/tickets/new");
+    }
+
     function gerente() {
         document.getElementById("fechar_gerente").style.display = 'block';
 

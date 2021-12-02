@@ -39,12 +39,12 @@ module.exports = (sequelize, DataTypes) => {
         funcionamento_totem: {
 			field: 'funcionamento_totem',
 			type: DataTypes.CHAR(1).BINARY,
-		}
+		},
 
-		// momento_grafico: {
-		// 	type: DataTypes.VIRTUAL, // campo 'falso' (não existe na tabela). Deverá ser preenchido 'manualmente' no select
-		// 	allowNull: true
-		// }
+		momento_grafico: {
+			type: DataTypes.VIRTUAL, // campo 'falso' (não existe na tabela). Deverá ser preenchido 'manualmente' no select
+			allowNull: true
+		}
 	}, 
 	{
 		tableName: 'historico_totem', 

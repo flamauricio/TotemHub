@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.bandtec.cli.integracao.usuario.maquina;
 
 import com.github.britooo.looca.api.core.Looca;
@@ -34,26 +29,17 @@ public class CliIntegracaoUser {
         Conversor converter = new Conversor();
         
         // adicionando dados ao objeto de histórico
-        HistoricoTotem dados = new HistoricoTotem
-        (
-                converter.converterDadosProcessador(processador.getUso().doubleValue()),
+     
+        
+        // Inicializando a classe de inserir dados ao sql server com dados da superclasse
+        InserirBanco inserir = new InserirBanco(  converter.converterDadosProcessador(processador.getUso().doubleValue()),
                 converter.converterDadosMemoriaEmUso(memoria.getEmUso().doubleValue()),
                 converter.converterDadosMemoriaTotal(memoria.getTotal().doubleValue()),
                 converter.converterDadosSistemaOperacional(sistema.getSistemaOperacional()),
                 horarioAtual.toString(),
-                "1"
-        );
+                "1");
         
-        // Inicializando a classe de inserir dados ao sql server com dados da superclasse
-        InserirBanco inserir = new InserirBanco
-        (
-                dados.getCpu_totem_em_uso(),
-                dados.getMemoria_em_uso(),
-                dados.getMemoria_total(),
-                dados.getSistema_operacional(),
-                horarioAtual.toString(),
-                "1"
-        );
+        
         
         // ínicio da interação com o usuário
         Interagir apresentar = new Interagir();
@@ -64,6 +50,9 @@ public class CliIntegracaoUser {
         Integer escolhaUsuario = 0;
         String senhaUsuario;
         String loginUsuario;
+        
+        inserir.inserirDado();
+        
         
         apresentar.apresentar();
         

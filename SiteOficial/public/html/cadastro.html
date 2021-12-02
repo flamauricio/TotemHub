@@ -23,9 +23,10 @@
             <!--logo-->
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Tabela de Funcionários</a></li>
+                    <li><a href="../index.html">Feedbacks</a></li>
                     <li><a style="color: #FFC702;">Cadastrar</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html">Sair</a></li>
                 </ul>
             </nav>
 
@@ -109,64 +110,4 @@
         return false;
     }
 
-    // function obterPublicacoes(idUsuario) {
-    //     // aguardar();
-    // 	alert("teste")
-    //     var idUsuario = sessionStorage.id_usuario_meuapp;
-    //     fetch(`/usuarios`)
-
-    //         .then(resposta => {
-
-    //             if (resposta.ok) {
-
-    //                 resposta.json().then(function (resposta) {
-    //                     atualizarFeed(resposta);
-    //                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-
-    //                     alert("aqui tem outro teste")
-
-    //                     // alert('obterPublicacoes')
-    //                     // finalizarAguardar();
-    //                 });
-    //             } else {
-    //                 console.error('Nenhum dado encontrado ou erro na API');
-    //                 alert('nao foi aqui')
-
-    //                 // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
-
-    //             }
-    //         })
-    //         .catch(function (error) {
-    //             alert("aviso")
-    //             console.error(`Erro na obtenção das publicações: ${error.message}`);
-    //         });
-    // }
-
-    // function atualizarFeed(usuarios) {
-    // 	alert('Isso é um teste')
-    //     var feed = document.getElementById("feed_container");
-    //     feed.innerHTML = "";
-    //     for (let contador = 0; contador < usuarios.length; contador++) {
-    //         var usuario = usuarios[contador];
-
-    //         var divConsulta = document.createElement("div")
-    //         var divNome = document.createElement("div")
-    //         var divEndereco = document.createElement("div");
-
-
-    //         divNome.innerHTML = `${usuario.nome_agente}.`;
-    //         divConsulta.appendChild(divNome);
-
-    //         divEndereco.innerHTML = `${usuario.fk_estacao}.`;
-    //         divConsulta.appendChild(divEndereco);
-    //         if(usuario.fk_estacao == 10000){
-    //             divConsulta = "Barueri";
-
-    //         }
-
-    //         feed.appendChild(divConsulta);
-
-
-    //     }
-    // }
 </script>

@@ -462,6 +462,10 @@ form input[type="submit"]:hover{
     text-align: center;
 }
 
+.text-size{
+    font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
     nav.desktop-menu{
         display: none;

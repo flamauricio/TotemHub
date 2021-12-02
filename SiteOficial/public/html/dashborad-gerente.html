@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/dash-gerente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Dashboard - Gerente</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div>
+                        <img src="../img/logo-totem-hub.png" alt="logo totem hub">
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img style="height: 40px;" src="../img/logout.png" alt="ícone para sair da página">
+                        </a>
+                    </div>
+                </div>
+                <h1 class="title">Feedbacks</h1>
+            </div>
+
+            <div class="container">
+                <div class="card-container">
+                    <div class="card">
+                        <p class="center yellow">
+                            Total de avaliações
+                        </p>
+                        <p class="center">
+                            100
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <p class="center">
+                            <img class="emoji" src="../img/happy-emoji.png" alt="Emoji Feliz">
+                        </p>
+                        <p class="center">
+                            100
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <p class="center">
+                            <img class="emoji" src="../img/indecision-emoji.png" alt="Emoji Indiferente">
+                        </p>
+                        <p class="center">
+                            100
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <p class="center">
+                            <img class="emoji" src="../img/sad-emoji.png" alt="Emoji Triste">
+                        </p>
+                        <p class="center">
+                            100
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="subtitle yellow">Comentários</h2>
+                <select name="Filtrar por" id="filtro">
+                    <option value="">Filtrar por</option>
+                    <option value="1">Feliz</option>
+                    <option value="2">Indiferente</option>
+                    <option value="3">Triste</option>
+                </select>
+
+                <textarea class="card-comment">
+                Comentários
+                </textarea>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

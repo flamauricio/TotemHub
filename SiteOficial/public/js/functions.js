@@ -1,7 +1,6 @@
 
 function obterPublicacoes(idGerente) {
     // aguardar();
-    alert("teste")
     var idGerente = sessionStorage.id_usuario_meuapp;
 
     fetch(`/usuarios/${idGerente}`)
@@ -14,26 +13,23 @@ function obterPublicacoes(idGerente) {
                     atualizarFeed(resposta);
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                     
-                    alert("aqui tem outro teste")
-                    
                     // alert('obterPublicacoes')
                     // finalizarAguardar();
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
-                alert('nao foi aqui')
 
                 // finalizarAguardar("Nenhum resultado encontrado ou erro na API");
 
             }
         })
         .catch(function (error) {
-            alert("aviso")
             console.error(`Erro na obtenção das publicações: ${error.message}`);
         });
 }
 
 function atualizarFeed(usuarios) {
+    console.log(usuarios);
     var feedId = document.getElementById("feed_id");
     var feedLogin = document.getElementById("feed_login");
     var feed = document.getElementById("feed_container");
@@ -79,6 +75,5 @@ function atualizarFeed(usuarios) {
         feedLogin.appendChild(divConsulta2);
         feedEstacao.appendChild(divConsulta3);
         feedId.appendChild(divConsulta4);
-
     }
 }

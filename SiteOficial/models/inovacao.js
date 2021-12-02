@@ -24,11 +24,11 @@ module.exports = (sequelize, DataTypes) => {
         }
 
     }, {
-        tableName: 'Feedback',
+        tableName: 'feedback',
         freezeTableName: true,
         underscored: true,
         timestamps: false,
     });
 
-    return Feedback;
+    return feedback;
 };

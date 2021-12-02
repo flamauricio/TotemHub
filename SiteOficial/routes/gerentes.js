@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Gerente = require('../models').Gerente;
+var Usuario = require('../models').Usuario;
 
 
 let sessoes = [];
@@ -40,22 +41,50 @@ router.post('/autenticar', function(req, res, next) {
   	});
 });
 
-// router.post('/cadastrar', function(req, res, next) {
-// 	console.log('Criando um usuário');
+router.post('/deletar/', function(req, res, next) {
+	console.log('deletando um usuário');
+
+	var idUsuario = req.body.delete;
+
+	let instrucaoSql = `DELETE FROM agente_de_estacao WHERE ID = ${idUsuario};`;
 	
-// 	Gerente.create({
-// 		nome_gerente : req.body.nome,
-// 		login_gerente : req.body.email,
-// 		senha_gerente: req.body.senha,
-//         fk_estacao: req.body.estacao
-// 	}).then(resultado => {
-// 		console.log(`Registro criado: ${resultado}`)
-//         res.send(resultado);
-//     }).catch(erro => {
-// 		console.error(erro);
-// 		res.status(500).send(erro.message);
-//   	});
-// });
+	sequelize.query(instrucaoSql, {
+		model: Usuario,
+		mapToModel: true 
+	})
+	.then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		res.json(resultado[0]);
+    })
+	.catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+});
+
+router.post('/update/', function(req, res, next) {
+	console.log('atualizando email e senha do usuário');
+
+	var idUsuario = req.body.id;
+	var email = req.body.email;
+	var senha = req.body.senha;
+
+	// let instrucaoSql = `UPDATE agente_de_estacao set login_agente = "${email}" WHERE ID = ${idUsuario};`;
+	let instrucaoSql = `UPDATE agente_de_estacao SET login_agente = "${email}", senha_agente = "${senha}" where ID = ${idUsuario};`;
+	
+	sequelize.query(instrucaoSql, {
+		model: Usuario,
+		mapToModel: true 
+	})
+	.then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		res.json(resultado[0]);
+    })
+	.catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+});
 
 router.get('/sessao/:login', function(req, res, next) {
 	let login_gerente = req.params.login_gerente;
@@ -78,7 +107,6 @@ router.get('/sessao/:login', function(req, res, next) {
 	} else {
 		res.sendStatus(403);
 	}
-	
 });
 
 module.exports = router;

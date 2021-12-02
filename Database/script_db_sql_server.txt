@@ -54,7 +54,6 @@ create table totem(
     foreign key(fk_estacao) references estacao(id_estacao)
 );
 
-
 create table historico_totem(
 	id_historico int primary key identity (500, 1),
     fk_totem int,
@@ -74,3 +73,29 @@ create table leads(
     descricao_lead varchar(200),
     primary key(id_lead)
 );
+
+
+
+
+
+
+
+
+---------------------
+-- INSERTS
+---------------------
+
+insert into [dbo].[empresa] (nome_empresa) values
+	('EmpresaTotemHub')
+
+insert into [dbo].[estacao](fk_empresa, nome_estacao, qnt_totem) values
+	(1, 'Estacao Barueri', 4)
+
+insert into [dbo].[gerente] (nome_gerente, login_gerente, senha_gerente, fk_empresa, fk_estacao) values
+	('Jorge', 'jorge@gmail.com', '123', 1, 100)
+
+insert into [dbo].[agente_de_estacao] (nome_agente, login_agente, senha_agente) values
+	('jorge', 'jorge@gmail.com', '123')
+
+insert into [dbo].[agente_de_estacao] () values
+    'jorge@gmail.com' AND senha_agente = '123' 

@@ -6,21 +6,18 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Autenticar {
 
-    private final String login;
-    private final String senha;
-
-    public Autenticar(String login, String senha) {
-        this.login = login;
-        this.senha = senha;
-
-    }
-
     conectaBD config = new conectaBD();
     JdbcTemplate con = new JdbcTemplate(config.getBancoDeDados());
-    
+
     public Boolean validarCli(String login, String senha) {
-        List<Usuario> selectUser = con.query("SELECT * FROM agente_de_estacao WHERE"
-                + " login_agente = ? AND senha_agente = ?", new BeanPropertyRowMapper(Usuario.class), login, senha);
+        List<Usuario> selectUser = con.query
+        (
+                "SELECT * FROM agente_de_estacao WHERE"
+                + " login_agente = ? AND senha_agente = ?", 
+                new BeanPropertyRowMapper(Usuario.class), 
+                login, 
+                senha
+        );
 
         if (!selectUser.isEmpty()) {
             login = selectUser.get(0).getLogin_agente();
@@ -39,5 +36,5 @@ public class Autenticar {
         return false;
 
     }
-    
+
 }

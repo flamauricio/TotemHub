@@ -5,7 +5,7 @@ module.exports = {
     username: 'totemHub',
     password: '#Gfgrupo2',
     database: 'sprintTotemhub',
-    host: 'totem-hub.database.windows.net',
+    host: 'totem-hub-server.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {

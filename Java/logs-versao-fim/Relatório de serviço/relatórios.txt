@@ -1,63 +1,28 @@
-[2021/11/26 10:09:39] 	 Funcionamento da máquina {
+[2021/12/01 22:05:16] 	 Funcionamento da máquina {
 
 	Identificação da máquina: BFEBFBFF000806EC 
 	Sistema operacional: Windows 
-	CPU utilizada: 6.695226438188495% 
-	Memória total: 8.35442688E9 
-	Memória em uso: 7.371780096E9 
-	Tamanho do arquivo: Memória estável 
-	Caminho do arquivo: Relatório de serviço\relatórios.txt 
-	Caminho absoluto do arquivo: C:\Users\jotal\OneDrive\Documentos\NetBeansProjects\logs-versao-fim\Relatório de serviço\relatórios.txt 
-	 
-}
-
-[2021/11/26 10:10:39] 	 Funcionamento da máquina {
-
-	Identificação da máquina: BFEBFBFF000806EC 
-	Sistema operacional: Windows 
-	CPU utilizada: 5.877332032678942% 
-	Memória total: 8.35442688E9 
-	Memória em uso: 7.559426048E9 
-	Tamanho do arquivo: Memória estável 
-	Caminho do arquivo: Relatório de serviço\relatórios.txt 
-	Caminho absoluto do arquivo: C:\Users\jotal\OneDrive\Documentos\NetBeansProjects\logs-versao-fim\Relatório de serviço\relatórios.txt 
-	 
-}
-
-[2021/11/26 10:20:16] 	 Funcionamento da máquina {
-
-	Identificação da máquina: BFEBFBFF000806EC 
-	Sistema operacional: Windows 
-	CPU utilizada: 10.606060606060606% 
-	Memória total: 8.35442688E9 
-	Memória em uso: 6.592995328E9 
-	Tamanho do arquivo: Memória estável 
+	CPU utilizada: 21,22% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,46 GB
+	Porcentagem de memória restante: 8,93% 
+	Máquina instável, utilização de memória crítica 
 	Caminho do arquivo: Relatório de serviço\relatórios.txt 
 	Caminho absoluto do arquivo: C:\TotemHub\Java\logs-versao-fim\Relatório de serviço\relatórios.txt 
 	 
 }
 
-[2021/11/26 10:23:15] 	 Funcionamento da máquina {
+[2021/12/01 22:05:46] 	 Funcionamento da máquina {
 
 	Identificação da máquina: BFEBFBFF000806EC 
 	Sistema operacional: Windows 
-	CPU utilizada: 8.354584092289011% 
-	Memória total: 8.35442688E9 
-	Memória em uso: 6.820102144E9 
-	Tamanho do arquivo: Memória estável 
-	Caminho do arquivo: Relatório de serviço\relatórios.txt 
-	Caminho absoluto do arquivo: C:\TotemHub\Java\logs-versao-fim\Relatório de serviço\relatórios.txt 
-	 
-}
-
-[2021/11/26 10:25:02] 	 Funcionamento da máquina {
-
-	Identificação da máquina: BFEBFBFF000806EC 
-	Sistema operacional: Windows 
-	CPU utilizada: 6.851152017554553% 
-	Memória total: 8.35442688E9 
-	Memória em uso: 6.82037248E9 
-	Tamanho do arquivo: Memória estável 
+	CPU utilizada: 16,28% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,30 GB
+	Porcentagem de memória restante: 10,55% 
+	Máquina instável, utilização de memória crítica 
 	Caminho do arquivo: Relatório de serviço\relatórios.txt 
 	Caminho absoluto do arquivo: C:\TotemHub\Java\logs-versao-fim\Relatório de serviço\relatórios.txt 
 	 

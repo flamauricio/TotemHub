@@ -21,19 +21,19 @@ module.exports = (sequelize, DataTypes) => {
 			field: 'fk_totem',
 			type: DataTypes.INTEGER,
 		},	
-		cpu_totem: {
-			field: 'cpu_totem',
-			type: DataTypes.REAL,
+		cpu_totem_em_uso: {
+			field: 'cpu_totem_em_uso',
+			type: DataTypes.DOUBLE,
 			allowNull: false
 		},
-		memoria_ram_totem: {
-			field: 'memoria_ram_totem ',
-			type: DataTypes.REAL,
+		memoria_em_uso: {
+			field: 'memoria_em_uso',
+			type: DataTypes.DOUBLE,
 			allowNull: false
 		},
 		horario_totem: {
 			field: 'horario_totem',
-			type: DataTypes.DATE, // NÃO existe DATETIME. O tipo DATE aqui já tem data e hora
+			type: DataTypes.STRING, // NÃO existe DATETIME. O tipo DATE aqui já tem data e hora
 			allowNull: false
 		},
         funcionamento_totem: {

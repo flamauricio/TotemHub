@@ -1,7 +1,8 @@
 let proximaAtualizacaoC;
 let proximaAtualizacaoM;
 
-window.onload = obterDadosGraficoPrimeiraVez(1);
+
+window.onload = obterDadosGraficoPrimeiraVez(400);
 
 let usuario;
 
@@ -27,10 +28,10 @@ function alterarCoresBotoes(id_leitura) {
 }
 */
 
-function chamargraficos(id_leitura) {
+function chamargraficos(id_historico) {
   console.log("executei chamargraficos");
-    obterDadosGraficoPrimeiraVez(id_leitura);
-    atualizarGraficoT(id_leitura)
+    obterDadosGraficoPrimeiraVez(id_historico);
+    atualizarGraficoC(id_historico)
 
     // alterarCoresBotoes(id_leitura);    
 }
@@ -97,7 +98,7 @@ function configurarGraficoM() {
 
 // altere aqui como os dados serão exibidos
 // e como são recuperados do BackEnd
-function obterDadosGraficoPrimeiraVez(id_leitura) {
+function obterDadosGraficoPrimeiraVez(id_historico) {
   console.log("executei obterDadosGraficoPrimeiraVez");
   // alterarCoresBotoes(id_leitura);
 
@@ -106,8 +107,9 @@ function obterDadosGraficoPrimeiraVez(id_leitura) {
     clearTimeout(proximaAtualizacaoM);
   }
 
-  fetch(`/leituras/ultimas/${id_leitura}`, { cache: "no-store" })
+  fetch(`/leituras/ultimas/${id_historico}`, { cache: "no-store" })
     .then(function (response) {
+     
       if (response.ok) {
         response.json().then(function (resposta) {
           console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
@@ -116,7 +118,7 @@ function obterDadosGraficoPrimeiraVez(id_leitura) {
           console.log(resposta.cpu); // retorna undefined
           console.log(resposta); // retorna [array(7), array(7)]
 
-          var dadosT = {
+          var dadosC = {
             labels: [],
             datasets: [
               {
@@ -130,7 +132,7 @@ function obterDadosGraficoPrimeiraVez(id_leitura) {
             ],
           };
 
-          var dadosU = {
+          var dadosM = {
             labels: [],
             datasets: [
               {
@@ -147,19 +149,19 @@ function obterDadosGraficoPrimeiraVez(id_leitura) {
           for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
 
-            dadosT.labels.push(resposta.momento_grafico);
-            dadosT.datasets[0].data.push(registro.cpu);
+            dadosM.labels.push(resposta.momento_grafico);
+            dadosM.datasets[0].data.push(registro.cpu);
 
-            dadosU.labels.push(registro.momento_grafico);
-            dadosU.datasets[0].data.push(registro.memoria);
+            dadosC.labels.push(registro.momento_grafico);
+            dadosC.datasets[0].data.push(registro.memoria);
           }
           console.log(JSON.stringify(dadosC));
           console.log(JSON.stringify(dadosM));
           console.log("CHEGOU AQUI");
 
-          plotarGraficoT(dadosC, id_leitura);
-          plotarGraficoU(dadosM, id_leitura);
-          div_msg.innerHTML = `<h2> Grafico dos totem: ${id_leitura} </h2>`;
+          plotarGraficoC(dadosC, id_historico);
+          plotarGraficoM(dadosM, id_historico);
+          div_msg.innerHTML = `<h2> Grafico dos totem: ${id_historico} </h2>`;
         });
       } else {
         console.error("Nenhum dado encontrado ou erro na API");
@@ -173,12 +175,12 @@ function obterDadosGraficoPrimeiraVez(id_leitura) {
 // só mexer se quiser alterar o tempo de atualização
 // ou se souber o que está fazendo!
 
-function atualizarGraficoC(id_leitura, dadosC) {
+function atualizarGraficoC(id_historico, dadosC) {
   console.log("executei atualizarGraficoC");
-  fetch(`/leituras/cliente/${id_leitura}`, { cache: "no-store" })
+  fetch(`/leituras/cliente/${id_historico}`, { cache: "no-store" })
     .then(function (response) {
       console.log(
-        "Estou tentando pegar id_leitura da CPU= ", id_leitura);
+        "Estou tentando pegar id_leitura da CPU= ", id_historico);
       if (response.ok) {
         response.json().then(function (novoRegistro) {
           console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
@@ -190,19 +192,19 @@ function atualizarGraficoC(id_leitura, dadosC) {
           dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
           dadosC.datasets[0].data.push(novoRegistro.cpu); // incluir uma nova leitura de temperatura
 
-          console.log("meu totem é o " + id_leitura);
+          console.log("meu totem é o " + id_historico);
 
           window.grafico_linhaC.update();
 
           proximaAtualizacaoC = setTimeout(
-            () => atualizarGraficoT(id_leitura, dadosC),
+            () => atualizarGraficoC(id_historico, dadosC),
             5000
           );
         });
       } else {
         console.error("Nenhum dado encontrado ou erro na API");
         proximaAtualizacaoC = setTimeout(
-          () => atualizarGraficoC(id_leitura, dadosC),
+          () => atualizarGraficoC(id_historico, dadosC),
           5000
         );
       }
@@ -212,11 +214,11 @@ function atualizarGraficoC(id_leitura, dadosC) {
     });
 }
 
-function atualizarGraficoM(id_leitura, dadosM) {
+function atualizarGraficoM(id_historico, dadosM) {
   console.log("executei atualizarGrafico");
-  fetch(`/leituras/ultimas/${id_leitura}`, { cache: "no-store" })
+  fetch(`/leituras/ultimas/${id_historico}`, { cache: "no-store" })
     .then(function (response) {
-      console.log("Estou tentando pegar id_leitura da Memoria = ", id_leitura);
+      console.log("Estou tentando pegar id_historico da Memoria = ", id_historico);
       if (response.ok) {
         response.json().then(function (novoRegistro) {
           console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
@@ -228,19 +230,19 @@ function atualizarGraficoM(id_leitura, dadosM) {
           dadosM.datasets[0].data.shift(); // apagar o primeiro de umidade
           dadosM.datasets[0].data.push(novoRegistro.memoria); // incluir uma nova leitura de umidade
 
-          console.log("meu totem é o " + id_leitura);
+          console.log("meu totem é o " + id_historico);
 
           window.grafico_linhaM.update();
 
           proximaAtualizacaoM = setTimeout(
-            () => atualizarGraficoM(id_leitura, dadosM),
+            () => atualizarGraficoM(id_historico, dadosM),
             5000
           );
         });
       } else {
         console.error("Nenhum dado encontrado ou erro na API");
         proximaAtualizacaoM = setTimeout(
-          () => atualizarGraficoM(id_leitura, dadosM),
+          () => atualizarGraficoM(id_historico, dadosM),
           5000
         );
       }
@@ -251,7 +253,7 @@ function atualizarGraficoM(id_leitura, dadosM) {
 }
 
 // só altere aqui se souber o que está fazendo!
-function plotarGraficoC(dadosC, id_leitura) {
+function plotarGraficoC(dadosC, id_historico) {
   console.log("executei plotarGrafico");
   console.log("iniciando plotagem do gráfico...");
 
@@ -261,10 +263,10 @@ function plotarGraficoC(dadosC, id_leitura) {
     options: configurarGraficoC(),
   });
 
-  setTimeout(() => atualizarGraficoC(id_leitura, dadosC), 5000);
+  setTimeout(() => atualizarGraficoC(id_historico, dadosC), 5000);
 }
 
-function plotarGraficoM(dadosM, id_leitura) {
+function plotarGraficoM(dadosM, id_historico) {
   console.log("executei plotarGrafico");
   console.log("iniciando plotagem do gráfico...");
 
@@ -274,18 +276,18 @@ function plotarGraficoM(dadosM, id_leitura) {
     options: configurarGraficoM(),
   });
 
-  setTimeout(() => atualizarGraficoM(id_leitura, dadosM), 5000);
+  setTimeout(() => atualizarGraficoM(id_historico, dadosM), 5000);
 }
 
 // Alertas
 
-function sendData() {
-  var http = new XMLHttpRequest();
-  http.open("GET", "http://localhost:9001/api/sendData", false);
-  http.send(null);
-}
+// function sendData() {
+//   var http = new XMLHttpRequest();
+//   http.open("GET", "http://localhost:9001/api/sendData", false);
+//   http.send(null);
+// }
 
 // Descomente abaixo se quiser inserir dados a cada X segundos
 setInterval(() => {
-  sendData();
+
 }, 5000);

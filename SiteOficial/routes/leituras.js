@@ -10,6 +10,8 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 	// quantas são as últimas leituras que quer? 7 está bom?
 	const limite_linhas = 7;
 
+	
+
 	var id_leitura = req.params.id_historico;
 
 	console.log(`Recuperando as ultimas ${limite_linhas} leituras`);
@@ -28,14 +30,11 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 	} else if (env == 'production') {
 		//abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `SELECT TOP ${limite_linhas} 
-		cpu_totem, 
-		memoria_ram_totem, 
-		funcionamento_totem,
-        horario_totem
-		FORMAT(horario_totem,'HH:mm:ss') AS momento_grafico
-		FROM leitura
+		cpu_totem_em_uso, 
+		memoria_em_uso 
+		FROM historico_totem
 		WHERE fk_totem = ${id_leitura}
-		ORDER BY id desc`;
+		ORDER BY id_historico desc`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
@@ -68,8 +67,8 @@ router.get('/cliente/:id_historico', function(req, res, next) {
 						from controle where fk_sensor = ${id_leitura} order by id_leitura desc limit 1`;
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server
-		instrucaoSql = `SELECT TOP 1 cpu_totem, memoria_ram_totem, FORMAT(horario_totem,'HH:mm:ss') AS momento_grafico, fk_totem 
-						FROM historico_totem WHERE fk_agente = ${id_leitura} ORDER BY id DESC`;
+		instrucaoSql = `SELECT TOP 1 cpu_totem_em_uso, memoria_em_uso, fk_totem 
+						FROM historico_totem WHERE fk_totem = ${id_leitura} ORDER BY id_historico DESC`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}

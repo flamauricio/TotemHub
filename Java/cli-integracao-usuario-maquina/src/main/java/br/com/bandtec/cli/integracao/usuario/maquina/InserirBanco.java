@@ -16,20 +16,24 @@ public class InserirBanco extends HistoricoTotem {
     GerarLog arquivo = new GerarLog();
 
     public InserirBanco(
+            String fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,
             String sistema_operacional,
             String horario_totem,
-            String funcionamento_totem
+            String status_processador,
+            String status_memoria
     ) {
         super(
+                fk_totem,
                 cpu_totem_em_uso,
                 memoria_em_uso,
                 memoria_total,
                 sistema_operacional,
                 horario_totem,
-                funcionamento_totem
+                status_processador,
+                status_memoria
         );
     }
 
@@ -37,15 +41,19 @@ public class InserirBanco extends HistoricoTotem {
 
         String sql
                 = ("INSERT INTO historico_totem "
-                + "(cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional) "
-                + "VALUES (?, ?, ?, ?)");
+                + "(fk_totem, cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
         con.update(
                 sql,
+                super.getFk_totem(),
                 super.getCpu_totem_em_uso(),
                 super.getMemoria_em_uso(),
                 super.getMemoria_total(),
-                super.getSistema_operacional()
+                super.getSistema_operacional(),
+                super.getHorario_totem(),
+                super.getStatus_processador(),
+                super.getStatus_memoria()
         );
 
         return true;
@@ -61,7 +69,7 @@ public class InserirBanco extends HistoricoTotem {
             }
         ;
         }; 
-        timer.schedule(t1, 15000, 15000);
+        timer.schedule(t1, 5000, 150000);
     }
 
 }

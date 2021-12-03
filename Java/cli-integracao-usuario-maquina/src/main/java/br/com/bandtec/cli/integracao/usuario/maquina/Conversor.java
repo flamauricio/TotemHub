@@ -6,24 +6,5 @@ public class Conversor {
         
         return valor * 0.000000001;
     }
-    
-    public Double converterDadosProcessador(Double dado){
-        return dado / 100000;
-        
-    }
-    
-    public Double converterDadosMemoriaEmUso(Double dado){
-        return dado / 100000;
-        
-    }
-    
-    public Double converterDadosMemoriaTotal(Double dado){
-        return dado / 100000;
-        
-    }
-    
-    public String converterDadosSistemaOperacional(String dado){
-        return dado;
-    }
-    
+   
 }

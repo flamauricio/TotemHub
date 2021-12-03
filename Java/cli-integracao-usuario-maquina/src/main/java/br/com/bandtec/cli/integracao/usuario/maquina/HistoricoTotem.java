@@ -10,34 +10,37 @@ package br.com.bandtec.cli.integracao.usuario.maquina;
  * @author jotal
  */
 public class HistoricoTotem {
-    
+
     private Integer id_historico;
     private Double cpu_totem_em_uso;
     private Double memoria_em_uso;
     private Double memoria_total;
     private String sistema_operacional;
     private String horario_totem;
-    private String funcionamento_totem;
-    private Integer fk_totem;
+    private String status_processador;
+    private String status_memoria;
+    private String fk_totem;
 
-    public HistoricoTotem
-        (
-                Double cpu_totem_em_uso, 
-                Double memoria_em_uso, 
-                Double memoria_total,
-                String sistema_operacional,
-                String horario_totem, 
-                String funcionamento_totem
-        )
-    {
+    public HistoricoTotem(
+            String fk_totem,
+            Double cpu_totem_em_uso,
+            Double memoria_em_uso,
+            Double memoria_total,
+            String sistema_operacional,
+            String horario_totem,
+            String status_processador,
+            String status_memoria
+    ) {
+        this.fk_totem = fk_totem;
         this.cpu_totem_em_uso = cpu_totem_em_uso;
         this.memoria_em_uso = memoria_em_uso;
         this.memoria_total = memoria_total;
         this.sistema_operacional = sistema_operacional;
         this.horario_totem = horario_totem;
-        this.funcionamento_totem = funcionamento_totem;
+        this.status_processador = status_processador;
+        this.status_memoria = status_memoria;
     }
-    
+
     public Integer getId_historico() {
         return id_historico;
     }
@@ -61,7 +64,7 @@ public class HistoricoTotem {
     public void setMemoria_em_uso(Double memoria_em_uso) {
         this.memoria_em_uso = memoria_em_uso;
     }
-    
+
     public Double getMemoria_total() {
         return memoria_total;
     }
@@ -86,25 +89,33 @@ public class HistoricoTotem {
         this.horario_totem = horario_totem;
     }
 
-    public String getFuncionamento_totem() {
-        return funcionamento_totem;
+    public String getStatus_processador() {
+        return status_processador;
     }
 
-    public void setFuncionamento_totem(String funcionamento_totem) {
-        this.funcionamento_totem = funcionamento_totem;
+    public void setStatus_processador(String status_processador) {
+        this.status_processador = status_processador;
     }
 
-    public Integer getFk_totem() {
+    public String getStatus_memoria() {
+        return status_memoria;
+    }
+
+    public void setStatus_memoria(String status_memoria) {
+        this.status_memoria = status_memoria;
+    }
+
+    public String getFk_totem() {
         return fk_totem;
     }
 
-    public void setFk_totem(Integer fk_totem) {
+    public void setFk_totem(String fk_totem) {
         this.fk_totem = fk_totem;
     }
-    
-     @Override
+
+    @Override
     public String toString() {
-        return "HistoricoTotem{" + "id_historico=" + id_historico + ", cpu_totem_em_uso=" + cpu_totem_em_uso + ", memoria_em_uso=" + memoria_em_uso + ", memoria_total=" + memoria_total + ", sistema_operacional=" + sistema_operacional + ", horario_totem=" + horario_totem + ", funcionamento_totem=" + funcionamento_totem + ", fk_totem=" + fk_totem + '}';
+        return "HistoricoTotem{" + "id_historico=" + id_historico + ", cpu_totem_em_uso=" + cpu_totem_em_uso + ", memoria_em_uso=" + memoria_em_uso + ", memoria_total=" + memoria_total + ", sistema_operacional=" + sistema_operacional + ", horario_totem=" + horario_totem + '}';
     }
-    
+
 }

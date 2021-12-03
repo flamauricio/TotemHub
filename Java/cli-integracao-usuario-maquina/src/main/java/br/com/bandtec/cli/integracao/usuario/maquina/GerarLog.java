@@ -25,14 +25,17 @@ public class GerarLog {
     
     public void gerarLog(String arquivo) {
 
+        // Objetos de manipulação do log
         File file = new File("Relatório de serviço");
         File arquivoCriado = new File("Relatório de serviço/relatórios.txt");
         DateTimeFormatter formatar = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
+        // Objetos looca
         Memoria dadosMemoria = new Memoria();
-        Processador dadosProcessador = new Processador();
-        
+        Processador dadosProcessador = new Processador();        
         Sistema dadosSistema = new Sistema();
+        
+        // Objetos do projeto
         Conversor conversor = new Conversor();
         Alertas alertas = new Alertas();
         

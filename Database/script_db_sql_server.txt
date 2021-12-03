@@ -3,9 +3,6 @@ create table empresa(
     nome_empresa varchar(45)
 );
 
-
-select * from empresa;
-
 create table estacao(
 	id_estacao int identity (100, 1),
     fk_empresa int,
@@ -15,8 +12,6 @@ create table estacao(
     foreign key (fk_empresa) references empresa(cnpj_empresa)
 );
 
-    
-select * from estacao;
 
 create table gerente(
 	id_gerente int primary key identity (200, 1),
@@ -42,13 +37,10 @@ create table agente_de_estacao(
     foreign key(fk_estacao) references estacao(id_estacao),
     foreign key(fk_empresa) references empresa(cnpj_empresa)
 );
-    
-
-select * from agente_de_estacao;
 
 
 create table totem(
-	id_totem int identity (400, 1),
+	id_totem primary key varchar(60),
     fk_estacao int,
     primary key(id_totem),
     foreign key(fk_estacao) references estacao(id_estacao)
@@ -56,13 +48,14 @@ create table totem(
 
 create table historico_totem(
 	id_historico int primary key identity (500, 1),
-    fk_totem int,
+    fk_totem varchar(60),
     cpu_totem_em_uso decimal,
     memoria_em_uso decimal,
     memoria_total decimal,
     sistema_operacional varchar(30),
-    horario_totem datetime2(0),
-    funcionamento_totem char(1),
+    horario_totem default char(19),
+    status_processador varchar(60),
+    status_memoria varchar(60),
     foreign key(fk_totem) references totem(id_totem)
 );
 
@@ -99,3 +92,6 @@ insert into [dbo].[agente_de_estacao] (nome_agente, login_agente, senha_agente) 
 
 insert into [dbo].[agente_de_estacao] () values
     'jorge@gmail.com' AND senha_agente = '123' 
+
+insert into [dbo].[totem](id_totem, fk_estacao) values
+	('BFEBFBFF000806EC', 100)

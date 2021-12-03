@@ -4,7 +4,7 @@ module.exports = {
     // altere APENAS username, password, database e host.
     username: 'totemHub',
     password: '#Gfgrupo2',
-    database: 'sprintTotemhub',
+    database: 'totemHub',
     host: 'totem-hub-server.database.windows.net',
     dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',

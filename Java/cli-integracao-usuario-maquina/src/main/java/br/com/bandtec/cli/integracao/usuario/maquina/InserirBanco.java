@@ -39,7 +39,7 @@ public class InserirBanco extends HistoricoTotem {
 
         String sql
                 = ("INSERT INTO historico_totem "
-                + "(fk_totem, cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
+                + "(cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
                 + "VALUES (?, ?, ?, ?, ?, ?, ?)");
 
         con.update(

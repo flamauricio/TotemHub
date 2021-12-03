@@ -2,7 +2,7 @@ let proximaAtualizacaoC;
 let proximaAtualizacaoM;
 
 
-window.onload = obterDadosGraficoPrimeiraVez(400);
+window.onload = obterDadosGraficoPrimeiraVez('BFEBFBFF000806EC');
 
 let usuario;
 
@@ -107,7 +107,7 @@ function obterDadosGraficoPrimeiraVez(id_historico) {
     clearTimeout(proximaAtualizacaoM);
   }
 
-  fetch(`/leituras/ultimas/${id_historico}`, { cache: "no-store" })
+  fetch(`/leituras/ultimas/${id_historico}`)
     .then(function (response) {
      
       if (response.ok) {

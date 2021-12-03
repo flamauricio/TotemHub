@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		horario_totem: {
 			field: 'horario_totem',
-			type: DataTypes.DATE, // NÃO existe DATETIME. O tipo DATE aqui já tem data e hora
+			type: DataTypes.CHAR(100).BINARY, // NÃO existe DATETIME. O tipo DATE aqui já tem data e hora
 			allowNull: false
 		},
 		momento_grafico: {

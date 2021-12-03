@@ -29,10 +29,10 @@ function alterarCoresBotoes(id_leitura) {
 */
 
 function chamargraficos(id_historico) {
-  console.log("executei chamargraficos");
+  console.log("executei chamar graficos");
     obterDadosGraficoPrimeiraVez(id_historico);
-    atualizarGraficoC(id_historico)
-
+    atualizarGraficoC(id_historico);
+    atualizarGraficoM(id_historico);
     // alterarCoresBotoes(id_leitura);    
 }
 
@@ -66,7 +66,7 @@ function configurarGraficoC() {
 }
 
 function configurarGraficoM() {
-  console.log("executei configurarGrafico");
+  console.log("executei configurarGraficoM");
   var configuracoesM = {
     responsive: true,
     animation: { duration: 500 },
@@ -149,11 +149,11 @@ function obterDadosGraficoPrimeiraVez(id_historico) {
           for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
 
-            dadosM.labels.push(resposta.momento_grafico);
-            dadosM.datasets[0].data.push(registro.cpu);
+            dadosM.labels.push(registro.momento_grafico);
+            dadosM.datasets[0].data.push(registro.memoria_em_uso);
 
             dadosC.labels.push(registro.momento_grafico);
-            dadosC.datasets[0].data.push(registro.memoria);
+            dadosC.datasets[0].data.push(registro.cpu_totem_em_uso);
           }
           console.log(JSON.stringify(dadosC));
           console.log(JSON.stringify(dadosM));
@@ -190,7 +190,7 @@ function atualizarGraficoC(id_historico, dadosC) {
           dadosC.labels.shift(); // apagar o primeiro
           dadosC.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
           dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
-          dadosC.datasets[0].data.push(novoRegistro.cpu); // incluir uma nova leitura de temperatura
+          dadosC.datasets[0].data.push(novoRegistro.cpu_totem_em_uso); // incluir uma nova leitura de temperatura
 
           console.log("meu totem é o " + id_historico);
 
@@ -215,7 +215,7 @@ function atualizarGraficoC(id_historico, dadosC) {
 }
 
 function atualizarGraficoM(id_historico, dadosM) {
-  console.log("executei atualizarGrafico");
+  console.log("executei atualizarGraficoM");
   fetch(`/leituras/ultimas/${id_historico}`, { cache: "no-store" })
     .then(function (response) {
       console.log("Estou tentando pegar id_historico da Memoria = ", id_historico);
@@ -228,7 +228,7 @@ function atualizarGraficoM(id_historico, dadosM) {
           dadosM.labels.shift(); // apagar o primeiro
           dadosM.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
           dadosM.datasets[0].data.shift(); // apagar o primeiro de umidade
-          dadosM.datasets[0].data.push(novoRegistro.memoria); // incluir uma nova leitura de umidade
+          dadosM.datasets[0].data.push(novoRegistro.memoria_em_uso); // incluir uma nova leitura de umidade
 
           console.log("meu totem é o " + id_historico);
 
@@ -267,7 +267,7 @@ function plotarGraficoC(dadosC, id_historico) {
 }
 
 function plotarGraficoM(dadosM, id_historico) {
-  console.log("executei plotarGrafico");
+  console.log("executei plotarGraficoM");
   console.log("iniciando plotagem do gráfico...");
 
   var ctx = myPieChart.getContext("2d");
@@ -281,11 +281,11 @@ function plotarGraficoM(dadosM, id_historico) {
 
 // Alertas
 
-// function sendData() {
-//   var http = new XMLHttpRequest();
-//   http.open("GET", "http://localhost:9001/api/sendData", false);
-//   http.send(null);
-// }
+ function sendData() {
+   var http = new XMLHttpRequest();
+   http.open("GET", "http://localhost:9001/api/sendData", false);
+   http.send(null);
+ }
 
 // Descomente abaixo se quiser inserir dados a cada X segundos
 setInterval(() => {

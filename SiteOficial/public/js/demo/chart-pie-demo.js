@@ -1,3 +1,4 @@
+/*
 const ctx = document.getElementById('myPieChart').getContext('2d');
 const myPieChart = new Chart(ctx, {
     type: 'line',
@@ -33,4 +34,4 @@ const myPieChart = new Chart(ctx, {
         }
     }
 });
-
+*/

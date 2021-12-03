@@ -32,9 +32,8 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 		memoria_em_uso,
 		memoria_total,
 		sistema_operacional,
-		horario_totem 
-		FROM historico_totem
-		ORDER BY id_historico desc`;
+		horario_totem as momento_grafico
+		FROM historico_totem`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
@@ -68,7 +67,7 @@ router.get('/cliente/:id_historico', function(req, res, next) {
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `SELECT TOP 1 cpu_totem_em_uso, memoria_em_uso, fk_totem 
-						FROM historico_totem WHERE fk_totem = ${id_leitura} ORDER BY id_historico DESC`;
+						FROM historico_totem`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
@@ -90,12 +89,12 @@ router.get('/estatisticas', function (req, res, next) {
 	console.log(`Recuperando as dados atuais`);
 
 	const instrucaoSql = `select 
-							max(cpu_totem) as cpu_maxima, 
-							min(cpu_totem) as cpu_minima, 
-							avg(cpu_totem) as cpu_media,
-							max(memoria_totem) as memoria_maxima, 
-							min(memoria_totem) as memoria_minima, 
-							avg(memoria_totem) as memoria_media 
+							max(cpu_totem_em_uso) as cpu_maxima, 
+							min(cpu_totem_em_uso) as cpu_minima, 
+							avg(cpu_totem_em_uso) as cpu_media,
+							max(memoria_em_uso) as memoria_maxima, 
+							min(memoria_em_uso) as memoria_minima, 
+							avg(memoria_em_uso) as memoria_media 
 						from historico_totem`;
 					
 

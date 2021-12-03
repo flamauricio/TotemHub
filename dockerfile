@@ -1,5 +1,5 @@
 
 FROM openjdk:11
-COPY cli-login-agente-1.0-SNAPSHOT-jar-with-dependencies.jar /TotemHub/
+COPY cli-aplicacao-TotemHub.jar /TotemHub/
 WORKDIR /TotemHub/
-ENTRYPOINT ["java","-jar","cli-login-agente-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+ENTRYPOINT ["java","-jar","cli-aplicacao-TotemHub.jar"]

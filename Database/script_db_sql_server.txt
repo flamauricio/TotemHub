@@ -53,7 +53,7 @@ create table historico_totem(
     memoria_em_uso decimal,
     memoria_total decimal,
     sistema_operacional varchar(30),
-    horario_totem default char(19),
+    horario_totem char(19),
     status_processador varchar(60),
     status_memoria varchar(60),
     foreign key(fk_totem) references totem(id_totem)

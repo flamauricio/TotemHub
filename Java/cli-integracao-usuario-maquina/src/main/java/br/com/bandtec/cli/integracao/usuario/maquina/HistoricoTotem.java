@@ -19,10 +19,10 @@ public class HistoricoTotem {
     private String horario_totem;
     private String status_processador;
     private String status_memoria;
-    private String fk_totem;
+    private Integer fk_totem;
 
     public HistoricoTotem(
-            String fk_totem,
+            Integer fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,
@@ -105,11 +105,11 @@ public class HistoricoTotem {
         this.status_memoria = status_memoria;
     }
 
-    public String getFk_totem() {
+    public Integer getFk_totem() {
         return fk_totem;
     }
 
-    public void setFk_totem(String fk_totem) {
+    public void setFk_totem(Integer fk_totem) {
         this.fk_totem = fk_totem;
     }
 
@@ -117,5 +117,4 @@ public class HistoricoTotem {
     public String toString() {
         return "HistoricoTotem{" + "id_historico=" + id_historico + ", cpu_totem_em_uso=" + cpu_totem_em_uso + ", memoria_em_uso=" + memoria_em_uso + ", memoria_total=" + memoria_total + ", sistema_operacional=" + sistema_operacional + ", horario_totem=" + horario_totem + '}';
     }
-
 }

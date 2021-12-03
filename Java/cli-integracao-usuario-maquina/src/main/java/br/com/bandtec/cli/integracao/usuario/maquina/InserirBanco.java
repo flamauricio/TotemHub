@@ -16,7 +16,7 @@ public class InserirBanco extends HistoricoTotem {
     GerarLog arquivo = new GerarLog();
 
     public InserirBanco(
-            String fk_totem,
+            Integer fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,

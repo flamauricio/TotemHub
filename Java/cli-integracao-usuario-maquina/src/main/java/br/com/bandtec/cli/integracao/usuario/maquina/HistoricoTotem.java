@@ -22,7 +22,6 @@ public class HistoricoTotem {
     private String fk_totem;
 
     public HistoricoTotem(
-            String fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,
@@ -31,7 +30,6 @@ public class HistoricoTotem {
             String status_processador,
             String status_memoria
     ) {
-        this.fk_totem = fk_totem;
         this.cpu_totem_em_uso = cpu_totem_em_uso;
         this.memoria_em_uso = memoria_em_uso;
         this.memoria_total = memoria_total;

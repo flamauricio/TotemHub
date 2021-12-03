@@ -36,7 +36,6 @@ public class CliIntegracaoUser {
         // Inicializando a classe de inserir dados ao sql server com dados da superclasse
         InserirBanco inserir = new InserirBanco
         (
-                processador.getId(),
                 processador.getUso(),
                 converter.converter(memoria.getEmUso().doubleValue()),
                 converter.converter(memoria.getTotal().doubleValue()),

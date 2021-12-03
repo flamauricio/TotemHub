@@ -16,7 +16,6 @@ public class InserirBanco extends HistoricoTotem {
     GerarLog arquivo = new GerarLog();
 
     public InserirBanco(
-            String fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,
@@ -26,7 +25,6 @@ public class InserirBanco extends HistoricoTotem {
             String status_memoria
     ) {
         super(
-                fk_totem,
                 cpu_totem_em_uso,
                 memoria_em_uso,
                 memoria_total,
@@ -42,11 +40,10 @@ public class InserirBanco extends HistoricoTotem {
         String sql
                 = ("INSERT INTO historico_totem "
                 + "(fk_totem, cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                + "VALUES (?, ?, ?, ?, ?, ?, ?)");
 
         con.update(
                 sql,
-                super.getFk_totem(),
                 super.getCpu_totem_em_uso(),
                 super.getMemoria_em_uso(),
                 super.getMemoria_total(),

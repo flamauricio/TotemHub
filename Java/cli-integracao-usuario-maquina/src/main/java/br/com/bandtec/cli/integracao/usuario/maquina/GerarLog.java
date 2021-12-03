@@ -26,8 +26,8 @@ public class GerarLog {
     public void gerarLog(String arquivo) {
 
         // Objetos de manipulação do log
-        File file = new File("Relatório de serviço");
-        File arquivoCriado = new File("Relatório de serviço/relatórios.txt");
+        File file = new File("relatorio-maquina");
+        File arquivoCriado = new File("relatorio-maquina/relatorios.txt");
         DateTimeFormatter formatar = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
         // Objetos looca

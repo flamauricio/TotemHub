@@ -10,8 +10,6 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 	// quantas são as últimas leituras que quer? 7 está bom?
 	const limite_linhas = 7;
 
-	
-
 	var id_leitura = req.params.id_historico;
 
 	console.log(`Recuperando as ultimas ${limite_linhas} leituras`);
@@ -31,9 +29,11 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 		//abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `SELECT TOP ${limite_linhas} 
 		cpu_totem_em_uso, 
-		memoria_em_uso 
+		memoria_em_uso,
+		memoria_total,
+		sistema_operacional,
+		horario_totem 
 		FROM historico_totem
-		WHERE fk_totem = ${id_leitura}
 		ORDER BY id_historico desc`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")

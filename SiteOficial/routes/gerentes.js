@@ -4,8 +4,25 @@ var sequelize = require('../models').sequelize;
 var Gerente = require('../models').Gerente;
 var Usuario = require('../models').Usuario;
 
-
 let sessoes = [];
+
+/* Cadastrar gerente */
+router.post('/cadastrar', function(req, res, next) {
+	console.log("cadastrando um gerente");
+
+	Gerente.create({
+		nome_gerente : req.body.nome,
+		login_gerente : req.body.email,
+		senha_gerente : req.body.senha,
+		estacao_gerente : req.body.estacao
+	}).then(resultado => {
+		console.log(`Lead criada: ${resultado}`)
+		res.send(resultado);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	})
+})
 
 router.post('/autenticar', function(req, res, next) {
 	console.log('Recuperando usuário por login e senha');

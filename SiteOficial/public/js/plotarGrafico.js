@@ -40,7 +40,7 @@ function chamargraficos(id_historico) {
 
 // altere aqui as configurações do gráfico(tamanhos, cores, textos, etc)
 function configurarGraficoC() {
-  console.log("executei configurarGrafico");
+  console.log("executei configurarGraficoC");
   var configuracoesC = {
     responsive: true,
     animation: { duration: 500 },
@@ -82,7 +82,7 @@ function configurarGraficoM() {
           type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
           display: true,
           position: "left",
-          id: "y-memoria",
+          id: "y-Memoria",
 
           // grid line settings
           gridLines: {
@@ -115,7 +115,9 @@ function obterDadosGraficoPrimeiraVez(id_historico) {
           console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
           resposta.reverse();
 
-          console.log(resposta.cpu); // retorna undefined
+         
+          console.log(resposta.cpu_totem_em_uso); // retorna undefined
+          console.log(resposta.memoria_em_uso);
           console.log(resposta); // retorna [array(7), array(7)]
 
           var dadosC = {
@@ -260,7 +262,7 @@ function plotarGraficoC(dadosC, id_historico) {
   var ctx = myChartArea.getContext("2d");
   window.grafico_linhaC = Chart.Line(ctx, {
     data: dadosC,
-    options: configurarGraficoC(),
+    options: configurarGraficoC()
   });
 
   setTimeout(() => atualizarGraficoC(id_historico, dadosC), 5000);
@@ -270,10 +272,10 @@ function plotarGraficoM(dadosM, id_historico) {
   console.log("executei plotarGraficoM");
   console.log("iniciando plotagem do gráfico...");
 
-  var ctx = myPieChart.getContext("2d");
+  var ctx = myChartPie.getContext("2d");
   window.grafico_linhaM = Chart.Line(ctx, {
     data: dadosM,
-    options: configurarGraficoM(),
+    options: configurarGraficoM()
   });
 
   setTimeout(() => atualizarGraficoM(id_historico, dadosM), 5000);

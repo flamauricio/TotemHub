@@ -10,12 +10,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class InserirBanco extends HistoricoTotem {
 
-    Timer timer;
-    conectaBD config = new conectaBD();
-    JdbcTemplate con = new JdbcTemplate(config.getBancoDeDados());
-    GerarLog arquivo = new GerarLog();
+    protected Timer timer;
+    protected conectaBD config = new conectaBD();
+    protected JdbcTemplate con = new JdbcTemplate(config.getBancoDeDados());
+    protected GerarLog arquivo = new GerarLog();
 
     public InserirBanco(
+            Integer fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,
@@ -25,6 +26,7 @@ public class InserirBanco extends HistoricoTotem {
             String status_memoria
     ) {
         super(
+                fk_totem,
                 cpu_totem_em_uso,
                 memoria_em_uso,
                 memoria_total,
@@ -39,11 +41,12 @@ public class InserirBanco extends HistoricoTotem {
 
         String sql
                 = ("INSERT INTO historico_totem "
-                + "(cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?)");
+                + "(fk_totem,cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
         con.update(
                 sql,
+                super.getFk_totem(),
                 super.getCpu_totem_em_uso(),
                 super.getMemoria_em_uso(),
                 super.getMemoria_total(),
@@ -57,16 +60,15 @@ public class InserirBanco extends HistoricoTotem {
     }
 
     public void inserirDado() {
-        timer = new Timer();
+        this.timer = new Timer();
         TimerTask t1 = new TimerTask() {
             @Override
             public void run() {
                 arquivo.gerarLog("C:\\TotemHub\\Java\\cli-integracao-usuario-maquina");
                 inserirDadoBanco();
-            }
-        ;
+            };
         }; 
-        timer.schedule(t1, 5000, 150000);
+        this.timer.schedule(t1, 5000, 150000);
     }
-
+    
 }

@@ -19,9 +19,10 @@ public class HistoricoTotem {
     private String horario_totem;
     private String status_processador;
     private String status_memoria;
-//    private Integer fk_totem;
+    private Integer fk_totem;
 
     public HistoricoTotem(
+            Integer fk_totem,
             Double cpu_totem_em_uso,
             Double memoria_em_uso,
             Double memoria_total,
@@ -30,6 +31,7 @@ public class HistoricoTotem {
             String status_processador,
             String status_memoria
     ) {
+        this.fk_totem = fk_totem;
         this.cpu_totem_em_uso = cpu_totem_em_uso;
         this.memoria_em_uso = memoria_em_uso;
         this.memoria_total = memoria_total;
@@ -103,13 +105,13 @@ public class HistoricoTotem {
         this.status_memoria = status_memoria;
     }
 
-//    public Integer getFk_totem() {
-//        return fk_totem;
-//    }
-//
-//    public void setFk_totem(Integer fk_totem) {
-//        this.fk_totem = fk_totem;
-//    }
+    public Integer getFk_totem() {
+        return fk_totem;
+    }
+
+    public void setFk_totem(Integer fk_totem) {
+        this.fk_totem = fk_totem;
+    }
 
     @Override
     public String toString() {

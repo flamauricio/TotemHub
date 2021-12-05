@@ -89,5 +89,5 @@ insert into [dbo].[agente_de_estacao] (nome_agente, login_agente, senha_agente) 
 insert into [dbo].[agente_de_estacao] () values
     'jorge@gmail.com' AND senha_agente = '123' 
 
-insert into [dbo].[totem](id_totem, fk_estacao) values
-	('BFEBFBFF000806EC', 100)
+insert into [dbo].[totem](fk_estacao) values
+	(100)

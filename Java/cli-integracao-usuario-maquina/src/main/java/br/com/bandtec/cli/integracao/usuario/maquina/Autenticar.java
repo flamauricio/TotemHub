@@ -6,8 +6,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Autenticar {
 
-    conectaBD config = new conectaBD();
-    JdbcTemplate con = new JdbcTemplate(config.getBancoDeDados());
+    protected conectaBD config = new conectaBD();
+    protected JdbcTemplate con = new JdbcTemplate(config.getBancoDeDados());
 
     public Boolean validarCli(String login, String senha) {
         List<Usuario> selectUser = con.query
@@ -24,14 +24,16 @@ public class Autenticar {
             senha = selectUser.get(0).getSenha_agente();
 
             if (login.equalsIgnoreCase(login) && senha.equals(senha)) {
-                System.out.println("Login Realizado com sucesso");
+                System.out.println("\nLogin Realizado com sucesso");
                 return true;
+                
             } else {
-                System.out.println("Login Errado");
+                System.out.println("\nLogin Errado");
                 return false;
+                
             }
         }
-        System.out.println("Login não cadastrado");
+        System.out.println("\nLogin não cadastrado");
 
         return false;
 

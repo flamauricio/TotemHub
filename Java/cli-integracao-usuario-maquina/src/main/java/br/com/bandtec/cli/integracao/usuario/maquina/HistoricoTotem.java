@@ -16,7 +16,6 @@ public class HistoricoTotem {
     private Double memoria_em_uso;
     private Double memoria_total;
     private String sistema_operacional;
-    private String horario_totem;
     private String status_processador;
     private String status_memoria;
     private Integer fk_totem;
@@ -27,7 +26,6 @@ public class HistoricoTotem {
             Double memoria_em_uso,
             Double memoria_total,
             String sistema_operacional,
-            String horario_totem,
             String status_processador,
             String status_memoria
     ) {
@@ -36,7 +34,6 @@ public class HistoricoTotem {
         this.memoria_em_uso = memoria_em_uso;
         this.memoria_total = memoria_total;
         this.sistema_operacional = sistema_operacional;
-        this.horario_totem = horario_totem;
         this.status_processador = status_processador;
         this.status_memoria = status_memoria;
     }
@@ -81,13 +78,13 @@ public class HistoricoTotem {
         this.sistema_operacional = sistema_operacional;
     }
 
-    public String getHorario_totem() {
-        return horario_totem;
-    }
-
-    public void setHorario_totem(String horario_totem) {
-        this.horario_totem = horario_totem;
-    }
+//    public String getHorario_totem() {
+//        return horario_totem;
+//    }
+//
+//    public void setHorario_totem(String horario_totem) {
+//        this.horario_totem = horario_totem;
+//    }
 
     public String getStatus_processador() {
         return status_processador;
@@ -115,7 +112,7 @@ public class HistoricoTotem {
 
     @Override
     public String toString() {
-        return "HistoricoTotem{" + "id_historico=" + id_historico + ", cpu_totem_em_uso=" + cpu_totem_em_uso + ", memoria_em_uso=" + memoria_em_uso + ", memoria_total=" + memoria_total + ", sistema_operacional=" + sistema_operacional + ", horario_totem=" + horario_totem + ", status_processador=" + status_processador + ", status_memoria=" + status_memoria + '}';
+        return "HistoricoTotem{" + "id_historico=" + id_historico + ", cpu_totem_em_uso=" + cpu_totem_em_uso + ", memoria_em_uso=" + memoria_em_uso + ", status_processador=" + status_processador + ", status_memoria=" + status_memoria + '}';
     }
 
     

@@ -21,7 +21,6 @@ public class InserirBanco extends HistoricoTotem {
             Double memoria_em_uso,
             Double memoria_total,
             String sistema_operacional,
-            String horario_totem,
             String status_processador,
             String status_memoria
     ) {
@@ -31,7 +30,6 @@ public class InserirBanco extends HistoricoTotem {
                 memoria_em_uso,
                 memoria_total,
                 sistema_operacional,
-                horario_totem,
                 status_processador,
                 status_memoria
         );
@@ -41,8 +39,8 @@ public class InserirBanco extends HistoricoTotem {
 
         String sql
                 = ("INSERT INTO historico_totem "
-                + "(fk_totem,cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, horario_totem, status_processador, status_memoria) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                + "(fk_totem,cpu_totem_em_uso, memoria_em_uso, memoria_total, sistema_operacional, status_processador, status_memoria) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?)");
 
         con.update(
                 sql,
@@ -51,7 +49,6 @@ public class InserirBanco extends HistoricoTotem {
                 super.getMemoria_em_uso(),
                 super.getMemoria_total(),
                 super.getSistema_operacional(),
-                super.getHorario_totem(),
                 super.getStatus_processador(),
                 super.getStatus_memoria()
         );

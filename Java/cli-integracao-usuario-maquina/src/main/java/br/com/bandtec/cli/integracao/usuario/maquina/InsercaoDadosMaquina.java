@@ -49,7 +49,6 @@ public class InsercaoDadosMaquina extends VisualizacaoMaquina{
                     this.converter.converter(memoria.getEmUso().doubleValue()),
                     this.converter.converter(memoria.getTotal().doubleValue()),
                     this.sistema.getSistemaOperacional(),
-                    this.formatar.format(LocalDateTime.now()),
                     this.alertas.gerarAlerta(converter.converter(memoria.getEmUso().doubleValue())),
                     this.alertas.gerarAlerta(converter.converter(memoria.getTotal().doubleValue()))
             );

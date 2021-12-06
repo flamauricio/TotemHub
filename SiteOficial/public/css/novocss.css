@@ -62,6 +62,27 @@ body {
     margin-bottom: 10px;
 }
 
+
+.botao_tres button {
+  background-color: #ffc702;
+  width: 450px;
+  border-radius: 15px;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  font-family: "PoPPins", sans-serif;
+  transition: ease-out 0.3s;
+}
+
+.botao_tres :hover {
+  background-color: slateblue;
+}
+
+.botao_tres button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
 .botao_dois button {
   cursor: pointer;
   background-color: #ffc702;
@@ -72,6 +93,7 @@ body {
   font-size: 20px;
   font-family: "PoPPins", sans-serif;
   transition: ease-out 0.3s;
+  margin-bottom: 10px;
 }
 
 .botao_dois :hover {

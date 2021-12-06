@@ -33,7 +33,8 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 		memoria_total,
 		sistema_operacional,
 		horario_totem as momento_grafico
-		FROM historico_totem`;
+		FROM historico_totem
+		WHERE fk_totem = ${combobox}`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}

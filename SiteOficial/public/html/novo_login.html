@@ -280,7 +280,7 @@
 
 var formulario = new URLSearchParams(new FormData(form_login_admin));
 
-fetch("/usuarios/autenticar", {
+fetch("/usuarios/autenticar_admin", {
     method: "POST",
     body: formulario
 }).then(resposta => {

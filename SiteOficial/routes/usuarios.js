@@ -4,6 +4,7 @@ var sequelize = require('../models').sequelize;
 var Usuario = require('../models').Usuario;
 var leads = require('../models').leads;
 var Gerente = require('../models').Gerente;
+var Admin = require('../models').Admin;
 
 let sessoes = [];
 
@@ -113,6 +114,41 @@ router.post('/autenticar', function(req, res, next) {
 
 	sequelize.query(instrucaoSql, {
 		model: Usuario
+	}).then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+
+		console.log(`Encontrados: ${resultado.length}`);
+
+		if (resultado.length == 1) {
+			sessoes.push(resultado[0].dataValues.login);
+			console.log('sessoes: ',sessoes);
+			res.json(resultado[0]);
+		} else if (resultado.length == 0) {
+			res.status(403).send('Email e/ou senha inválido(s)');
+		} else {
+			res.status(403).send('Mais de um usuário com o mesmo email e senha!');
+		}
+
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
+});
+
+/* Recuperar usuário por login e senha */
+router.post('/autenticar_admin', function(req, res, next) {
+	console.log('Recuperando admin por login e senha');
+
+	var email_admin = req.body.email_admin; // depois de .body, use o nome (name) do campo em seu formulário de login
+	var senha_admin = req.body.senha_admin; // depois de .body, use o nome (name) do campo em seu formulário de login	
+
+	let instrucaoSql = `select * from admin
+							where email_admin = '${email_admin}'
+							and senha_admin = '${senha_admin}'`;
+	console.log(instrucaoSql);
+
+	sequelize.query(instrucaoSql, {
+		model: Admin
 	}).then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`);
 

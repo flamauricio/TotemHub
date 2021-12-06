@@ -19,7 +19,7 @@ import java.time.format.DateTimeFormatter;
 public class InsercaoDadosMaquina extends VisualizacaoMaquina{
     
      // objeto data
-    protected DateTimeFormatter formatar = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+    
     
     protected InserirBanco inserir;
     protected Integer escolhaUsuario;

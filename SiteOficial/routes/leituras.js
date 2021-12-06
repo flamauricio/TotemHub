@@ -10,7 +10,7 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 	// quantas são as últimas leituras que quer? 7 está bom?
 	const limite_linhas = 7;
 
-	var id_leitura = req.params.id_historico;
+	var id_historico = req.params.id_historico;
 
 	console.log(`Recuperando as ultimas ${limite_linhas} leituras`);
 	
@@ -34,7 +34,7 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 		sistema_operacional,
 		horario_totem as momento_grafico
 		FROM historico_totem
-		WHERE fk_totem = ${combobox}`;
+		WHERE fk_totem = ${id_historico}`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}

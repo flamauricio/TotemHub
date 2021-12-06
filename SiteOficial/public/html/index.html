@@ -20,7 +20,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="chamargraficos(400)">
 
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -48,11 +48,24 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo" style="display: flex;">
                     <i class="fas fa-fw fa-cog" style="padding-top: 4%;"></i>
-                    <select class="form-select" aria-label="Default select example" id="comboBox" name="combo">
+
+                    <!-- <select class="form-select" aria-label="Default select example" id="id_historico" name="id_hitorico">
                         <option value="400">Totem 1</option>
                         <option value="401">Totem 2</option>
                         <option value="402">Totem 3</option>
-                    </select>
+                    </select> -->
+
+                    <div>
+                      <button id="botaoEstufa4" onclick="chamargraficos(400)">Totem 1</button>
+                      <button id="botaoEstufa4" onclick="chamargraficos(401)">Totem 3</button>
+                    </div>
+                 
+                    <div>
+                      <button id="botaoEstufa4" onclick="chamargraficos(402)">Totem 2</button>
+                      <button id="botaoEstufa4" onclick="chamargraficos(403)">Totem 4</button>
+                    </div>
+
+
                 </a>
 
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -219,7 +232,7 @@
         
         <!-- <script src="../js/demo/chart-area-demo.js"></script> -->
         <script src="../js/plotarGrafico.js"></script>
-        <script src="../../routes/leituras.js"></script>
+      
 
 
 
@@ -231,29 +244,29 @@ let proximaAtualizacaoC;
 let proximaAtualizacaoM;
 let usuario;
 
-window.onload = obterDadosGraficoPrimeiraVez(id_leituras);
+window.onload = obterDadosGraficoPrimeiraVez(id_historico);
 
 // verificar_autenticacao();
 
-/*
-function alterarCoresBotoes(id_leitura) {
+
+function alterarCoresBotoes(id_historico) {
   console.log("executei alterarCoresBotoes");
   botaoCaminhao1.className = "btn";
   botaoCaminhao2.className = "btn";
   botaoCaminhao3.className = "btn";
   botaoCaminhao4.className = "btn";
 
-  if (id_leitura == "1") {
+  if (id_historico == "400") {
     botaoCaminhao1.className += " btn-now";
-  } else if (id_leitura == "2") {
+  } else if (id_historico == "401") {
     botaoCaminhao2.className += " btn-now";
-  } else if (id_leitura == "3") {
+  } else if (id_historico == "402") {
     botaoCaminhao3.className += " btn-now";
-  } else if (id_leitura == "4") {
+  } else if (id_historico == "403") {
     botaoCaminhao4.className += " btn-now";
   }
 }
-*/
+
 
 function chamargraficos(id_historico) {
   console.log("executei chamar graficos");

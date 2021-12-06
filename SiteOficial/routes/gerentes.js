@@ -6,25 +6,7 @@ var Usuario = require('../models').Usuario;
 
 let sessoes = [];
 
-/* Cadastrar gerente */
-router.post('/cadastrar', function(req, res, next) {
-	console.log("cadastrando um gerente");
-
-	Gerente.create({
-		nome_gerente : req.body.nome,
-		login_gerente : req.body.email,
-		senha_gerente : req.body.senha,
-		estacao_gerente : req.body.estacao
-	}).then(resultado => {
-		console.log(`Lead criada: ${resultado}`)
-		res.send(resultado);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	})
-})
-
-router.post('/autenticar', function(req, res, next) {
+router.post('/autenticar', function (req, res, next) {
 	console.log('Recuperando usuário por login e senha');
 
 	var email_gerente = req.body.login_gerente; // depois de .body, use o nome (name) do campo em seu formulário de login
@@ -44,7 +26,7 @@ router.post('/autenticar', function(req, res, next) {
 
 		if (resultado.length == 1) {
 			sessoes.push(resultado[0].dataValues.login);
-			console.log('sessoes: ',sessoes);
+			console.log('sessoes: ', sessoes);
 			res.json(resultado[0]);
 		} else if (resultado.length == 0) {
 			res.status(403).send('Email e/ou senha inválido(s)');
@@ -55,65 +37,64 @@ router.post('/autenticar', function(req, res, next) {
 	}).catch(erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);
-  	});
+	});
 });
 
-router.post('/deletar/', function(req, res, next) {
+router.post('/deletar/', function (req, res, next) {
 	console.log('deletando um usuário');
 
 	var idUsuario = req.body.delete;
 
 	let instrucaoSql = `DELETE FROM agente_de_estacao WHERE ID = ${idUsuario};`;
-	
+
 	sequelize.query(instrucaoSql, {
 		model: Usuario,
-		mapToModel: true 
+		mapToModel: true
 	})
-	.then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-		res.json(resultado[0]);
-    })
-	.catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-  	});
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado[0]);
+		})
+		.catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
-router.post('/update/', function(req, res, next) {
+router.post('/update/', function (req, res, next) {
 	console.log('atualizando email e senha do usuário');
 
 	var idUsuario = req.body.id;
 	var email = req.body.email;
 	var senha = req.body.senha;
 
-	// let instrucaoSql = `UPDATE agente_de_estacao set login_agente = "${email}" WHERE ID = ${idUsuario};`;
-	let instrucaoSql = `UPDATE agente_de_estacao SET login_agente = "${email}", senha_agente = "${senha}" where ID = ${idUsuario};`;
-	
+	let instrucaoSql = `UPDATE agente_de_estacao SET login_agente = '${email}', senha_agente = '${senha}' where id = ${idUsuario};`;
+
 	sequelize.query(instrucaoSql, {
 		model: Usuario,
-		mapToModel: true 
+		mapToModel: true
 	})
-	.then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-		res.json(resultado[0]);
-    })
-	.catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-  	});
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado[0]);
+		})
+		.catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
-router.get('/sessao/:login', function(req, res, next) {
+router.get('/sessao/:login', function (req, res, next) {
 	let login_gerente = req.params.login_gerente;
 	console.log("agente:", login_gerente);
 	console.log(`Verificando se o usuário ${login_gerente} tem sessão`);
-	
+
 	let tem_sessao = false;
-	for (let u=0; u<sessoes.length; u++) {
+	for (let u = 0; u < sessoes.length; u++) {
 		if (sessoes[u] == login_gerente) {
 			tem_sessao = true;
 			res.status(500).send(erro.message);
-			break; 
+			break;
 		}
 	}
 

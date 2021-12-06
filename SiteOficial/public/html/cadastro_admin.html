@@ -86,7 +86,7 @@
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         // var idGerente = sessionStorage.id_usuario_meuapp;
         
-        fetch(`/gerentes/cadastrar`, {
+        fetch(`/admin/cadastrar/`, {
             method: "POST",
             body: formulario
 
@@ -94,7 +94,7 @@
             if (response.ok) {
                 window.location.href = 'tabela_cadastro_admin.html';
                 // alert("Cadastro efetuado com sucesso");
-                obterPublicacoes();
+                obterPublicacoes2();
 
 
             } else {

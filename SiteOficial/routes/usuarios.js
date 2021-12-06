@@ -3,6 +3,7 @@ var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Usuario = require('../models').Usuario;
 var leads = require('../models').leads;
+var Gerente = require('../models').Gerente;
 
 let sessoes = [];
 

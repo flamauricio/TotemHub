@@ -18,7 +18,7 @@
 	<script src="../js/functions.js"></script>
 </head>
 
-<body onload="obterPublicacoes()">
+<body onload="obterPublicacoes2()">
 
 	<header>
 		<div class="logo">
@@ -28,8 +28,7 @@
 		<nav class="desktop-menu">
 			<ul>
 				<li><a class="text-size" href="cadastro_admin.html">Cadastro</a></li>
-				<li><a class="text-size" href="feedback.html">Feedbacks</a></li>
-				<li><a class="text-size" style="color: #FFC702;">Tabela de Funcionários</a></li>
+				<li><a class="text-size" style="color: #FFC702;">Tabela de Gerentes</a></li>
 				<li><a class="text-size" href="index.html">Sair</a></li>
 			</ul>
 		</nav>
@@ -87,91 +86,11 @@
 								<td>
 									<div id="feed_estacao"></div>
 								</td>
-
-								<!-- <td><img src="../img/on.png" style="width: 20px;"></td> -->
-								<!-- <td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td> -->
 							</tr>
 							<tr>
-								<td>
-									<!-- <span class="custom-checkbox">
-								<input type="checkbox" id="checkbox2" name="options[]" value="1">
-								<label for="checkbox2"></label>
-							</span> -->
-								</td>
-								<!-- <td>Dominique Perrier</td>
-						<td>dominiqueperrier@mail.com</td>
-						<td>Obere Str. 57, Berlin, Germany</td>
-						<td><img src="../img/off.png" style="width: 20px;"></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox3" name="options[]" value="1">
-								<label for="checkbox3"></label>
-							</span>
-						</td>
-						<td>Maria Anders</td>
-						<td>mariaanders@mail.com</td>
-						<td>25, rue Lauriston, Paris, France</td>
-						<td><img src="../img/off.png" style="width: 20px;"></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox4" name="options[]" value="1">
-								<label for="checkbox4"></label>
-							</span>
-						</td>
-						<td>Fran Wilson</td>
-						<td>franwilson@mail.com</td>
-						<td>C/ Araquil, 67, Madrid, Spain</td>
-						<td><img src="../img/on.png" style="width: 20px;"></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox5" name="options[]" value="1">
-								<label for="checkbox5"></label>
-							</span>
-						</td>
-						<td>Martin Blank</td>
-						<td>martinblank@mail.com</td>
-						<td>Via Monte Bianco 34, Turin, Italy</td>
-						<td><img src="../img/on.png" style="width: 20px;"></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>  -->
+								
 						</tbody>
 					</table>
-					<!-- <div class="clearfix">
-				<div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-				<ul class="pagination">
-					<li class="page-item disabled"><a href="#">Previous</a></li>
-					<li class="page-item"><a href="#" class="page-link">1</a></li>
-					<li class="page-item"><a href="#" class="page-link">2</a></li>
-					<li class="page-item active"><a href="#" class="page-link">3</a></li>
-					<li class="page-item"><a href="#" class="page-link">4</a></li>
-					<li class="page-item"><a href="#" class="page-link">5</a></li>
-					<li class="page-item"><a href="#" class="page-link">Next</a></li>
-				</ul>
-			</div> -->
 				</div>
 			</div>
 		</div>
@@ -181,7 +100,7 @@
 				<div class="modal-content">
 					<form id="form_update" method="post" onsubmit="return update()">
 						<div class="modal-header">
-							<h4 class="modal-title">Editar funcionário</h4>
+							<h4 class="modal-title">Editar Gerente</h4>
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						</div>
 						<div class="modal-body">
@@ -256,7 +175,7 @@
 
 						<form id="form_delete" method="post">
 							<p>Tem certeza que deseja deletar esse usuário?</p>
-							<p class="text-warning"><small>Digite o id do agente que deseja deletar.</small></p>
+							<p class="text-warning"><small>Digite o id do gerente que deseja deletar.</small></p>
 							<input name="delete" id="deleteUser" type="text">
 					</div>
 					<div class="modal-footer">
@@ -289,7 +208,7 @@
 		var formulario = new URLSearchParams(new FormData(form_delete));
 
 
-		fetch(`/gerentes/deletar/`, {
+		fetch(`/admin/deletar/`, {
 			method: "Post",
 			body: formulario,
 
@@ -301,7 +220,7 @@
 				alert('Erro no comando!');
 				console.log("reposta: ", response);
 				response.text().then(function (resposta) {
-					atualizarFeed();
+					atualizarFeed2();
 				});
 			}
 		});
@@ -312,7 +231,7 @@
 
 		var formulario = new URLSearchParams(new FormData(form_update));
 
-		fetch(`/gerentes/update/`, {
+		fetch(`/admin/update/`, {
 			method: "Post",
 			body: formulario,
 
@@ -324,7 +243,7 @@
 				alert('Erro no comando!');
 				console.log("reposta: ", response);
 				response.text().then(function (resposta) {
-					atualizarFeed();
+					atualizarFeed2();
 				});
 			}
 		});

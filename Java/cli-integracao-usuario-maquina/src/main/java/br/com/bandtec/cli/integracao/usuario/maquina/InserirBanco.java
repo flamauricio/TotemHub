@@ -6,10 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-/**
- *
- * @author jotal
- */
+
 public class InserirBanco extends HistoricoTotem {
 
     protected Timer timer;

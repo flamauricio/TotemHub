@@ -1,4 +1,4 @@
-    package br.com.bandtec.cli.integracao.usuario.maquina;
+package br.com.bandtec.cli.integracao.usuario.maquina;
 
 public class Usuario {
    

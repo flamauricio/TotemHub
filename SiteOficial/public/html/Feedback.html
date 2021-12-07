@@ -65,12 +65,14 @@
 
 
                 <h3>Deseja deixar alguma mensagem extra? </h3>
-                <div class="input-field">
-                    <input type="text" name="opiniao" id="opinao" placeholder="Deixe sua mensagem aqui">
-                    <div class="underline"></div>
-                </div>
-
-                <input type="submit" value="Enviar Feedback" id="btn_login">
+                <form id="form_publicar" method="post" onsubmit="return publicar()">
+                    <div class="input-field">
+                        <input type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui">
+                        <div class="underline"></div>
+                    </div>
+                    <input type="submit" value="Enviar Feedback" id="btn_publicar">
+                </form>
+                
             </form>
         </div>
 
@@ -82,6 +84,76 @@
 </html>
 
 <script>
+
+
+function publicar() {
+        console.log("entrei!")
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_publicar));
+        var id_feedback = sessionStorage.id_leads_meuapp;
+        fetch(`/publicacoes/publicar/${id_feedback}`, {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+                obterPublicacoes();
+
+                finalizarAguardar();
+            } else {
+                console.log('Erro ao publicar!');
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    
+
+    function obterPublicacoes() {
+        aguardar();
+        fetch("/publicacoes")
+        .then(resposta => {
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                   
+                    atualizarFeed(resposta);
+
+                    finalizarAguardar();
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+                finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+            }
+        })
+        .catch(function (error) {
+            console.error(`Erro na obtenção das publicações: ${error.message}`);
+        });
+    }
+
+    function obterPublicacoesPorUsuario(id_feedback) {
+        fetch(`/publicacoes/${id_feedback}`)
+        .then(resposta => {
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    // alert(JSON.stringify(resposta))
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+        .catch(function (error) {
+            console.error(`Erro na obtenção das publicações do usuário: ${error.message}`);
+        });
+    }
+
+
     // let login_usuario;
     // let nome_usuario;
 
@@ -158,4 +230,5 @@
     // function finalizar_sessao() {
     //     fetch(`/usuarios/sair/${login_usuario}`, { cache: 'no-store' });
     // }
+
 </script>

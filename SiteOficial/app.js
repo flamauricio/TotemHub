@@ -10,6 +10,7 @@ var usuariosRouter = require('./routes/usuarios');
 var gerentesRouter = require('./routes/gerentes');
 var leiturasRouter = require('./routes/leituras');
 var adminRouter = require('./routes/admin');
+var publicacoesRouter = require('./routes/publicacoes');
 
 var app = express();
 
@@ -24,5 +25,6 @@ app.use('/usuarios', usuariosRouter);
 app.use('/gerentes', gerentesRouter);
 app.use('/leituras', leiturasRouter);
 app.use('/admin', adminRouter);
+app.use('/publicacoes', publicacoesRouter);
 
 module.exports = app;

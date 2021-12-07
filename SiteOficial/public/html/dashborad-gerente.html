@@ -75,8 +75,8 @@
                     <option value="3">Triste</option>
                 </select>
 
-                <textarea class="card-comment">
-                Comentários
+                <div class="card-comment" id="feed_container"></div>
+                   
                 </textarea>
             </div>
         </div>
@@ -84,3 +84,30 @@
 </body>
 
 </html>
+<script>
+
+    function atualizarFeed(publicacoes) {
+        var feed = document.getElementById("feed_container");
+        feed.innerHTML = "";
+        for (let i = 0; i < publicacoes.length; i++) {
+            var publicacao = publicacoes[i];
+
+            var divPublicacao = document.createElement("div")
+            var divNome = document.createElement("div")
+            var divDescricao = document.createElement("div")
+
+            divNome.innerHTML = `${feedback.id_feedback}:`;
+            divDescricao.innerHTML = feedback.mensagem;
+
+            divPublicacao.className = "publicacao"
+            divNome.className = "nome";
+            divDescricao.className = "descricao";
+
+            divPublicacao.appendChild(divNome);
+            divPublicacao.appendChild(divDescricao);
+
+            feed.appendChild(divPublicacao);
+        }
+    }
+    
+</script>

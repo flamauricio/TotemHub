@@ -1,0 +1,502 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--background);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 160px;
+    padding: 35px 16px;
+    z-index: 1;
+}
+
+.agente-hover:hover,
+.gerente-hover:hover {
+    transition: ease-in 0.5s;
+    color: var(--yellow);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.teste-log:hover {
+    transition: ease-in 0.5s;
+    color: var(--yellow);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+nav {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav a {
+    color: inherit;
+}
+
+li:hover {
+    color: var(--yellow);
+}
+
+
+/* First Page */
+
+.bg-img {
+    background-image: url("../img/bg-metro-home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 99vw;
+    height: 90vh;
+}
+
+section .container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.logo-mobile {
+    display: none;
+    float: left;
+}
+
+.logo-mobile-size {
+    width: 180px;
+    padding-top: 35px;
+}
+
+section .container .nav-bar {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 3.5rem;
+    float: right;
+}
+
+nav.mobile-menu {
+    float: right;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/menu.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+nav.mobile-menu ul {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 75px;
+    list-style: none;
+    text-align: center;
+    border: none;
+}
+
+nav.mobile-menu ul li {
+    border-bottom: 0.5px solid black;
+    transition: 0.4s;
+    padding: 8px 0;
+}
+
+nav.mobile-menu ul li:hover {
+    background-color: #ffc802bb;
+}
+
+nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    float: right;
+}
+
+header nav.nav-bar ul {
+    list-style-type: none;
+}
+
+header nav.nav-bar li {
+    float: left;
+    margin: 15px 20px;
+}
+
+header nav.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav.nav-bar ul li a:hover {
+    color: #FFC702;
+    transition: 1s ease;
+}
+
+
+/* section .container .nav-bar-item:nth-child(2),
+section .container .nav-bar-item:nth-child(3),
+section .container .nav-bar-item:nth-child(4),
+section .container .nav-bar-item:nth-child(5){
+    margin-left: 3.5rem;
+}
+
+section .container .nav-bar-item:first-child{
+    color: var(--yellow);
+}
+
+ul li{
+    display: inline;
+} */
+
+.logo-home {
+    width: 28rem;
+    margin-top: 20rem;
+}
+
+.slogan {
+    float: right;
+    font-size: 4.2rem;
+    font-weight: 200;
+    color: var(--yellow);
+    line-height: 4.4rem;
+}
+
+.exp {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 5.6rem;
+}
+
+
+/* Tablet Responsivity */
+
+@media screen and (max-width: 1010px) {
+    .bg-img {
+        height: 450px;
+    }
+    .logo-mobile {
+        display: block;
+        width: 80px;
+        /* background-size: 100% 100%; */
+    }
+    .nav-bar {
+        display: none;
+    }
+    nav.mobile-menu {
+        display: block;
+    }
+    .logo-home {
+        display: none;
+    }
+    .slogan {
+        float: none;
+    }
+    .mobile-slogan {
+        padding-top: 180px;
+        text-align: center;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Second Page */
+
+.about-us {
+    height: 650px;
+    overflow-x: hidden;
+}
+
+.about-us h2 {
+    position: relative;
+    text-align: center;
+    color: black;
+    text-align: center;
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Squada One';
+}
+
+.about-us h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 109px;
+    bottom: 1px;
+    border-radius: 8px;
+    background-color: var(--yellow);
+}
+
+section .div-grid {
+    display: flex;
+    justify-content: center;
+    /* width: 100%;  */
+}
+
+section .div-grid .icons {
+    width: 80px;
+    margin: 16vh 7.8vw 28px;
+}
+
+.about-us .div-grid div h3 {
+    width: 210px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 auto;
+    color: var(--background_graphic);
+}
+
+.about-us .div-grid div p {
+    width: 210px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 auto;
+}
+
+
+/* Third Page */
+
+.just-about {
+    margin: 26vh auto;
+    height: 35vh;
+}
+
+.just-about-mobile {
+    margin: 10vh auto;
+    height: 35vh;
+    height: 550px;
+    display: none;
+}
+
+.queue .bg-queue {
+    background-image: url(../img/queue.svg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* PERMITE A VISÃO DIFERENCIADA DA IMAGEM, COM A POSIÇÃO QUE SE ALTERA CONFORME DESCE SITE*/
+}
+
+.page-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.queue .bg-queue .page-container .content-bg-queue {
+    color: var(--white);
+    font-size: 4.2vw;
+    font-weight: 600;
+    padding-top: 5%;
+}
+
+.queue .bg-queue .page-container .second-content-bg-queue {
+    color: var(--white);
+    font-size: 2.6vw;
+}
+
+
+/* Fourth Page */
+
+.content-about-us {
+    display: flex;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.content-about-us-mobile {
+    position: relative;
+    align-items: center;
+    text-align: justify;
+}
+
+.bg-yellow-about {
+    background-color: var(--yellow);
+    width: 1170px;
+    height: 124px;
+}
+
+.content-about {
+    color: black;
+    text-align: center;
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Squada One';
+}
+
+.content-about {
+    position: relative;
+}
+
+.content-about::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 75px;
+    bottom: 1px;
+    border-radius: 8px;
+    background-color: var(--yellow);
+}
+
+.content-about-us-text {
+    color: black;
+    margin-left: 68px;
+    margin-right: 128px;
+    font-size: 1.8rem;
+}
+
+.content-about-us-text-mobile {
+    color: black;
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.4rem;
+}
+
+
+/* FOOTER: */
+
+.footer {
+    height: 12vh;
+    background-color: var(--footer);
+    color: var(--yellow);
+    vertical-align: text-top;
+    overflow: hidden;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.footer .container-footer {
+    margin: 0 150px;
+}
+
+.footer .container-footer .text-left {
+    font-size: 3.6rem;
+    font-weight: 600;
+    float: left;
+    margin-top: 10px;
+}
+
+.footer .container-footer .text-right {
+    float: right;
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 60px;
+        margin-top: 35px;
+    }
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+    .queue .bg-queue {
+        height: 400px !important;
+        text-align: center;
+    }
+    .just-about {
+        display: none;
+    }
+    .just-about-mobile {
+        margin: 10vh auto;
+        height: 30vh;
+        min-height: 450px;
+        display: block;
+    }
+    .footer {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+        height: 14vh;
+        background-color: var(--footer);
+        text-align: center;
+        color: var(--yellow);
+        overflow: hidden;
+    }
+    .footer-mobile p {
+        margin: 1% 0 1% 0;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    .footer-mobile p:nth-child(2) {
+        font-size: 1.0rem;
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section .div-grid {
+        display: grid !important;
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 60px;
+        margin-top: 60px;
+    }
+    .icons {
+        display: block !important;
+        margin: 0 auto !important;
+        width: 60px !important;
+        margin-bottom: 10px !important;
+    }
+    .about-us {
+        height: 800px !important;
+        overflow: hidden;
+    }
+    .page-container p {
+        font-size: 30px !important;
+    }
+    .page-container p:nth-child(2) {
+        font-size: 20px !important;
+    }
+    .slogan {
+        font-size: 2.8rem;
+    }
+    .exp {
+        font-size: 3.6rem;
+    }
+}

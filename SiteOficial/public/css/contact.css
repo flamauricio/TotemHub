@@ -1,0 +1,139 @@
+.form {
+    height: 500px;
+    /* display: flex; */
+}
+
+.contato {
+    display: flex;
+    margin: 0 0 9% 0;
+}
+
+.left-contact {
+    height: 500px;
+    width: 50%;
+}
+
+.left-contact .container-left-contact {
+    margin: 45px 90px;
+}
+
+.left-contact h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.left-contact p {
+    font-size: 1.4rem;
+}
+
+.left-contact .email-contact {
+    margin-top: 50px;
+}
+
+.left-contact .email-contact .icon-email {
+    width: 50px;
+    font-weight: 600;
+}
+
+.left-contact .tel-contact .icon-tel {
+    width: 50px;
+}
+
+.left-contact .tel-contact {
+    margin-top: 50px;
+}
+
+.form-contact {
+    width: 50%;
+    height: 500px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contact-mobile {
+    display: none;
+    height: 500px;
+    background-color: var(--yellow);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrap input {
+    margin: 5px auto;
+    width: 40vw;
+    border: none;
+    height: 30px;
+    padding-left: 5px;
+}
+
+textarea.txt {
+    margin: 5px auto;
+    width: 40vw;
+    outline: none;
+    resize: none;
+}
+
+button {
+    margin: 0 30%;
+    width: 150px;
+    height: 30px;
+    background-color: var(--button);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1010px) {
+    .left-contact {
+        margin-top: 20px;
+        width: 100%;
+        background-image: linear-gradient(rgb(213, 212, 212), white);
+    }
+    .left-contact p:nth-child(2) {
+        margin-top: 20px;
+    }
+    .form-contact {
+        display: none;
+    }
+    .form-contact-mobile {
+        display: block;
+        display: flex;
+    }
+    .form-contact-mobile .ipt-mobile {
+        width: 60vw;
+        min-width: 345px;
+    }
+    .form-contact-mobile .txt {
+        height: 30vh;
+        width: 60vw;
+        min-width: 345px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .left-contact {
+        text-align: center;
+    }
+    .left-contact h2 {
+        text-align: center;
+        margin-top: 46px;
+        text-transform: uppercase;
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-family: 'Squada One';
+        position: relative;
+    }
+    .left-contact h2::before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 100px;
+        bottom: 1px;
+        border-radius: 8px;
+        background-color: var(--yellow);
+    }
+    .left-contact .container-left-contact {
+        margin: 45px 5%;
+    }
+}

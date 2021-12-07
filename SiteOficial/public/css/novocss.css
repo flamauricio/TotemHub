@@ -1,0 +1,300 @@
+.botaoHome img{
+    margin-left: 1200px;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(214, 211, 211); */
+  background-image: url(../img/back_cadEmpresa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  overflow: hidden;
+}
+
+.fundo {
+  background-color: rgba(0, 0, 0, 0.062);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  height: 530px;
+  max-width: 700px;
+  text-align: center;
+  align-content: center;
+  margin: 35px 70px 117px 350px;
+  margin-top: 10px;
+}
+
+.Img_centro {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  height: 275px;
+}
+
+.enunciado h1 {
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: "PoPPins", sans-serif;
+  padding-bottom: 10px;
+}
+
+.botao_um button {
+  background-color: #ffc702;
+  width: 450px;
+  border-radius: 15px;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  font-family: "PoPPins", sans-serif;
+  transition: ease-out 0.3s;
+}
+
+.botao_um :hover {
+  background-color: slateblue;
+}
+
+.botao_um button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.botao_tres button {
+  background-color: #ffc702;
+  width: 450px;
+  border-radius: 15px;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  font-family: "PoPPins", sans-serif;
+  transition: ease-out 0.3s;
+}
+
+.botao_tres :hover {
+  background-color: slateblue;
+}
+
+.botao_tres button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.botao_dois button {
+  cursor: pointer;
+  background-color: #ffc702;
+  width: 450px;
+  border-radius: 15px;
+  height: 45px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "PoPPins", sans-serif;
+  transition: ease-out 0.3s;
+  margin-bottom: 10px;
+}
+
+.botao_dois :hover {
+  background-color: slateblue;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(240, 240, 240, 0.8);
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  /*define a transição para apresentar e sair a modal*/
+  pointer-events: none;
+}
+
+.modal:target {
+  /* define qual é o "alvo" que irá finalizar a minha modal, */
+  opacity: 1;
+  pointer-events: auto;
+  /* onde é representado pela referência "#" no index dentro da div criada na classe modal */
+}
+
+.background-modal {
+  width: min-content;
+  position: relative;
+  text-align: center;
+  margin: 7% auto;
+  padding: 15px 20px;
+  background: whitesmoke;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 15px;
+  padding: 20px;
+  padding: 5px;
+  margin: 70px 285px;
+}
+
+.fechar {
+  position: absolute;
+  width: 33px;
+  right: 0px;
+  top: -20px;
+  /* text-align: center; */
+  line-height: 32px;
+  margin-top: 5px;
+  background: #ff4545;
+  border-radius: 50%;
+  font-size: 16px;
+  margin: 95px 255px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  border: 3px black;
+  display: none;
+}
+
+.openmod {
+  text-decoration: none;
+  color: black;
+  font-family: "PoPPins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo_modal {
+  position: absolute;
+}
+
+.form-login {
+  padding-top: 150px;
+}
+
+.btnEntrar_agente {
+  background-color: #ffc702;
+  width: 150px;
+  border-radius: 15px;
+  height: 31px;
+  color: black;
+  font-size: 18px;
+  font-family: "Squada One", cursive;
+  transition: ease-out 0.3s;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.btnEntrar_agente :hover {
+  background-color: slateblue;
+}
+
+.btnEntrar_gerente {
+  background-color: #ffc702;
+  width: 150px;
+  border-radius: 15px;
+  height: 31px;
+  color: black;
+  font-size: 18px;
+  font-family: "Squada One", cursive;
+  transition: ease-out 0.3s;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#agerente h1 {
+  font-family: "Squada One", cursive;
+  font-size: 40px;
+}
+
+.login-footer {
+  font-size: 18px;
+  font-family: "Squada One", cursive;
+  color: black;
+}
+
+.form-login h1 {
+  font-family: "Squada One", cursive;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.wrapper {
+  width: 450px;
+  /* background: #fff; */
+  padding: 30px;
+  margin: 10px 170px;
+  /* box-shadow: 0px 0px 10px rgb(0 0 0 / 10%); */
+}
+
+.wrapper .input-data {
+  height: 40px;
+  width: 100%;
+  /* align-items: center; */
+  position: relative;
+}
+
+.wrapper .input-data input {
+  height: 92%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  font-family: "Squada One", cursive;
+  background: whitesmoke;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  font-family: "Squada One", cursive;
+  color: #ffc702;
+}
+
+.wrapper .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.input-data .underline::before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 101%;
+  border-bottom: 2px solid gray;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.input-data .underline::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 101%;
+  border-bottom: 2px solid #ffc702;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.input-data input:focus ~ .underline::after {
+  transform: scaleX(1);
+}

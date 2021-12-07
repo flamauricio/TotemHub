@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: var(--background);
+}
+
+.btn-dedicatoria {
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    transition: 900ms ease;
+    cursor: pointer;
+    margin: 0 0 5vh 43vw;
+    background-color: var(--yellow);
+    color: var(--footer);
+}
+
+.btn-dedicatoria:hover {
+    background-color: var(--footer);
+    color: var(--button);
+}
+
+.divGrid {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 55px);
+    align-items: center;
+}
+
+.comboTotem{
+    background-color: var(--background);
+    font-size: 14px;
+    height: 20px;
+    width: 155px;
+}
+
+.container{
+    max-width: 90%;
+    margin: 8vh auto;
+}
+
+.fundo{
+    height: max-content;
+    background-color: var(--background_graphic);
+    padding: 100px;
+}
+
+.fundoGrafico{
+    margin: auto;
+    border-radius: 25px;
+    width: 600px;
+    background-color: var(--yellow);
+}
+
+.caixa-dash{
+    background-color: var(--background_graphic);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.divGraficos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 0 0 5% 0;
+}
+
+.grafico {
+    border-radius: 15px;
+    width: 450px;
+}
+
+.grafico_comparativo{
+    border-radius: 15px;
+    width: 450px;
+}
+
+.grafico_comparativo2{
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.grafico canvas {
+    width: 180px;
+}
+
+canvas{
+    background-color: white;
+}
+
+.borda-dash{
+    background-color: var(--yellow);
+    height: max-content;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.borda-dash2{
+    background-color: var(--yellow);
+    height: max-content;
+    padding: 50px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.textBemVindo {
+    font-size: 17px;
+}
+
+.textTotem {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#indicadores {
+    height: 40px;
+    width: 170px;
+    background-color: var(--green);
+    border: solid 1px var(--black);
+    float: right;
+    margin: -70px;
+}
+
+.indicators-text {
+    float: left;
+    margin: -37px;
+}

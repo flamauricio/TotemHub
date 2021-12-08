@@ -1603,3 +1603,2043 @@
 	 
 }
 
+[2021/12/07 15:54:16] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 19,64% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,13 GB
+	Porcentagem de memória restante: 37,86% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 15:57:50] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 21,81% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,08 GB
+	Porcentagem de memória restante: 38,40% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 15:57:56] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 33,15% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,10 GB
+	Porcentagem de memória restante: 38,23% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 15:57:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,09% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,09 GB
+	Porcentagem de memória restante: 38,29% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 15:58:01] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 33,64% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,10 GB
+	Porcentagem de memória restante: 38,21% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 15:58:14] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 35,06% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,10 GB
+	Porcentagem de memória restante: 38,24% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 15:58:29] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 32,71% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,80% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:01:52] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,63% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,00 GB
+	Porcentagem de memória restante: 39,23% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:01:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 22,40% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,01 GB
+	Porcentagem de memória restante: 39,08% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:00] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 38,04% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,01 GB
+	Porcentagem de memória restante: 39,07% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:02] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 31,25% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,01 GB
+	Porcentagem de memória restante: 39,06% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:06] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 34,37% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,01 GB
+	Porcentagem de memória restante: 39,08% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:09] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 36,56% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,02 GB
+	Porcentagem de memória restante: 39,01% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:11] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 31,75% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,04 GB
+	Porcentagem de memória restante: 38,83% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:15] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 52,89% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,07 GB
+	Porcentagem de memória restante: 38,46% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:19] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 33,49% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,10 GB
+	Porcentagem de memória restante: 38,16% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:23] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 31,22% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,12 GB
+	Porcentagem de memória restante: 37,95% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:25] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 65,45% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,12 GB
+	Porcentagem de memória restante: 37,97% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:29] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 46,89% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,13 GB
+	Porcentagem de memória restante: 37,85% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:31] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 46,15% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,76% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:35] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 50,75% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,80% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:49] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 35,98% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,27% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:53] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 28,31% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,18 GB
+	Porcentagem de memória restante: 37,42% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:02:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,48% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,54% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:04] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 31,00% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,58% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:08] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,48% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,57% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:10] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,00% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,63% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:14] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 43,66% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,94% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:18] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,75% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 37,02% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:23] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,46% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,28 GB
+	Porcentagem de memória restante: 36,42% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:29] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,94% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 37,01% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:03:54] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,12% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,17% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:03] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 21,83% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,27% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:09] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 17,43% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,31% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:15] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 22,82% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 36,99% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:19] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 30,47% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,19% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:22] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,04% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,33% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:23] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,32% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,31% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:27] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 48,32% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,31% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 57,97% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,32% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:30] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,36% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,22% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:31] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,12% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,22% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:32] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,49% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,23% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:36] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 20,53% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,18% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:36] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 19,05% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,18% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:38] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,27% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,21% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:41] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 37,88% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,19% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:41] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 36,56% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,20% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:45] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 41,49% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,93% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:49] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 30,65% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,92% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:50] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,91% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,12% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:53] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 58,50% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,21% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:54] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 57,52% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,08% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:55] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 54,97% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,06% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 20,80% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,07% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:04:59] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,69% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,08% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:01] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 44,26% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,06% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:03] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,00% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 37,05% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:05] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 38,26% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 37,00% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:19] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,71% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,17% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:22] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 21,64% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,16% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:23] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 34,37% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,17% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 32,84% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,18% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:34] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 30,59% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 36,98% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:35] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,72% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,22 GB
+	Porcentagem de memória restante: 36,96% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:38] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,73% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,91% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:39] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,63% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,92% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:40] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 33,18% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,92% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:41] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,67% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,23 GB
+	Porcentagem de memória restante: 36,91% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:44] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 34,57% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,09% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:45] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 39,62% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,09% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:48] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 36,60% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,11% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:49] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 39,72% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,52% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:51] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 22,96% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,13 GB
+	Porcentagem de memória restante: 37,92% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:53] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,58% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,78% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:55] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,17% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,77% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:57] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 20,59% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,76% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:05:59] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,53% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,76% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:01] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 32,21% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,74% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:06] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 33,10% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,71% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:08] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 21,71% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,71% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:10] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 21,48% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,72% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:14] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,92% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,61% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:24] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 17,34% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,56% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:27] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,11% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,55% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:33] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,19% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,78% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:33] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 31,06% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,78% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:37] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,51% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,72% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:39] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 43,92% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,68% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:44] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 36,70% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,68% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:45] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 28,07% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,68% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:46] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 28,51% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,64% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:49] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 29,29% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,56% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:51] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,56% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,74% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:52] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 28,62% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,14 GB
+	Porcentagem de memória restante: 37,84% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:53] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,05% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,15 GB
+	Porcentagem de memória restante: 37,73% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:57] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 19,02% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,32% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:06:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 22,74% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,32% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:00] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,27% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,51% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:00] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,41% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,47% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:01] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 29,78% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,49% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:02] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,58% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,49% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:06] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 28,09% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,46% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:06] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 27,92% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,46% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:08] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 22,63% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,46% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:11] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,44% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,45% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:11] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,18% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,45% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:15] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 24,09% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,20% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:19] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,75% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,19 GB
+	Porcentagem de memória restante: 37,35% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:20] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,49% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,18 GB
+	Porcentagem de memória restante: 37,36% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:23] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 32,50% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,20% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:24] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 39,33% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,20 GB
+	Porcentagem de memória restante: 37,19% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:25] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 47,24% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,21 GB
+	Porcentagem de memória restante: 37,13% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 38,24% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,54% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:29] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 46,22% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,16 GB
+	Porcentagem de memória restante: 37,57% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:29] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 64,71% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,17 GB
+	Porcentagem de memória restante: 37,53% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:31] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 35,74% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 13,18 GB
+	Porcentagem de memória restante: 37,35% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:07:33] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 58,14% 
+	Máquina instável, utilização de processador acima do esperado 
+	Memória total: 16,92 GB
+	Memória em uso: 13,18 GB
+	Porcentagem de memória restante: 37,43% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:38:34] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 12,10% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,22 GB
+	Porcentagem de memória restante: 47,02% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:38:40] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 9,41% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,23 GB
+	Porcentagem de memória restante: 46,91% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:38:48] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 13,02% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,29 GB
+	Porcentagem de memória restante: 46,26% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:38:51] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 10,40% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,30 GB
+	Porcentagem de memória restante: 46,21% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:38:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 8,41% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,28 GB
+	Porcentagem de memória restante: 46,38% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:03] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 9,74% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,28 GB
+	Porcentagem de memória restante: 46,44% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:07] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 11,75% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,32 GB
+	Porcentagem de memória restante: 46,01% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:11] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 8,37% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,34 GB
+	Porcentagem de memória restante: 45,78% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:16] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 11,36% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,34 GB
+	Porcentagem de memória restante: 45,78% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:20] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 11,54% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,34 GB
+	Porcentagem de memória restante: 45,84% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 10,58% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,35 GB
+	Porcentagem de memória restante: 45,66% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:40] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 11,08% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,40 GB
+	Porcentagem de memória restante: 45,23% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:47] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 14,25% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,41 GB
+	Porcentagem de memória restante: 45,14% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:39:54] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 5,78% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,39 GB
+	Porcentagem de memória restante: 45,34% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:40:06] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 9,68% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,41 GB
+	Porcentagem de memória restante: 45,14% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:40:11] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 9,80% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,40 GB
+	Porcentagem de memória restante: 45,17% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:40:19] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 23,67% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,43 GB
+	Porcentagem de memória restante: 44,87% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/07 16:41:04] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 9,90% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 16,92 GB
+	Memória em uso: 12,14 GB
+	Porcentagem de memória restante: 47,84% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\Users\vitor.herculano\OneDrive - Accenture\Documents\SegundoSemestre\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+

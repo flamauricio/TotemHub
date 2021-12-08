@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.bandtec.cli.integracao.usuario.maquina;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-/**
- *
- * @author jotal
- */
 public class BuscarDadosTotem extends Totem{
 
     protected conectaBD config = new conectaBD();

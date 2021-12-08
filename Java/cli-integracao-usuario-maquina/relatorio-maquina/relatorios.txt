@@ -3643,3 +3643,888 @@
 	 
 }
 
+[2021/12/07 22:15:00] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 39,29% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 3,99 GB
+	Porcentagem de memória restante: 21,28% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:16:21] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,67% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 3,99 GB
+	Porcentagem de memória restante: 21,28% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:16:47] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,53% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,00 GB
+	Porcentagem de memória restante: 21,21% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:16:54] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 28,64% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,01 GB
+	Porcentagem de memória restante: 21,07% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:17:02] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 24,81% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,02 GB
+	Porcentagem de memória restante: 21,00% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:17:29] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 33,87% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,02 GB
+	Porcentagem de memória restante: 20,97% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:24:05] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 27,69% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,00 GB
+	Porcentagem de memória restante: 21,18% 
+	Máquina instável, utilização de memória acima do esperado 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:26:35] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 29,77% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,58 GB
+	Porcentagem de memória restante: 15,42% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:29:05] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,74% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,55 GB
+	Porcentagem de memória restante: 15,72% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:31:35] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 30,71% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,54 GB
+	Porcentagem de memória restante: 15,86% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:32:07] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 29,11% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,53 GB
+	Porcentagem de memória restante: 15,87% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:34:05] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 25,45% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,61 GB
+	Porcentagem de memória restante: 15,13% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:34:37] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 35,00% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,65 GB
+	Porcentagem de memória restante: 14,73% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:36:35] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,79% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,65 GB
+	Porcentagem de memória restante: 14,72% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:37:07] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 28,05% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,65 GB
+	Porcentagem de memória restante: 14,74% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:39:05] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 28,75% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,71 GB
+	Porcentagem de memória restante: 14,15% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:39:37] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 28,13% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,70 GB
+	Porcentagem de memória restante: 14,19% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:41:35] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 16,33% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,67 GB
+	Porcentagem de memória restante: 14,51% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:42:07] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 14,36% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,68 GB
+	Porcentagem de memória restante: 14,43% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:44:05] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 15,23% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,65 GB
+	Porcentagem de memória restante: 14,69% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 22:44:37] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 24,94% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,70 GB
+	Porcentagem de memória restante: 14,21% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:16:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 12,18% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,91 GB
+	Porcentagem de memória restante: 12,13% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:17:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 34,27% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,94% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:18:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 38,60% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,73% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:19:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,48% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,90% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:21:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 38,27% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 5,03 GB
+	Porcentagem de memória restante: 10,94% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:22:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 27,37% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,73% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:23:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,55% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,96% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:24:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 23,58% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,92 GB
+	Porcentagem de memória restante: 12,03% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:26:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,40% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,83% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:27:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,15% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,86% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:28:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 34,60% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,80% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:29:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 21,47% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,89% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:31:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 23,45% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,77% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:32:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 25,26% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,85% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:33:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 28,43% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,74% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:34:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 27,34% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,87% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:36:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 29,41% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,80% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:37:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 30,15% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,91% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:38:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 23,83% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,86% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:39:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 27,08% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,91% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:41:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 24,74% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,90% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:42:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 34,44% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,94 GB
+	Porcentagem de memória restante: 11,86% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:43:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,34% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,93 GB
+	Porcentagem de memória restante: 11,94% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:44:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 43,19% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,98 GB
+	Porcentagem de memória restante: 11,45% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:46:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 24,94% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,68% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:47:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,11% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,75% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:48:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,28% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,70% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:49:58] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 29,35% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,96 GB
+	Porcentagem de memória restante: 11,65% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:51:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 26,42% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,98 GB
+	Porcentagem de memória restante: 11,38% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:52:28] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 32,68% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,97 GB
+	Porcentagem de memória restante: 11,53% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/07 23:53:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 27,59% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6,12 GB
+	Memória em uso: 4,95 GB
+	Porcentagem de memória restante: 11,74% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 00:35:33] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 17,22% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 61216317,44 GB
+	Memória em uso: 47927746,56 GB
+	Porcentagem de memória restante: 132885708,80% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 00:35:42] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 27,41% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 61216317,44 GB
+	Memória em uso: 47903703,04 GB
+	Porcentagem de memória restante: 133126144,00% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 00:35:47] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 23,32% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 61216317,44 GB
+	Memória em uso: 48439828,48 GB
+	Porcentagem de memória restante: 127764889,60% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 00:35:50] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 39,80% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 61216317,44 GB
+	Memória em uso: 48429506,56 GB
+	Porcentagem de memória restante: 127868108,80% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 00:38:03] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 24,43% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 61216317,44 GB
+	Memória em uso: 48812687,36 GB
+	Porcentagem de memória restante: 124036300,80% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 00:38:12] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 24,05% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 61216317,44 GB
+	Memória em uso: 48772833,28 GB
+	Porcentagem de memória restante: 124434841,60% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+
+[2021/12/08 17:09:24] 	 Funcionamento da máquina {
+
+	Identificação da máquina: bfebfbff000306d4 
+	Sistema operacional: Ubuntu 
+	CPU utilizada: 28,39% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 6121631744,00 GB
+	Memória em uso: 5283885056,00 GB
+	Porcentagem de memória restante: 8377466880,00% 
+	Máquina estável, baixo uso de memória 
+	Caminho do arquivo: relatorio-maquina/relatorios.txt 
+	Caminho absoluto do arquivo: /home/flavio/NetBeansProjects/cli-integracao-usuario-maquina/relatorio-maquina/relatorios.txt 
+	 
+}
+

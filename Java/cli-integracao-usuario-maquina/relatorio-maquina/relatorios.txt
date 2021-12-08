@@ -3643,3 +3643,108 @@
 	 
 }
 
+[2021/12/08 17:54:11] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 26,49% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,70 GB
+	Porcentagem de memória restante: 6,55% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/08 17:55:38] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 25,02% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,75 GB
+	Porcentagem de memória restante: 6,01% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/08 17:56:41] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 8,47% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,71 GB
+	Porcentagem de memória restante: 6,49% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/08 17:58:22] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 11,22% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,68 GB
+	Porcentagem de memória restante: 6,73% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/08 17:59:36] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 18,89% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,27 GB
+	Porcentagem de memória restante: 10,83% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/08 17:59:51] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 18,84% 
+	Máquina estável, baixo uso de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,29 GB
+	Porcentagem de memória restante: 10,68% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+
+[2021/12/08 18:00:06] 	 Funcionamento da máquina {
+
+	Identificação da máquina: BFEBFBFF000806EC 
+	Sistema operacional: Windows 
+	CPU utilizada: 32,38% 
+	Máquina estável, utilização moderada de processador 
+	Memória total: 8,35 GB
+	Memória em uso: 7,45 GB
+	Porcentagem de memória restante: 9,02% 
+	Máquina instável, utilização de memória crítica 
+	Caminho do arquivo: relatorio-maquina\relatorios.txt 
+	Caminho absoluto do arquivo: C:\TotemHub\Java\cli-integracao-usuario-maquina\relatorio-maquina\relatorios.txt 
+	 
+}
+

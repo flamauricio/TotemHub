@@ -21,7 +21,7 @@
 
 </head>
 
-<body id="page-top" onload=atualizacaoPeriodica()>
+<body id="page-top" onload=obterDadosGraficoPrimeiraVez(400)>
 
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -52,13 +52,13 @@
 
 
                     <div>
-                      <button id="id_historico" class="btn" name="id_historico" onclick="chamargraficos(400)">Totem 1</button>
-                      <button id="id_historico" onclick="chamargraficos(401)">Totem 3</button>
+                      <button id="id_historico1" class="btn-totem-now" name="id_historico" onclick="chamargraficos(400)">Totem 1</button>
+                      <button id="id_historico2" class="btn-totem" name="id_historico"  onclick="chamargraficos(401)">Totem 3</button>
                     </div>
                  
                     <div>
-                      <button id="id_historico" onclick="chamargraficos(402)">Totem 2</button>
-                      <button id="id_historico" onclick="chamargraficos(403)">Totem 4</button>
+                      <button id="id_historico3" class="btn-totem" onclick="chamargraficos(402)">Totem 2</button>
+                      <button id="id_historico4" class="btn-totem" onclick="chamargraficos(403)">Totem 4</button>
                     </div>
 
 
@@ -229,7 +229,7 @@ let proximaAtualizacaoC;
 let proximaAtualizacaoM;
 let usuario;
 
-window.onload = obterDadosGraficoPrimeiraVez(400);
+// window.onload = obterDadosGraficoPrimeiraVez(400);
 
 
 // function atualizacaoPeriodica() {
@@ -244,19 +244,19 @@ window.onload = obterDadosGraficoPrimeiraVez(400);
 
 function alterarCoresBotoes(id_historico) {
   console.log("executei alterarCoresBotoes");
-  botaoTotem1.className = "btn";
-  botaoTotem2.className = "btn";
-  botaoTotem3.className = "btn";
-  botaoTotem4.className = "btn";
+  id_historico1.className = "btn-totem";
+  id_historico2.className = "btn-totem";
+  id_historico3.className = "btn-totem";
+  id_historico4.className = "btn-totem";
 
   if (id_historico == "400") {
-    botaoCaminhao1.className += " btn-now";
+    id_historico1.className += "btn-now-totem";
   } else if (id_historico == "401") {
-    botaoCaminhao2.className += " btn-now";
+    id_historico2.className += "btn-now-totem";
   } else if (id_historico == "402") {
-    botaoCaminhao3.className += " btn-now";
+    id_historico3.className += "btn-now-totem";
   } else if (id_historico == "403") {
-    botaoCaminhao4.className += " btn-now";
+    id_historico4.className += "btn-now-totem";
   }
 }
 
@@ -266,7 +266,7 @@ function chamargraficos(id_historico) {
     obterDadosGraficoPrimeiraVez(id_historico);
     atualizarGraficoC(id_historico);
     atualizarGraficoM(id_historico);
-    // alterarCoresBotoes(id_leitura);    
+    alterarCoresBotoes(id_historico);    
 }
 
  // neste JSON tem que ser 'labels', 'datasets' etc, porque é o padrão do Chart.js

@@ -29,7 +29,7 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 		//abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `SELECT TOP ${limite_linhas} 
 		id_historico,
-		cpu_totem_em_uso, 
+		cpu_totem_em_uso,
 		memoria_em_uso,
 		memoria_total,
 		sistema_operacional,

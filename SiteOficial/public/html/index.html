@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>TotemHub - Dashboard</title>
+    <link rel="stylesheet" href="../css/root.css">
 
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -20,7 +21,7 @@
 
 </head>
 
-<body id="page-top" onload="chamargraficos(id_historico)">
+<body id="page-top" onload=atualizacaoPeriodica()>
 
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -51,7 +52,7 @@
 
 
                     <div>
-                      <button id="id_historico" name="id_historico" onclick="chamargraficos(400)">Totem 1</button>
+                      <button id="id_historico" class="btn" name="id_historico" onclick="chamargraficos(400)">Totem 1</button>
                       <button id="id_historico" onclick="chamargraficos(401)">Totem 3</button>
                     </div>
                  
@@ -106,7 +107,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                               memória ram em uso (%)</div>
+                                               Utilização CPU (%)</div>
                                                <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                                                 <div class="col-auto">
                                                     <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
@@ -130,18 +131,11 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                memória de disco em uso (%)
+                                                Utilização Memoria Ram(%)
                                             </div>
                                             <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
+                                                    <div id="div_memoria" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -237,15 +231,23 @@ let usuario;
 
 window.onload = obterDadosGraficoPrimeiraVez(400);
 
-// verificar_autenticacao();
+
+// function atualizacaoPeriodica() {
+//         obterdadosporestufa(400);
+//         obterdadosporestufa(401);
+//         obterdadosporestufa(402);
+//         obterdadosporestufa(403);
+
+//         setTimeout(atualizacaoPeriodica, 5000);
+//     }
 
 
 function alterarCoresBotoes(id_historico) {
   console.log("executei alterarCoresBotoes");
-  botaoCaminhao1.className = "btn";
-  botaoCaminhao2.className = "btn";
-  botaoCaminhao3.className = "btn";
-  botaoCaminhao4.className = "btn";
+  botaoTotem1.className = "btn";
+  botaoTotem2.className = "btn";
+  botaoTotem3.className = "btn";
+  botaoTotem4.className = "btn";
 
   if (id_historico == "400") {
     botaoCaminhao1.className += " btn-now";
@@ -350,6 +352,7 @@ function obterDadosGraficoPrimeiraVez(id_historico) {
           console.log(resposta.cpu_totem_em_uso); // retorna undefined
           console.log(resposta.memoria_em_uso);
           console.log(resposta); // retorna [array(7), array(7)]
+          // div_cpu.innerHTML = resposta.memoria_em_uso;
 
           var dadosC = {
             labels: [],
@@ -427,6 +430,8 @@ function atualizarGraficoC(id_historico, dadosC) {
           dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
           dadosC.datasets[0].data.push(novoRegistro.cpu_totem_em_uso); // incluir uma nova leitura de temperatura
           
+          div_cpu.innerHTML = `${novoRegistro.cpu_totem_em_uso}%`;
+          div_memoria.innerHTML = `${novoRegistro.memoria_em_uso}%`;
 
           console.log("meu totem é o " + id_historico);
 
@@ -466,7 +471,7 @@ function atualizarGraficoM(id_historico, dadosM) {
           dadosM.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
           dadosM.datasets[0].data.shift(); // apagar o primeiro de temperatura
           dadosM.datasets[0].data.push(novoRegistro.memoria_em_uso); // incluir uma nova leitura de temperatura
-
+          
           console.log("meu totem é o " + id_historico);
 
           window.grafico_linhaM.update();

@@ -20,7 +20,7 @@
 
 </head>
 
-<body id="page-top" onload="chamargraficos(400)">
+<body id="page-top" onload="chamargraficos(id_historico)">
 
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -49,20 +49,15 @@
                     aria-expanded="true" aria-controls="collapseTwo" style="display: flex;">
                     <i class="fas fa-fw fa-cog" style="padding-top: 4%;"></i>
 
-                    <!-- <select class="form-select" aria-label="Default select example" id="id_historico" name="id_hitorico">
-                        <option value="400">Totem 1</option>
-                        <option value="401">Totem 2</option>
-                        <option value="402">Totem 3</option>
-                    </select> -->
 
                     <div>
-                      <button id="botaoEstufa4" onclick="chamargraficos(400)">Totem 1</button>
-                      <button id="botaoEstufa4" onclick="chamargraficos(401)">Totem 3</button>
+                      <button id="id_historico" name="id_historico" onclick="chamargraficos(400)">Totem 1</button>
+                      <button id="id_historico" onclick="chamargraficos(401)">Totem 3</button>
                     </div>
                  
                     <div>
-                      <button id="botaoEstufa4" onclick="chamargraficos(402)">Totem 2</button>
-                      <button id="botaoEstufa4" onclick="chamargraficos(403)">Totem 4</button>
+                      <button id="id_historico" onclick="chamargraficos(402)">Totem 2</button>
+                      <button id="id_historico" onclick="chamargraficos(403)">Totem 4</button>
                     </div>
 
 
@@ -114,14 +109,10 @@
                                                memória ram em uso (%)</div>
                                                <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -244,7 +235,7 @@ let proximaAtualizacaoC;
 let proximaAtualizacaoM;
 let usuario;
 
-window.onload = obterDadosGraficoPrimeiraVez(id_historico);
+window.onload = obterDadosGraficoPrimeiraVez(400);
 
 // verificar_autenticacao();
 
@@ -393,9 +384,11 @@ function obterDadosGraficoPrimeiraVez(id_historico) {
 
             dadosM.labels.push(registro.momento_grafico);
             dadosM.datasets[0].data.push(registro.memoria_em_uso);
-
+            
             dadosC.labels.push(registro.momento_grafico);
             dadosC.datasets[0].data.push(registro.cpu_totem_em_uso);
+
+            
           }
           console.log(JSON.stringify(dadosC));
           console.log(JSON.stringify(dadosM));
@@ -419,20 +412,21 @@ function obterDadosGraficoPrimeiraVez(id_historico) {
 
 function atualizarGraficoC(id_historico, dadosC) {
   console.log("executei atualizarGraficoC");
-  fetch(`/leituras/cliente/${id_historico}`, { cache: "no-store" })
+  fetch(`/leituras/cliente/${id_historico}`)
     .then(function (response) {
       console.log(
-        "Estou tentando pegar id_leitura da CPU= ", id_historico);
+        "Estou tentando pegar id_historico da CPU= ", id_historico);
       if (response.ok) {
         response.json().then(function (novoRegistro) {
-          console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-          console.log(`Dados atuais do gráfico: ${dadosC}`);
+          console.log(`Dados recebidos de CPU: ${JSON.stringify(novoRegistro)}`);
+          console.log(`Dados atuais do gráfico de CPU: ${dadosC}`);
 
           // tirando e colocando valores no gráfico
           dadosC.labels.shift(); // apagar o primeiro
           dadosC.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
           dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
           dadosC.datasets[0].data.push(novoRegistro.cpu_totem_em_uso); // incluir uma nova leitura de temperatura
+          
 
           console.log("meu totem é o " + id_historico);
 
@@ -458,19 +452,20 @@ function atualizarGraficoC(id_historico, dadosC) {
 
 function atualizarGraficoM(id_historico, dadosM) {
   console.log("executei atualizarGraficoM");
-  fetch(`/leituras/ultimas/${id_historico}`, { cache: "no-store" })
+  fetch(`/leituras/cliente/${id_historico}`)
     .then(function (response) {
-      console.log("Estou tentando pegar id_historico da Memoria = ", id_historico);
+      console.log(
+        "Estou tentando pegar id_historico da Memoria = ", id_historico);
       if (response.ok) {
         response.json().then(function (novoRegistro) {
-          console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-          console.log(`Dados atuais do gráfico: ${dadosM}`);
+          console.log(`Dados recebidos de CPU: ${JSON.stringify(novoRegistro)}`);
+          console.log(`Dados atuais do gráfico de CPU: ${dadosM}`);
 
           // tirando e colocando valores no gráfico
           dadosM.labels.shift(); // apagar o primeiro
           dadosM.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
-          dadosM.datasets[0].data.shift(); // apagar o primeiro de umidade
-          dadosM.datasets[0].data.push(novoRegistro.memoria_em_uso); // incluir uma nova leitura de umidade
+          dadosM.datasets[0].data.shift(); // apagar o primeiro de temperatura
+          dadosM.datasets[0].data.push(novoRegistro.memoria_em_uso); // incluir uma nova leitura de temperatura
 
           console.log("meu totem é o " + id_historico);
 

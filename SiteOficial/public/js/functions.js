@@ -45,6 +45,27 @@ function obterPublicacoes2() {
         });
 }
 
+function obterPublicacoes3() {
+
+    fetch(`/publicacoes/exibir`)
+    
+        .then(resposta => {
+            
+            if (resposta.ok) {
+                console.log("resposta:", resposta);
+                resposta.json().then(function (resposta) {
+                    atualizarFeed2(resposta);
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+        .catch(function (error) {
+            console.error(`Erro na obtenção das publicações: ${error.message}`);
+        });
+}
+
 function atualizarFeed(usuarios) {
     console.log(usuarios);
     var feedId = document.getElementById("feed_id");

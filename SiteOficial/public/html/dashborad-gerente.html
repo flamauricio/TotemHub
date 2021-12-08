@@ -11,7 +11,7 @@
     <title>Dashboard - Gerente</title>
 </head>
 
-<body>
+<body onload="atualizarFeed()">
     <main>
         <div>
             <div class="container">
@@ -32,10 +32,9 @@
                 <div class="card-container">
                     <div class="card">
                         <p class="center yellow">
-                            Total de avaliações
+                            Total de avaliações <br>
                         </p>
-                        <p class="center">
-                            100
+                        <p onload="getAvalicoes()" class="center">
                         </p>
                     </div>
 
@@ -75,7 +74,7 @@
                     <option value="3">Triste</option>
                 </select>
 
-                <div class="card-comment" id="feed_container"></div>
+                <div id="myDepoiments"></div>
                    
                 </textarea>
             </div>
@@ -86,28 +85,47 @@
 </html>
 <script>
 
-    function atualizarFeed(publicacoes) {
-        var feed = document.getElementById("feed_container");
-        feed.innerHTML = "";
-        for (let i = 0; i < publicacoes.length; i++) {
-            var publicacao = publicacoes[i];
+    function atualizarFeed() {
+        var content = "";
+        
+        fetch("/publicacoes/exibir")
+        .then(resultado => {
+            return resultado.json()
+        })
+        .then(myJson => {
+            let result = myJson
+            
+            for (i = 0; i < result.length; i++) {
+                
+                    content +=
+                        `<div class="card-comment">${result[i].mensagem} <br>
+                        Id comentário: ${result[i].id_feedback}</div>`
+                        ;
+                }
+                document.getElementById('myDepoiments').innerHTML = content;
+            })
+    }
 
-            var divPublicacao = document.createElement("div")
-            var divNome = document.createElement("div")
-            var divDescricao = document.createElement("div")
+    function getAvalicoes(){
+        console.log("peguei")
 
-            divNome.innerHTML = `${feedback.id_feedback}:`;
-            divDescricao.innerHTML = feedback.mensagem;
+        fetch(`/publicacoes/exibir-total`, {
+            method: "GET",
+            // body: formulario
+        }).then(resposta => {
 
-            divPublicacao.className = "publicacao"
-            divNome.className = "nome";
-            divDescricao.className = "descricao";
-
-            divPublicacao.appendChild(divNome);
-            divPublicacao.appendChild(divDescricao);
-
-            feed.appendChild(divPublicacao);
-        }
+            if (resposta.ok) {
+                // window.location.href = 'dashborad-gerente.html';
+                // obterPublicacoes3();
+            } else {
+                console.log('Erro ao publicar!');
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+        });
+        return false;
     }
     
 </script>

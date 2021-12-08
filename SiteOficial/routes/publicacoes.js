@@ -1,17 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
-var feedback = require('../models').feedback;
+var Feedback = require('../models').Feedback;
 
 /* ROTA QUE RECUPERA CRIA UMA PUBLICAÇÃO */
-router.post('/publicar/:idUsuario', function(req, res, next) {
-    console.log("Iniciando Publicação...")
+router.post('/cadastrar/', function(req, res, next) {
+    console.log("Cadastrando feedback")
     
-	let id_feedback = req.params.id_feedback;
-
-    feedback.create({
+    Feedback.create({
         pontuacao: req.body.pontuacao,
-        fk_estacao: id_feedback
+        fk_estacao: req.body.estacao,
+        mensagem: req.body.mensagem
     }).then(resultado => {
         console.log("Post realizado com sucesso!!");
         res.send(resultado);
@@ -21,6 +20,44 @@ router.post('/publicar/:idUsuario', function(req, res, next) {
         res.status(500).send(erro.message);
     })
 })
+
+router.get('/exibir/', function (req, res, next) {
+	console.log('Recuperando feedbacks');
+
+	let instrucaoSql = `SELECT * FROM feedback;`;
+
+	sequelize.query(instrucaoSql, {
+		model: Feedback,
+		mapToModel: true
+	})
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
+});
+
+router.get('/exibir-total/:estacao', function (req, res, next) {
+	console.log('Contagem feedbacks ');
+
+    var fk_estacao = req.params.estacao;
+
+	let instrucaoSql = `SELECT count(pontuacao) * FROM feedback WHERE fk_estacao = ${fk_estacao};`;
+
+	sequelize.query(instrucaoSql, {
+		model: Feedback,
+		mapToModel: true
+	})
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
+});
 
 /* ROTA QUE RECUPERA TODAS AS PUBLICAÇÕES */
 router.get('/', function(req, res, next) {

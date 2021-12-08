@@ -28,13 +28,15 @@ router.get('/ultimas/:id_historico', function(req, res, next) {
 	} else if (env == 'production') {
 		//abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `SELECT TOP ${limite_linhas} 
-		cpu_totem_em_uso, 
+		id_historico,
+		cpu_totem_em_uso,
 		memoria_em_uso,
 		memoria_total,
 		sistema_operacional,
 		horario_totem as momento_grafico
 		FROM historico_totem
-		WHERE fk_totem = ${id_historico}`;
+		WHERE fk_totem = ${id_historico}
+		order by id_historico desc`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
@@ -67,8 +69,9 @@ router.get('/cliente/:id_historico', function(req, res, next) {
 						from controle where fk_sensor = ${id_leitura} order by id_leitura desc limit 1`;
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server
-		instrucaoSql = `SELECT TOP 1 cpu_totem_em_uso, memoria_em_uso, fk_totem 
-						FROM historico_totem`;
+		instrucaoSql = `SELECT TOP 1 cpu_totem_em_uso, memoria_em_uso, horario_totem as 						momento_grafico, fk_totem 
+						FROM historico_totem WHERE fk_totem = ${id_leitura} order 
+						by id_historico desc`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}

@@ -11,3 +11,11 @@
     --footer: #363839;
     font-size: 62.5%;
 }
+
+.btn-totem{
+    background-color: gray;
+}
+
+.btn-now-totem{
+    color: red;
+}

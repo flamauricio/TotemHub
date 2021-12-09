@@ -17,16 +17,18 @@
     <header>
 
         <div class="container">
-            <div class="logo">
-                <!-- <img src="img/TotemHub.svg" alt=""> -->
+            <a href="../index.html">
+                <div class="logo">
+            </a>
+            <!-- <img src="img/TotemHub.svg" alt=""> -->
             </div>
             <!--logo-->
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="../index.html">Tabela de Funcionários</a></li>
-                    <li><a href="../index.html">Feedbacks</a></li>
+                    <li><a href="../html/tabela.html">Tabela de Funcionários</a></li>
+                    <li><a href="../html/dashborad-gerente.html">Feedbacks</a></li>
                     <li><a style="color: #FFC702;">Cadastrar</a></li>
-                    <li><a href="login.html">Sair</a></li>
+                    <li><a href="../index.html">Sair</a></li>
                 </ul>
             </nav>
 
@@ -86,7 +88,7 @@
 
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         var idGerente = sessionStorage.id_usuario_meuapp;
-        
+
         fetch(`/usuarios/cadastrar/${idGerente}`, {
             method: "POST",
             body: formulario
@@ -109,5 +111,4 @@
 
         return false;
     }
-
 </script>

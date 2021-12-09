@@ -18,8 +18,10 @@
     <header>
 
         <div class="container">
-            <div class="logo">
-                <!-- <img src="img/TotemHub.svg" alt=""> -->
+            <a href="../index.html">
+                <div class="logo">
+            </a>
+            <!-- <img src="img/TotemHub.svg" alt=""> -->
             </div>
             <!--logo-->
             <nav class="desktop-menu">
@@ -46,7 +48,7 @@
                 <label class="custom-selector">
                     <select name="estacao">
                         <option selected disabled>Selecione</option>
-                        <option value="100">Consolacão</option>
+                        <option value="100">Barueri</option>
                         <option value="101">Pinheiros</option>
                         <option value="102">República</option>
                     </select>
@@ -65,11 +67,11 @@
 
 
                 <h3>Deseja deixar alguma mensagem extra? </h3>
-                    <div class="input-field">
-                        <input type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui">
-                        <div class="underline"></div>
-                    </div>
-                    <input type="submit" id="btn_publicar">
+                <div class="input-field">
+                    <input type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui">
+                    <div class="underline"></div>
+                </div>
+                <input value="Enviar" type="submit" id="btn_publicar">
             </form>
         </div>
     </header>
@@ -78,19 +80,21 @@
 </html>
 
 <script>
-
     function publicar() {
         console.log("entrei!")
 
         var formulario = new URLSearchParams(new FormData(form_publicar));
         // var id_feedback = sessionStorage.id_leads_meuapp;s
         fetch(`/publicacoes/cadastrar/`, {
+
             method: "POST",
             body: formulario
         }).then(resposta => {
 
             if (resposta.ok) {
-                // window.location.href = 'dashborad-gerente.html';
+
+                window.location.reload();
+                alert("Feedback enviado! Obrigado <3")
                 obterPublicacoes3();
             } else {
                 console.log('Erro ao publicar!');
@@ -108,7 +112,7 @@
         fetch("/publicacoes")
             .then(resposta => {
                 if (resposta.ok) {
-                    resposta.json().then(function (resposta) {
+                    resposta.json().then(function(resposta) {
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
 
                         atualizarFeed(resposta);
@@ -119,7 +123,7 @@
                     console.log("Nenhum resultado encontrado ou erro na API");
                 }
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.error(`Erro na obtenção das publicações: ${error.message}`);
             });
     }
@@ -128,7 +132,7 @@
         fetch(`/publicacoes/${id_feedback}`)
             .then(resposta => {
                 if (resposta.ok) {
-                    resposta.json().then(function (resposta) {
+                    resposta.json().then(function(resposta) {
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                         alert(JSON.stringify(resposta))
                     });
@@ -136,7 +140,7 @@
                     console.error('Nenhum dado encontrado ou erro na API');
                 }
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.error(`Erro na obtenção das publicações do usuário: ${error.message}`);
             });
     }
@@ -218,5 +222,4 @@
     // function finalizar_sessao() {
     //     fetch(`/usuarios/sair/${login_usuario}`, { cache: 'no-store' });
     // }
-
 </script>

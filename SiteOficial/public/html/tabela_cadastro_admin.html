@@ -31,7 +31,7 @@
             <ul>
                 <li><a class="text-size" href="../html/cadastro_admin.html">Cadastro</a></li>
                 <li><a class="text-size" style="color: #FFC702;">Tabela de Gerentes</a></li>
-                <li><a class="text-size" href="../index.html">Sair</a></li>
+                <li><a class="text-size" onclick="logoff()">Sair</a></li>
             </ul>
         </nav>
 
@@ -227,6 +227,17 @@
         });
         return false;
     }
+
+    function logoff() {
+        sessionStorage.clear(); 
+        redirecionar_login();
+    }
+
+    function redirecionar_login() { 
+        window.location.href = 'novo_login.html';
+    
+    }
+
 
     function update() {
 

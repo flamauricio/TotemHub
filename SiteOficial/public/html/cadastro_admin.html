@@ -27,7 +27,7 @@
                 <ul>
                     <li><a href="../html/cadastro_admin.html">Cadastro de Gerentes</a></li>
                     <li><a href="../html/tabela_cadastro_admin.html">Tabela de Gerentes</a></li>
-                    <li><a href="../index.html">Sair</a></li>
+                    <li><a onclick="logoff()">Sair</a></li>
                 </ul>
             </nav>
 
@@ -83,6 +83,17 @@
 </html>
 
 <script>
+
+function logoff() {
+        sessionStorage.clear(); 
+        redirecionar_login();
+    }
+
+    function redirecionar_login() { 
+        window.location.href = 'novo_login.html';
+    
+    }
+
     function cadastrar() {
 
         var formulario = new URLSearchParams(new FormData(form_cadastro));

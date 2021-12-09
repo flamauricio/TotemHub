@@ -107,7 +107,7 @@ nav.mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
-    background-image: url(./img/menu.png);
+    background-image: url(../img/menu.png);
     background-size: 100% 100%;
     cursor: pointer;
     margin-top: 35px;

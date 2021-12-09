@@ -85,13 +85,13 @@
 
           <div class="row" style="padding-top: 10px;">
             <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card border-left-primary shadow h-100 py-2" id="fundo_cpu" style="background-color: rgb(255, 255, 255);">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="font-size: smaller;">
                         status memória de disco</div>
-                      <div id="Estado_alerta" class="h5 mb-0 font-weight-bold text-gray-800" style="margin-top: 19px;">
+                      <div id="Estado_alerta" class="h5 mb-0 font-weight-bold text-gray-800" style="margin-top: 19px; font-size: x-large;">
                         Buscando Estado de Alerta</div>
                     </div>
                   </div>
@@ -99,16 +99,17 @@
               </div>
             </div>
 
-            <div class="col-xl-3 col-md-6 mb-4" >
-              <div class="card border-left-success shadow h-100 py-2">
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2" style="background-color: rgb(255, 255, 255);">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1" style="font-size: smaller;">
                         Utilização CPU (%)</div>
                       <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                         <div class="col-auto">
-                          <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Buscando Dados CPU</div>
+                          <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: x-large;">
+                            Buscando Dados CPU</div>
                         </div>
                         <div class="col">
 
@@ -124,17 +125,17 @@
             </div>
 
             <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
+              <div class="card border-left-info shadow h-100 py-2" style="background-color: rgb(255, 255, 255);">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="font-size: smaller;">
                         Utilização Memoria Ram(%)
                       </div>
                       <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                         <div class="col-auto">
-                          <div id="div_memoria" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Buscando Dados
-                            Memoria</div>
+                          <div id="div_memoria" class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: x-large;">
+                            Buscando Dados Memoria</div>
                         </div>
                       </div>
                     </div>
@@ -147,14 +148,14 @@
             </div>
 
             <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
+              <div class="card border-left-warning shadow h-100 py-2" style="background-color: rgb(255, 255, 255);">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" style="font-size: smaller;">
                         Sistema Operacional</div>
-                      <br>
-                      <div id="div_so" class="h5 mb-0 font-weight-bold text-gray-800">Buscando Dados</div>
+                      <div id="div_so" class="h5 mb-0 font-weight-bold text-gray-800" style="margin-top: 19px; font-size: x-large;">
+                        Buscando Dados</div>
                     </div>
                   </div>
                 </div>
@@ -164,7 +165,7 @@
 
           <div class="row">
             <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4" style="height: 370px;">
+              <div class="card shadow mb-4" style="height: 370px;" style="background-color: rgb(255, 255, 255);">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Grafico da CPU</h6>
                 </div>
@@ -430,42 +431,40 @@
             // 
 
             var cpu_dados = `${novoRegistro.cpu_totem_em_uso}`;
-            div_cpu.innerHTML = Number(cpu_dados).toFixed(2) + "%";
             var memoria_dados = `${novoRegistro.memoria_em_uso}`;
             var memoria_total = `${novoRegistro.memoria_total}`;
             var memoria_media = (memoria_dados * 100) / memoria_total;
-            div_memoria.innerHTML = Number(memoria_media).toFixed(2) + "%";
             div_so.innerHTML = (novoRegistro.sistema_operacional);
 
             if (memoria_media <= 20) {
-              Estado_alerta.innerHTML = `<div style="color: green;">OK</div>`;
+              Estado_alerta.innerHTML = `<div style="color: green; font-size: x-large;">OK</div>`;
             } else if (memoria_media <= 50) {
-              Estado_alerta.innerHTML = `<div style="color: yellow;">Alerta</div>`;
+              Estado_alerta.innerHTML = `<div style="color: yellow; font-size: x-large;">Alerta</div>`;
             } else if (memoria_media <= 80) {
-              Estado_alerta.innerHTML = `<div style="color: orange;">Atenção</div>`;
+              Estado_alerta.innerHTML = `<div style="color: orange; font-size: x-large;">Atenção</div>`;
             } else {
-              Estado_alerta.innerHTML = `<div style="color: red;">Critico</div>`;
+              Estado_alerta.innerHTML = `<div style="color: red; font-size: x-large;">Critico</div>`;
             }
 
             if(cpu_dados <= 20){
-              div_cpu.innerHTML = `<div style="color: green;">${Number(memoria_media).toFixed(2)}%</div>`;
+              div_cpu.innerHTML = `<div style="color: green; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
             } else if (cpu_dados <= 50) {
-              div_cpu.innerHTML = `<div style="color: yellow;">${Number(memoria_media).toFixed(2)}%</div>`;
+              div_cpu.innerHTML = `<div style="color: yellow; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
             } else if (cpu_dados <= 80) {
-              div_cpu.innerHTML = `<div style="color: orange;">${Number(memoria_media).toFixed(2)}%</div>`;
+              div_cpu.innerHTML = `<div style="color: orange; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
             } else {
-              div_cpu.innerHTML = `<div style="color: red;">${Number(memoria_media).toFixed(2)}%</div>`;
+              div_cpu.innerHTML = `<div style="color: red; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
             }
 
-            // if(cpu_dados <= 20){
-            //   fundo_cpu.innerHTML.style = "background-color: green";
-            // } else if (cpu_dados <= 50) {
-            //   fundo_cpu.innerHTML.style = "background-color: yellow";
-            // } else if (cpu_dados <= 80) {
-            //   fundo_cpu.innerHTML.style = "background-color: orange";
-            // } else {
-            //   fundo_cpu.innerHTML.style = "background-color: red";
-            // }
+            if(memoria_media <= 20){
+              div_memoria.innerHTML = `<div style="color: green; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            } else if (memoria_media <= 50) {
+              div_memoria.innerHTML = `<div style="color: yellow; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            } else if (memoria_media <= 80) {
+              div_memoria.innerHTML = `<div style="color: orange; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            } else {
+              div_memoria.innerHTML = `<div style="color: red; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            }
 
             console.log("meu totem é o " + id_historico);
 

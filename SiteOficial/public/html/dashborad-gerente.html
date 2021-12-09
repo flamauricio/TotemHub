@@ -20,8 +20,8 @@
                         <a href="../index.html"><img src="../img/logo-totem-hub.png" alt="logo totem hub"></a>
                     </div>
                     <div>
-                        <a href="../index.html">
-                            <img style="height: 40px;" src="../img/logout.png" alt="ícone para sair da página">
+                        <a>
+                            <img style="height: 40px;" src="../img/logout.png" onclick="logoff()" alt="ícone para sair da página">
                         </a>
                     </div>
                 </div>
@@ -80,6 +80,18 @@
 
 </html>
 <script>
+
+
+function logoff() {
+        sessionStorage.clear(); 
+        redirecionar_login();
+    }
+
+    function redirecionar_login() { 
+        window.location.href = 'cadastro.html';
+    
+    }
+
     function comment(estacaoGerente) {
         if (filtro.value == 1) {
             var estacaoGerente = sessionStorage.estacao_usuario_meuapp

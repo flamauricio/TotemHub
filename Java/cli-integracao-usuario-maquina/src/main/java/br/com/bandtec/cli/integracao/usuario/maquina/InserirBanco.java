@@ -41,11 +41,13 @@ public class InserirBanco extends HistoricoTotem {
 
         String horarioAtual = formatar.format(LocalDateTime.now());
         
+        Alertas alertas = new Alertas();
+        
         String sql
                 = ("INSERT INTO historico_totem "
                 + "(fk_totem,cpu_totem_em_uso, memoria_em_uso, memoria_total, "
-                + "sistema_operacional, status_processador, status_memoria, horario_totem) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                + "sistema_operacional, horario_totem) "
+                + "VALUES (?, ?, ?, ?, ?, ?)");
 
         con.update(
                 sql,
@@ -54,8 +56,6 @@ public class InserirBanco extends HistoricoTotem {
                 super.getMemoria_em_uso(),
                 super.getMemoria_total(),
                 super.getSistema_operacional(),
-                super.getStatus_processador(),
-                super.getStatus_memoria(),
                 horarioAtual
         );
 
@@ -67,7 +67,7 @@ public class InserirBanco extends HistoricoTotem {
         TimerTask t1 = new TimerTask() {
             @Override
             public void run() {
-                arquivo.gerarLog("C:\\TotemHub\\Java\\cli-integracao-usuario-maquina");
+                arquivo.gerarLog("C:\\TotemHub");
                 inserirDadoBanco();
             };
         }; 

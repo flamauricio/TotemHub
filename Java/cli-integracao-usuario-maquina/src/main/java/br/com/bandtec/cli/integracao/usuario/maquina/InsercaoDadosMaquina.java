@@ -4,8 +4,6 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.memoria.Memoria;
 import com.github.britooo.looca.api.group.processador.Processador;
 import com.github.britooo.looca.api.group.sistema.Sistema;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class InsercaoDadosMaquina extends VisualizacaoMaquina{
     

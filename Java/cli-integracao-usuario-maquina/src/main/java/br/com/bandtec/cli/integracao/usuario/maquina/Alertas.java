@@ -11,18 +11,18 @@ public class Alertas {
         } else if(dado <= 80){
             alerta = "Máquina instável, utilização de processador acima do esperado";
         } else {
-            alerta = "Máquina instável, utilização de processador crítica";
+            alerta = "Máquina crítica, utilização de processador crítica";
         }
         return alerta;
     }
     
     public String gerarAlerta(Double dadoMemoriaTotal, Double dadoMemoriaEmUso){
         
-        dadoMemoriaTotal = dadoMemoriaTotal * 0.1;
-        dadoMemoriaEmUso = dadoMemoriaEmUso * 0.1;
+//        dadoMemoriaTotal = dadoMemoriaTotal * 0.1;
+//        dadoMemoriaEmUso = dadoMemoriaEmUso * 0.1;
         
-        Double resultado = (dadoMemoriaTotal - dadoMemoriaEmUso) * 100;
-        
+        Double resultado =  100 - ((dadoMemoriaEmUso * 100) / dadoMemoriaTotal);
+
         String alerta;
         if(resultado <= 20){
             alerta = String.format

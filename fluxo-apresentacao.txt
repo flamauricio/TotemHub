@@ -1,0 +1,23 @@
+Fluxo Apresentação
+
+- Contextualização {slide 1-4} Bruno
+- Inovação {slide 5-6} Jorge
+- Organização {slide 7} Pedro
+- Diagrama de Software {slide 8} Pedro
+- Apresentação do Site {slide 9}
+    Fluxo Site
+    1ª Parte - Ecossistema de cadastros e permissões
+    * Index Pedro
+    * Login Admin - CRUD (Cadastro de gerente) Bruno
+    * Login Gerente - CRUD (Cadastro de agente) Nicolas
+    * Jframe com Slack Flavio
+    * Java assistent (cli + docker + log) Vitor
+    * Login Agente - Dashboard Flavio
+    
+
+    2ª Parte - Inovação
+    * Scannear QRCode Nicolas
+    * Tela de feedback Nicolas
+    * Login Gerente, Dashboard Gerente Vitor
+- Desafios {slide 10 - foco no docker} Jorge
+- Agradecimentos {slide 11} Bruno

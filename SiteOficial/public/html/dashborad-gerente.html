@@ -11,7 +11,7 @@
     <title>Dashboard - Gerente</title>
 </head>
 
-<body onload="atualizarFeed()">
+<body onload="atualizarFeed() , getAvalicoes()">
     <main>
         <div>
             <div class="container">
@@ -32,9 +32,10 @@
                 <div class="card-container">
                     <div class="card">
                         <p class="center yellow">
-                            Total de avaliações <br>
+                            <br> Total de avaliações
                         </p>
-                        <p onload="getAvalicoes()" class="center">
+
+                        <span id="teste" style="padding: 0px 110px;"></span>
                         </p>
                     </div>
 
@@ -75,7 +76,7 @@
                 </select>
 
                 <div id="myDepoiments"></div>
-                   
+
                 </textarea>
             </div>
         </div>
@@ -84,48 +85,61 @@
 
 </html>
 <script>
-
     function atualizarFeed() {
         var content = "";
-        
+
         fetch("/publicacoes/exibir")
-        .then(resultado => {
-            return resultado.json()
-        })
-        .then(myJson => {
-            let result = myJson
-            
-            for (i = 0; i < result.length; i++) {
-                
+            .then(resultado => {
+                return resultado.json()
+            })
+            .then(myJson => {
+                let result = myJson
+
+                for (i = 0; i < result.length; i++) {
+
                     content +=
                         `<div class="card-comment">${result[i].mensagem} <br>
-                        Id comentário: ${result[i].id_feedback}</div>`
-                        ;
+                        Id comentário: ${result[i].id_feedback}</div>`;
                 }
                 document.getElementById('myDepoiments').innerHTML = content;
             })
     }
 
-    function getAvalicoes(){
-        console.log("peguei")
 
-        fetch(`/publicacoes/exibir-total`, {
-            method: "GET",
-            // body: formulario
-        }).then(resposta => {
 
-            if (resposta.ok) {
-                // window.location.href = 'dashborad-gerente.html';
-                // obterPublicacoes3();
-            } else {
-                console.log('Erro ao publicar!');
-                resposta.text().then(texto => {
-                    console.error(texto);
-                    finalizarAguardar(texto);
-                });
-            }
-        });
-        return false;
+    function getAvalicoes(estacaoGerente) {
+        // aguardar();
+        var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+
+
+        fetch(`/publicacoes/${estacaoGerente}`)
+
+        .then(resultado => {
+                if (resultado.ok) {
+                    resultado.json().then(function(resultado) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resultado)}`);
+                        var result = JSON.stringify(resultado);
+                        console.log(`resultado: ${result}`);
+
+                        var string = result.split('[').join('')
+                        string = string.split('{').join('')
+                        string = string.split('"').join('')
+                        string = string.split('"').join('')
+                        string = string.split(':').join('')
+                        string = string.split('}').join('')
+                        string = string.split(']').join('')
+                        console.log(`resultado: ${string}`);
+
+                        teste.innerHTML = `${string}`;
+
+                    })
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+
+                }
+            })
+            .catch(function(error) {
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
     }
-    
 </script>

@@ -71,7 +71,7 @@ public class InserirBanco extends HistoricoTotem {
                 inserirDadoBanco();
             };
         }; 
-        this.timer.schedule(t1, 2000, 150000);
+        this.timer.schedule(t1, 2000, 15000);
     }
     
 }

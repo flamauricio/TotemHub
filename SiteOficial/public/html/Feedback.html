@@ -65,11 +65,11 @@
 
 
                 <h3>Deseja deixar alguma mensagem extra? </h3>
-                    <div class="input-field">
-                        <input type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui">
-                        <div class="underline"></div>
-                    </div>
-                    <input type="submit" id="btn_publicar">
+                <div class="input-field">
+                    <input type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui">
+                    <div class="underline"></div>
+                </div>
+                <input type="submit" id="btn_publicar">
             </form>
         </div>
     </header>
@@ -78,18 +78,19 @@
 </html>
 
 <script>
-
     function publicar() {
         console.log("entrei!")
 
         var formulario = new URLSearchParams(new FormData(form_publicar));
         // var id_feedback = sessionStorage.id_leads_meuapp;s
         fetch(`/publicacoes/cadastrar/`, {
+
             method: "POST",
             body: formulario
         }).then(resposta => {
 
             if (resposta.ok) {
+
                 // window.location.href = 'dashborad-gerente.html';
                 obterPublicacoes3();
             } else {
@@ -108,7 +109,7 @@
         fetch("/publicacoes")
             .then(resposta => {
                 if (resposta.ok) {
-                    resposta.json().then(function (resposta) {
+                    resposta.json().then(function(resposta) {
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
 
                         atualizarFeed(resposta);
@@ -119,7 +120,7 @@
                     console.log("Nenhum resultado encontrado ou erro na API");
                 }
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.error(`Erro na obtenção das publicações: ${error.message}`);
             });
     }
@@ -128,7 +129,7 @@
         fetch(`/publicacoes/${id_feedback}`)
             .then(resposta => {
                 if (resposta.ok) {
-                    resposta.json().then(function (resposta) {
+                    resposta.json().then(function(resposta) {
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                         alert(JSON.stringify(resposta))
                     });
@@ -136,7 +137,7 @@
                     console.error('Nenhum dado encontrado ou erro na API');
                 }
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.error(`Erro na obtenção das publicações do usuário: ${error.message}`);
             });
     }
@@ -218,5 +219,4 @@
     // function finalizar_sessao() {
     //     fetch(`/usuarios/sair/${login_usuario}`, { cache: 'no-store' });
     // }
-
 </script>

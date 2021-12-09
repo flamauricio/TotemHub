@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
         fk_totem: {
 			field: 'fk_totem',
 			type: DataTypes.STRING(100).BINARY,
+		},
+		sistema_operacional: {
+			field: 'sistema_operacional',
+			type: DataTypes.STRING,
 		},	
 		cpu_totem_em_uso: {
 			field: 'cpu_totem_em_uso',
@@ -24,6 +28,11 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		memoria_em_uso: {
 			field: 'memoria_em_uso',
+			type: DataTypes.DECIMAL,
+			allowNull: false
+		},
+		memoria_total: {
+			field: 'memoria_total',
 			type: DataTypes.DECIMAL,
 			allowNull: false
 		},

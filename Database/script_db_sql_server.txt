@@ -47,13 +47,13 @@ create table totem(
 );
 
 create table historico_totem(
-	id_historico int primary key identity (500, 1),
-    fk_totem varchar(60),
-    cpu_totem_em_uso decimal,
-    memoria_em_uso decimal,
-    memoria_total decimal,
+    id_historico int primary key identity (500, 1),
+    fk_totem int,
+    cpu_totem_em_uso Real,
+    memoria_em_uso Real,
+    memoria_total Real,
     sistema_operacional varchar(30),
-    horario_totem default char(19),
+    horario_totem char(19),
     status_processador varchar(60),
     status_memoria varchar(60),
     foreign key(fk_totem) references totem(id_totem)

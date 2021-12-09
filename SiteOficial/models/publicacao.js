@@ -6,7 +6,7 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 */
 
 module.exports = (sequelize, DataTypes) => {
-    let feedback = sequelize.define('Publicacao',{	
+    let Feedback = sequelize.define('Feedback',{	
 		id_feedback: {
 			field: 'id_feedback',
 			type: DataTypes.INTEGER,
@@ -30,11 +30,11 @@ module.exports = (sequelize, DataTypes) => {
         }
 	}, 
 	{
-		tableName: 'publicacao', 
+		tableName: 'feedback', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
 	});
 
-    return feedback;
+    return Feedback;
 };

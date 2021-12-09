@@ -21,21 +21,21 @@
 
     <div class="fundo">
         <div class="Img_centro">
-            <img src="../img/logo-totem-hub.svg" alt="logo"></a>
+            <a href="../index.html"> <img src="../img/logo-totem-hub.svg" alt="logo"></a>
         </div>
         <div class="enunciado">
             <h1>Realizar login como:</h1>
         </div>
         <div class="botao_um">
-            <a href="#modalLogin_agente" class="openmod"> <button onclick="agente()"> <b> Login Agente </b>
+            <a href="#modalLogin_agente" class="openmod"> <button onclick="agente()"> <b>Agente </b>
                 </button></a>
         </div>
         <div class="botao_dois">
-            <a href="#modalLogin_gerente" class="openmod"> <button onclick="gerente()"> <b> Login Gerente </b>
+            <a href="#modalLogin_gerente" class="openmod"> <button onclick="gerente()"> <b>Gerente </b>
                 </button></a>
         </div>
         <div class="botao_tres">
-            <a href="#modalLogin_admin" class="openmod"> <button onclick="admin()"> <b> Login Administrador </b>
+            <a href="#modalLogin_admin" class="openmod"> <button onclick="admin()"> <b>Administrador </b>
                 </button></a>
         </div>
 
@@ -79,9 +79,6 @@
 
     <!-- x para fechar o modal e referenciado como # para ser "alvo" no target -->
     <a onclick="fecha_gerente()" id="fechar_gerente" href="#fechar" title="Fechar" class="fechar">x</a>
-
-    
-    
 
     <div id="modalLogin_agente" class="modal">
 
@@ -172,7 +169,6 @@
 </html>
 
 <script>
-
     function nova_senha() {
         window.open("https://totemhub-bandtec.freshdesk.com/support/tickets/new");
     }
@@ -254,11 +250,12 @@
                 resposta.json().then(json => {
 
                     window.location.href = 'cadastro.html';
-
+                    sessionStorage.estacao_usuario_meuapp = json.fk_estacao;
                     sessionStorage.login_usuario_meuapp = json.login_gerente;
                     sessionStorage.nome_usuario_meuapp = json.nome_gerente;
                     sessionStorage.id_usuario_meuapp = json.id_gerente;
                     var idGerente = sessionStorage.id_usuario_meuapp;
+                    var estacaoGerente = sessionStorage.estacao_usuario_meuapp;
 
                 });
 
@@ -278,36 +275,35 @@
 
     function entrar_login_admin() {
 
-var formulario = new URLSearchParams(new FormData(form_login_admin));
+        var formulario = new URLSearchParams(new FormData(form_login_admin));
 
-fetch("/usuarios/autenticar_admin", {
-    method: "POST",
-    body: formulario
-}).then(resposta => {
+        fetch("/usuarios/autenticar_admin", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
 
-    if (resposta.ok) {
+            if (resposta.ok) {
 
-        resposta.json().then(json => {
+                resposta.json().then(json => {
 
-            window.location.href = 'tabela_cadastro_admin.html';
+                    window.location.href = 'tabela_cadastro_admin.html';
 
-            sessionStorage.login_usuario_meuapp = json.login;
-            sessionStorage.nome_usuario_meuapp = json.nome;
-            sessionStorage.id_usuario_meuapp = json.id;
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id;
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+                alert('Login incorreto');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
         });
 
-    } else {
-
-        console.log('Erro de login!');
-        alert('Login incorreto');
-
-        resposta.text().then(texto => {
-            console.error(texto);
-        });
+        return false;
     }
-});
-
-return false;
-}
-    
 </script>

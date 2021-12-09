@@ -206,6 +206,40 @@ body {
   cursor: pointer;
   padding-top: 5px;
 }
+.btnEntrar_admin {
+  background-color: #ffc702;
+  width: 150px;
+  border-radius: 15px;
+  height: 31px;
+  color: black;
+  font-size: 18px;
+  font-family: "Squada One", cursive;
+  transition: ease-out 0.3s;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.btnEntrar_admin :hover {
+  background-color: slateblue;
+}
+
+.btnEntrar_admin {
+  background-color: #ffc702;
+  width: 150px;
+  border-radius: 15px;
+  height: 31px;
+  color: black;
+  font-size: 18px;
+  font-family: "Squada One", cursive;
+  transition: ease-out 0.3s;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
 
 #agerente h1 {
   font-family: "Squada One", cursive;

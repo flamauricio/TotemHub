@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./SiteOficial/bin/www",
-    "postinstall": "cd SiteOficial && npm install"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",

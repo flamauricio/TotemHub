@@ -1,9 +1,8 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin: 0;
     border: 0;
-
 }
 
 .container {
@@ -16,7 +15,8 @@
 }
 
 .yellow {
-    color: #FFC702;;
+    color: #FFC702;
+    ;
 }
 
 .header {
@@ -38,16 +38,16 @@
 }
 
 .card-container {
-    margin: 0 auto; 
-    justify-content: space-between; 
-    display: flex; 
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
     margin-top: 22px;
 }
 
 .card {
-    border: 2px solid  #727070;
+    border: 3px solid #727070;
     height: 120px;
-    width: 230px; 
+    width: 230px;
     border-radius: 3px;
 }
 
@@ -58,10 +58,11 @@
 
 .card-comment {
     margin-top: 30px;
-    border: 2px solid  #727070;
+    border: 3px solid #727070;
     height: 120px;
-    width: 100%; 
+    width: 100%;
     border-radius: 3px;
+    padding: 5px;
 }
 
 textarea {

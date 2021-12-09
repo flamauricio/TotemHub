@@ -21,10 +21,10 @@ router.post('/cadastrar/', function(req, res, next) {
     })
 })
 
-router.get('/exibir/', function(req, res, next) {
+router.get('/exibir/:estacaoGerente', function(req, res, next) {
     console.log('Recuperando feedbacks');
-
-    let instrucaoSql = `SELECT * FROM feedback;`;
+    var estacaoGerente = req.params.estacaoGerente;
+    let instrucaoSql = `SELECT * FROM feedback WHERE fk_estacao = ${estacaoGerente};`;
 
     sequelize.query(instrucaoSql, {
             model: Feedback,
@@ -38,6 +38,67 @@ router.get('/exibir/', function(req, res, next) {
             res.status(500).send(erro.message);
         });
 });
+
+
+router.get('/exibir-comentarios-bons/:estacaoGerente', function(req, res, next) {
+    console.log('Recuperando feedbacks');
+    var estacaoGerente = req.params.estacaoGerente;
+    let instrucaoSql = `SELECT * FROM feedback WHERE fk_estacao = ${estacaoGerente} AND pontuacao = 1;`;
+
+    sequelize.query(instrucaoSql, {
+            model: Feedback,
+            mapToModel: true
+        })
+        .then(resultado => {
+            console.log(`Encontrados: ${resultado.length}`);
+            res.json(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+});
+
+
+router.get('/exibir-comentarios-indif/:estacaoGerente', function(req, res, next) {
+    console.log('Recuperando feedbacks');
+    var estacaoGerente = req.params.estacaoGerente;
+    let instrucaoSql = `SELECT * FROM feedback WHERE fk_estacao = ${estacaoGerente} AND pontuacao = 2;`;
+
+    sequelize.query(instrucaoSql, {
+            model: Feedback,
+            mapToModel: true
+        })
+        .then(resultado => {
+            console.log(`Encontrados: ${resultado.length}`);
+            res.json(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+});
+
+
+router.get('/exibir-comentarios-ruins/:estacaoGerente', function(req, res, next) {
+    console.log('Recuperando feedbacks');
+    var estacaoGerente = req.params.estacaoGerente;
+    let instrucaoSql = `SELECT * FROM feedback WHERE fk_estacao = ${estacaoGerente} AND pontuacao = 3;`;
+
+    sequelize.query(instrucaoSql, {
+            model: Feedback,
+            mapToModel: true
+        })
+        .then(resultado => {
+            console.log(`Encontrados: ${resultado.length}`);
+            res.json(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+});
+
+
+
+
 
 router.get('/:estacaoGerente', function(req, res, next) {
     console.log('Contagem feedbacks ');
@@ -58,6 +119,90 @@ router.get('/:estacaoGerente', function(req, res, next) {
             res.status(500).send(erro.message);
         });
 });
+
+
+router.get('/boas/:estacaoGerente', function(req, res, next) {
+    console.log('Contagem feedbacks TOP ');
+    var estacaoGerente = req.params.estacaoGerente;
+    //var fk_estacao = req.params.estacaoGerente;
+
+    let instrucaoSql = `SELECT count(pontuacao) FROM feedback WHERE pontuacao = 1 AND fk_estacao = ${estacaoGerente};`
+
+    sequelize.query(instrucaoSql, {
+            model: Feedback,
+            mapToModel: true
+        })
+        .then(resultado => {
+            console.log(`Encontrados: ${resultado.length}`);
+            res.json(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+});
+
+
+router.get('/medianas/:estacaoGerente', function(req, res, next) {
+    console.log('Contagem feedbacks TOP ');
+    var estacaoGerente = req.params.estacaoGerente;
+    //var fk_estacao = req.params.estacaoGerente;
+
+    let instrucaoSql = `SELECT count(pontuacao) FROM feedback WHERE pontuacao = 2 AND fk_estacao = ${estacaoGerente};`
+
+    sequelize.query(instrucaoSql, {
+            model: Feedback,
+            mapToModel: true
+        })
+        .then(resultado => {
+            console.log(`Encontrados: ${resultado.length}`);
+            res.json(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+});
+
+router.get('/ruins/:estacaoGerente', function(req, res, next) {
+    console.log('Contagem feedbacks TOP ');
+    var estacaoGerente = req.params.estacaoGerente;
+    //var fk_estacao = req.params.estacaoGerente;
+
+    let instrucaoSql = `SELECT count(pontuacao) FROM feedback WHERE pontuacao = 3 AND fk_estacao = ${estacaoGerente};`
+
+    sequelize.query(instrucaoSql, {
+            model: Feedback,
+            mapToModel: true
+        })
+        .then(resultado => {
+            console.log(`Encontrados: ${resultado.length}`);
+            res.json(resultado);
+        }).catch(erro => {
+            console.error(erro);
+            res.status(500).send(erro.message);
+        });
+});
+
+// router.get('/comentariosBons/:estacaoGerente', function(req, res, next) {
+//     console.log('Contagem feedbacks TOP ');
+//     var estacaoGerente = req.params.estacaoGerente;
+//     //var fk_estacao = req.params.estacaoGerente;
+
+//     let instrucaoSql = `SELECT mensagem FROM feedback WHERE pontuacao = 1 AND fk_estacao = ${estacaoGerente} ORDER BY  1;`
+
+//     sequelize.query(instrucaoSql, {
+//             model: Feedback,
+//             mapToModel: true
+//         })
+//         .then(resultado => {
+//             console.log(`Encontrados: ${resultado.length}`);
+//             res.json(resultado);
+//         }).catch(erro => {
+//             console.error(erro);
+//             res.status(500).send(erro.message);
+//         });
+// });
+
+
 
 /* ROTA QUE RECUPERA TODAS AS PUBLICAÇÕES */
 router.get('/', function(req, res, next) {

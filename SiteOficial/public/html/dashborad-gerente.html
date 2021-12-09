@@ -11,16 +11,16 @@
     <title>Dashboard - Gerente</title>
 </head>
 
-<body onload="atualizarFeed() , getAvalicoes()">
+<body onload="comment() , getAvalicoes(), getAvalicoesBoas(), getAvalicoesMedianas(), getAvalicoesRuins()">
     <main>
         <div>
             <div class="container">
                 <div class="header">
                     <div>
-                        <img src="../img/logo-totem-hub.png" alt="logo totem hub">
+                        <a href="../index.html"><img src="../img/logo-totem-hub.png" alt="logo totem hub"></a>
                     </div>
                     <div>
-                        <a href="#">
+                        <a href="../index.html">
                             <img style="height: 40px;" src="../img/logout.png" alt="ícone para sair da página">
                         </a>
                     </div>
@@ -34,45 +34,40 @@
                         <p class="center yellow">
                             <br> Total de avaliações
                         </p>
+                        <span id="totais" style="padding: 0px 110px;"></span>
 
-                        <span id="teste" style="padding: 0px 110px;"></span>
-                        </p>
                     </div>
 
                     <div class="card">
                         <p class="center">
                             <img class="emoji" src="../img/happy-emoji.png" alt="Emoji Feliz">
                         </p>
-                        <p class="center">
-                            100
-                        </p>
+                        <span id="boas" style="padding: 0px 110px;"></span>
                     </div>
 
                     <div class="card">
                         <p class="center">
                             <img class="emoji" src="../img/indecision-emoji.png" alt="Emoji Indiferente">
                         </p>
-                        <p class="center">
-                            100
-                        </p>
+                        <span id="medianas" style="padding: 0px 110px;"></span>
                     </div>
 
                     <div class="card">
                         <p class="center">
                             <img class="emoji" src="../img/sad-emoji.png" alt="Emoji Triste">
                         </p>
-                        <p class="center">
-                            100
-                        </p>
+                        <span id="ruins" style="padding: 0px 110px;"></span>
                     </div>
                 </div>
 
                 <h2 class="subtitle yellow">Comentários</h2>
-                <select name="Filtrar por" id="filtro">
-                    <option value="">Filtrar por</option>
+                <select name="Filtrar por" onchange="comment()" id="filtro">
+                    <option selected disabled >Filtrar por</option>
+                    <option value="0">Mostrar todos</option>
                     <option value="1">Feliz</option>
                     <option value="2">Indiferente</option>
                     <option value="3">Triste</option>
+                    
                 </select>
 
                 <div id="myDepoiments"></div>
@@ -85,26 +80,87 @@
 
 </html>
 <script>
-    function atualizarFeed() {
-        var content = "";
+    function comment(estacaoGerente) {
+        if (filtro.value == 1) {
+            var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+            var content = "";
+            fetch(`/publicacoes/exibir-comentarios-bons/${estacaoGerente}`)
+                .then(resultado => {
+                    return resultado.json()
+                })
+                .then(myJson => {
+                    let result = myJson
 
-        fetch("/publicacoes/exibir")
-            .then(resultado => {
-                return resultado.json()
-            })
-            .then(myJson => {
-                let result = myJson
+                    for (i = 0; i < result.length; i++) {
 
-                for (i = 0; i < result.length; i++) {
-
-                    content +=
-                        `<div class="card-comment">${result[i].mensagem} <br>
+                        content +=
+                            `<div class="card-comment">${result[i].mensagem} <br>
                         Id comentário: ${result[i].id_feedback}</div>`;
-                }
-                document.getElementById('myDepoiments').innerHTML = content;
-            })
-    }
+                    }
+                    document.getElementById('myDepoiments').innerHTML = content;
+                })
+        } else if (filtro.value == 2) {
+            var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+            var content = "";
+            fetch(`/publicacoes/exibir-comentarios-indif/${estacaoGerente}`)
+                .then(resultado => {
+                    return resultado.json()
+                })
+                .then(myJson => {
+                    let result = myJson
 
+                    for (i = 0; i < result.length; i++) {
+
+                        content +=
+                            `<div class="card-comment">${result[i].mensagem} <br>
+                        Id comentário: ${result[i].id_feedback}</div>`;
+                    }
+                    document.getElementById('myDepoiments').innerHTML = content;
+                })
+
+        } else if (filtro.value == 3) {
+            var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+            var content = "";
+            fetch(`/publicacoes/exibir-comentarios-ruins/${estacaoGerente}`)
+                .then(resultado => {
+                    return resultado.json()
+                })
+                .then(myJson => {
+                    let result = myJson
+
+                    for (i = 0; i < result.length; i++) {
+
+                        content +=
+                            `<div class="card-comment">${result[i].mensagem} <br>
+                        Id comentário: ${result[i].id_feedback}</div>`;
+                    }
+                    document.getElementById('myDepoiments').innerHTML = content;
+                })
+
+        } else {
+            var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+            var content = "";
+
+            fetch(`/publicacoes/exibir/${estacaoGerente}`)
+                .then(resultado => {
+                    return resultado.json()
+                })
+                .then(myJson => {
+                    let result = myJson
+
+                    for (i = 0; i < result.length; i++) {
+
+                        content +=
+                            `<div class="card-comment">${result[i].mensagem} <br>
+                        Id comentário: ${result[i].id_feedback}</div>`;
+                    }
+                    document.getElementById('myDepoiments').innerHTML = content;
+                })
+
+
+
+        }
+    }
 
 
     function getAvalicoes(estacaoGerente) {
@@ -130,7 +186,119 @@
                         string = string.split(']').join('')
                         console.log(`resultado: ${string}`);
 
-                        teste.innerHTML = `${string}`;
+                        totais.innerHTML = `${string}`;
+
+                    })
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+
+                }
+            })
+            .catch(function(error) {
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
+    }
+
+
+
+    function getAvalicoesBoas(estacaoGerente) {
+        // aguardar();
+        var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+
+
+        fetch(`/publicacoes/boas/${estacaoGerente}`)
+
+        .then(resultado => {
+                if (resultado.ok) {
+                    resultado.json().then(function(resultado) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resultado)}`);
+                        var result = JSON.stringify(resultado);
+                        console.log(`resultado: ${result}`);
+
+                        var string = result.split('[').join('')
+                        string = string.split('{').join('')
+                        string = string.split('"').join('')
+                        string = string.split('"').join('')
+                        string = string.split(':').join('')
+                        string = string.split('}').join('')
+                        string = string.split(']').join('')
+                        console.log(`resultado: ${string}`);
+
+                        boas.innerHTML = `${string}`;
+
+                    })
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+
+                }
+            })
+            .catch(function(error) {
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
+    }
+
+
+    function getAvalicoesMedianas(estacaoGerente) {
+        // aguardar();
+        var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+
+
+        fetch(`/publicacoes/medianas/${estacaoGerente}`)
+
+        .then(resultado => {
+                if (resultado.ok) {
+                    resultado.json().then(function(resultado) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resultado)}`);
+                        var result = JSON.stringify(resultado);
+                        console.log(`resultado: ${result}`);
+
+                        var string = result.split('[').join('')
+                        string = string.split('{').join('')
+                        string = string.split('"').join('')
+                        string = string.split('"').join('')
+                        string = string.split(':').join('')
+                        string = string.split('}').join('')
+                        string = string.split(']').join('')
+                        console.log(`resultado: ${string}`);
+
+                        medianas.innerHTML = `${string}`;
+
+                    })
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+
+                }
+            })
+            .catch(function(error) {
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
+    }
+
+
+    function getAvalicoesRuins(estacaoGerente) {
+        // aguardar();
+        var estacaoGerente = sessionStorage.estacao_usuario_meuapp
+
+
+        fetch(`/publicacoes/ruins/${estacaoGerente}`)
+
+        .then(resultado => {
+                if (resultado.ok) {
+                    resultado.json().then(function(resultado) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resultado)}`);
+                        var result = JSON.stringify(resultado);
+                        console.log(`resultado: ${result}`);
+
+                        var string = result.split('[').join('')
+                        string = string.split('{').join('')
+                        string = string.split('"').join('')
+                        string = string.split('"').join('')
+                        string = string.split(':').join('')
+                        string = string.split('}').join('')
+                        string = string.split(']').join('')
+                        console.log(`resultado: ${string}`);
+
+                        ruins.innerHTML = `${string}`;
 
                     })
                 } else {

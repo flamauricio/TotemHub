@@ -32,7 +32,7 @@
                 <li><a class="text-size" href="../html/cadastro.html">Cadastrar</a></li>
                 <li><a class="text-size" href="../html/dashborad-gerente.html">Feedbacks</a></li>
                 <li><a class="text-size" style="color: #FFC702;">Tabela de Funcionários</a></li>
-                <li><a class="text-size" href="../index.html">Sair</a></li>
+                <li><a class="text-size" onclick="logoff()">Sair</a></li>
             </ul>
         </nav>
 
@@ -58,9 +58,9 @@
                             </div>
                             <div class="col-sm-6">
                                 <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
-										class="material-icons">&#xE147;</i> <span>Editar</span></a>
+                                        class="material-icons">&#xE147;</i> <span>Editar</span></a>
                                 <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i
-										class="material-icons">&#xE15C;</i> <span>Deletar</span></a>
+                                        class="material-icons">&#xE15C;</i> <span>Deletar</span></a>
                             </div>
                         </div>
                     </div>
@@ -265,7 +265,8 @@
 
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
 
-                        <button onclick="return deletar()" class="btn btn-danger" name="form_delete" method="Post">Deletar</button>
+                        <button onclick="return deletar()" class="btn btn-danger" name="form_delete"
+                            method="Post">Deletar</button>
 
                         </form>
 
@@ -293,20 +294,31 @@
             method: "Post",
             body: formulario,
 
-        }).then(function(response) {
+        }).then(function (response) {
             if (response) {
                 alert("Usuário deletado com sucesso!");
                 window.location.reload();
             } else {
                 alert('Erro no comando!');
                 console.log("reposta: ", response);
-                response.text().then(function(resposta) {
+                response.text().then(function (resposta) {
                     atualizarFeed();
                 });
             }
         });
         return false;
     }
+
+    function logoff() {
+        sessionStorage.clear(); 
+        redirecionar_login();
+    }
+
+    function redirecionar_login() { 
+        window.location.href = 'novo_login.html';
+    
+    }
+
 
     function update() {
 
@@ -316,14 +328,14 @@
             method: "Post",
             body: formulario,
 
-        }).then(function(response) {
+        }).then(function (response) {
             if (response) {
                 alert("Usuário editado com sucesso!");
                 window.location.reload();
             } else {
                 alert('Erro no comando!');
                 console.log("reposta: ", response);
-                response.text().then(function(resposta) {
+                response.text().then(function (resposta) {
                     atualizarFeed();
                 });
             }

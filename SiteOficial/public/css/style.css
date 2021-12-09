@@ -107,7 +107,7 @@ nav.mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
-    background-image: url(./img/menu.png);
+    background-image: url(../img/menu.png);
     background-size: 100% 100%;
     cursor: pointer;
     margin-top: 35px;
@@ -236,7 +236,7 @@ ul li{
 /* Second Page */
 
 .about-us {
-    height: 650px;
+    height: 560px;
     overflow-x: hidden;
 }
 
@@ -292,7 +292,7 @@ section .div-grid .icons {
 /* Third Page */
 
 .just-about {
-    margin: 26vh auto;
+    margin: 10vh auto;
     height: 35vh;
 }
 

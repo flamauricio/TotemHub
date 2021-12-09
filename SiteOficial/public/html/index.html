@@ -1,538 +1,573 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>TotemHub - Dashboard</title>
+  <title>TotemHub - Dashboard</title>
+  <link rel="stylesheet" href="../css/root.css">
 
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
 
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
-<body id="page-top" onload="chamargraficos(400)">
+<body id="page-top" onload=obterDadosGraficoPrimeiraVez(400)>
 
-    <div id="wrapper">
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <div id="wrapper">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text mx-3">TotemHub
-                    <!--<sup>2</sup>-->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-text mx-3">TotemHub
+          <!--<sup>2</sup>-->
+        </div>
+      </a>
+
+      <hr class="sidebar-divider my-0">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <span class="text-size">Bem vindo a sua Dashboard</span></a>
+      </li>
+
+      <hr class="sidebar-divider">
+
+      <div class="sidebar-heading text-size">
+        Interface
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo" style="display: flex;">
+          <i class="fas fa-fw fa-cog" style="padding-top: 4%;"></i>
+
+
+          <div>
+            <button id="id_historico1" class="btn-totem-now bt-size" name="id_historico"
+              onclick="chamargraficos(400)">Totem 1</button>
+            <button id="id_historico2" class="btn-totem bt-size" name="id_historico" onclick="chamargraficos(401)">Totem
+              3</button>
+          </div>
+
+          <div>
+            <button id="id_historico3" class="btn-totem bt-size" onclick="chamargraficos(402)">Totem 2</button>
+            <button id="id_historico4" class="btn-totem bt-size" onclick="chamargraficos(403)">Totem 4</button>
+          </div>
+
+
+        </a>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Components:</h6>
+            <a class="collapse-item" href="buttons.html">Buttons</a>
+            <a class="collapse-item" href="cards.html">Cards</a>
+          </div>
+        </div>
+      </li>
+
+      <div class="text-center d-none d-md-inline" title="Home">
+        <a href="../index.html"><i class="fas fa-2x fa-house-user"></i></a>
+      </div>
+    </ul>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <div id="content">
+        <div class="container-fluid">
+
+          <div class="row" style="padding-top: 10px;">
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2" id="fundo_cpu" style="background-color: rgb(255, 255, 255);">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="font-size: smaller;">
+                        status memória de disco</div>
+                      <div id="Estado_alerta" class="h5 mb-0 font-weight-bold text-gray-800" style="margin-top: 19px; font-size: x-large;">
+                        Buscando Estado de Alerta</div>
+                    </div>
+                  </div>
                 </div>
-            </a>
-
-            <hr class="sidebar-divider my-0">
-
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <span>Nome da Empresa</span></a>
-            </li>
-
-            <hr class="sidebar-divider">
-
-            <div class="sidebar-heading">
-                Interface
+              </div>
             </div>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo" style="display: flex;">
-                    <i class="fas fa-fw fa-cog" style="padding-top: 4%;"></i>
-
-                    <!-- <select class="form-select" aria-label="Default select example" id="id_historico" name="id_hitorico">
-                        <option value="400">Totem 1</option>
-                        <option value="401">Totem 2</option>
-                        <option value="402">Totem 3</option>
-                    </select> -->
-
-                    <div>
-                      <button id="botaoEstufa4" onclick="chamargraficos(400)">Totem 1</button>
-                      <button id="botaoEstufa4" onclick="chamargraficos(401)">Totem 3</button>
-                    </div>
-                 
-                    <div>
-                      <button id="botaoEstufa4" onclick="chamargraficos(402)">Totem 2</button>
-                      <button id="botaoEstufa4" onclick="chamargraficos(403)">Totem 4</button>
-                    </div>
-
-
-                </a>
-
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            <div class="text-center d-none d-md-inline" title="Home">
-                <a href="../index.html"><i class="fas fa-2x fa-house-user"></i></a>
-            </div>
-        </ul>
-
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <div id="content">
-                <div class="container-fluid">
-
-                    <div class="row" style="padding-top: 10px;">
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                status memória de disco</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Ok -> Alerta -> Perigo</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2" style="background-color: rgb(255, 255, 255);">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1" style="font-size: smaller;">
+                        Utilização CPU (%)</div>
+                      <div class="row no-gutters align-items-center" style="margin-top: 19px;">
+                        <div class="col-auto">
+                          <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: x-large;">
+                            Buscando Dados CPU</div>
                         </div>
+                        <div class="col">
 
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                               memória ram em uso (%)</div>
-                                               <div class="row no-gutters align-items-center" style="margin-top: 19px;">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col-auto">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                                         </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                memória de disco em uso (%)
-                                            </div>
-                                            <div class="row no-gutters align-items-center" style="margin-top: 19px;">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="col-auto">
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2" style="background-color: rgb(255, 255, 255);">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="font-size: smaller;">
+                        Utilização Memoria Ram(%)
+                      </div>
+                      <div class="row no-gutters align-items-center" style="margin-top: 19px;">
+                        <div class="col-auto">
+                          <div id="div_memoria" class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: x-large;">
+                            Buscando Dados Memoria</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="col-auto">
                                             <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
                                         </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Card 4</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2" style="background-color: rgb(255, 255, 255);">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1" style="font-size: smaller;">
+                        Sistema Operacional</div>
+                      <div id="div_so" class="h5 mb-0 font-weight-bold text-gray-800" style="margin-top: 19px; font-size: x-large;">
+                        Buscando Dados</div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart1 TotemHub</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <!-- <canvas id="myAreaChart"></canvas> -->
-                                        <canvas id="myChartArea"></canvas>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          <div class="row">
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4" style="height: 370px;" style="background-color: rgb(255, 255, 255);">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Grafico da CPU</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-area">
+                    <!-- <canvas id="myAreaChart"></canvas> -->
+                    <canvas id="myChartArea"></canvas>
 
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart2 TotemHub</h6>
-                                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myChartPie"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4" style="height: 370px;">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Grafico de Memoria</h6>
                 </div>
 
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; TotemHub 2021</span>
-                        </div>
-                    </div>
-                </footer>
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myChartPie"></canvas>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
 
-        <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; TotemHub 2021</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
 
-        <script src="vendor/chart.js/Chart.min.js"></script>
-        
-        <!-- <script src="../js/demo/chart-area-demo.js"></script> -->
-        <script src="../js/plotarGrafico.js"></script>
-      
+
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- <script src="../js/demo/chart-area-demo.js"></script> -->
+    <script src="../js/plotarGrafico.js"></script>
+
 
 
 
 </body>
+
 </html>
 
 <script>
-let proximaAtualizacaoC;
-let proximaAtualizacaoM;
-let usuario;
+  let proximaAtualizacaoC;
+  let proximaAtualizacaoM;
+  let usuario;
 
-window.onload = obterDadosGraficoPrimeiraVez(id_historico);
-
-// verificar_autenticacao();
+  // window.onload = obterDadosGraficoPrimeiraVez(400);
 
 
-function alterarCoresBotoes(id_historico) {
-  console.log("executei alterarCoresBotoes");
-  botaoCaminhao1.className = "btn";
-  botaoCaminhao2.className = "btn";
-  botaoCaminhao3.className = "btn";
-  botaoCaminhao4.className = "btn";
+  // function atualizacaoPeriodica() {
+  //         obterdadosporestufa(400);
+  //         obterdadosporestufa(401);
+  //         obterdadosporestufa(402);
+  //         obterdadosporestufa(403);
 
-  if (id_historico == "400") {
-    botaoCaminhao1.className += " btn-now";
-  } else if (id_historico == "401") {
-    botaoCaminhao2.className += " btn-now";
-  } else if (id_historico == "402") {
-    botaoCaminhao3.className += " btn-now";
-  } else if (id_historico == "403") {
-    botaoCaminhao4.className += " btn-now";
+  //         setTimeout(atualizacaoPeriodica, 5000);
+  //     }
+
+
+  function alterarCoresBotoes(id_historico) {
+    console.log("executei alterarCoresBotoes");
+    id_historico1.className = "btn-totem";
+    id_historico2.className = "btn-totem";
+    id_historico3.className = "btn-totem";
+    id_historico4.className = "btn-totem";
+
+    if (id_historico == "400") {
+      id_historico1.className += "btn-now-totem";
+    } else if (id_historico == "401") {
+      id_historico2.className += "btn-now-totem";
+    } else if (id_historico == "402") {
+      id_historico3.className += "btn-now-totem";
+    } else if (id_historico == "403") {
+      id_historico4.className += "btn-now-totem";
+    }
   }
-}
 
 
-function chamargraficos(id_historico) {
-  console.log("executei chamar graficos");
+  function chamargraficos(id_historico) {
+    console.log("executei chamar graficos");
     obterDadosGraficoPrimeiraVez(id_historico);
     atualizarGraficoC(id_historico);
     atualizarGraficoM(id_historico);
-    // alterarCoresBotoes(id_leitura);    
-}
-
- // neste JSON tem que ser 'labels', 'datasets' etc, porque é o padrão do Chart.js
-
-// altere aqui as configurações do gráfico(tamanhos, cores, textos, etc)
-function configurarGraficoC() {
-  console.log("executei configurarGraficoC");
-  var configuracoesC = {
-    responsive: true,
-    animation: { duration: 500 },
-    hoverMode: "index",
-    stacked: false,
-    title: {
-      display: true,
-      text: "Histórico recente da CPU",
-    },
-    scales: {
-      yAxes: [
-        {
-          type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-          display: true,
-          position: "left",
-          id: "y-CPU",
-        },
-      ],
-    },
-  };
-
-  return configuracoesC;
-}
-
-function configurarGraficoM() {
-  console.log("executei configurarGraficoM");
-  var configuracoesM = {
-    responsive: true,
-    animation: { duration: 500 },
-    hoverMode: "index",
-    stacked: false,
-    title: {
-      display: true,
-      text: "Histórico recente da Memoria",
-    },
-    scales: {
-      yAxes: [
-        {
-          type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-          display: true,
-          position: "left",
-          id: "y-Memoria",
-
-          // grid line settings
-          gridLines: {
-            drawOnChartArea: false, // only want the grid lines for one axis to show up
-          },
-        },
-      ],
-    },
-  };
-
-  return configuracoesM;
-}
-
-// altere aqui como os dados serão exibidos
-// e como são recuperados do BackEnd
-function obterDadosGraficoPrimeiraVez(id_historico) {
-  console.log("executei obterDadosGraficoPrimeiraVez");
-  // alterarCoresBotoes(id_leitura);
-
-  if (proximaAtualizacaoC != undefined || proximaAtualizacaoM != undefined) {
-    clearTimeout(proximaAtualizacaoC);
-    clearTimeout(proximaAtualizacaoM);
+    alterarCoresBotoes(id_historico);
   }
 
-  fetch(`/leituras/ultimas/${id_historico}`)
-    .then(function (response) {
-     
-      if (response.ok) {
-        response.json().then(function (resposta) {
-          console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-          resposta.reverse();
+  // neste JSON tem que ser 'labels', 'datasets' etc, porque é o padrão do Chart.js
 
-         
-          console.log(resposta.cpu_totem_em_uso); // retorna undefined
-          console.log(resposta.memoria_em_uso);
-          console.log(resposta); // retorna [array(7), array(7)]
+  // altere aqui as configurações do gráfico(tamanhos, cores, textos, etc)
+  function configurarGraficoC() {
+    console.log("executei configurarGraficoC");
+    var configuracoesC = {
+      responsive: true,
+      animation: { duration: 500 },
+      hoverMode: "index",
+      stacked: false,
+      title: {
+        display: true,
+        text: "Histórico recente da CPU",
+      },
+      scales: {
+        yAxes: [
+          {
+            type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+            display: true,
+            position: "left",
+            id: "y-CPU",
+          },
+        ],
+      },
+    };
 
-          var dadosC = {
-            labels: [],
-            datasets: [
-              {
-                yAxisID: "y-CPU",
-                label: "CPU",
-                borderColor: "rgba(255,0,0,1)",
-                backgroundColor: "rgba(255,0,0,1)",
-                fill: false,
-                data: [],
-              },
-            ],
-          };
+    return configuracoesC;
+  }
 
-          var dadosM = {
-            labels: [],
-            datasets: [
-              {
-                yAxisID: "y-Memoria",
-                label: "Memoria",
-                borderColor: "rgba(51, 102, 255,1)",
-                backgroundColor: "rgba(51, 102, 255,1)",
-                fill: false,
-                data: [],
-              },
-            ],
-          };
+  function configurarGraficoM() {
+    console.log("executei configurarGraficoM");
+    var configuracoesM = {
+      responsive: true,
+      animation: { duration: 500 },
+      hoverMode: "index",
+      stacked: false,
+      title: {
+        display: true,
+        text: "Histórico recente da Memoria",
+      },
+      scales: {
+        yAxes: [
+          {
+            type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+            display: true,
+            position: "left",
+            id: "y-Memoria",
 
-          for (i = 0; i < resposta.length; i++) {
-            var registro = resposta[i];
+            // grid line settings
+            gridLines: {
+              drawOnChartArea: false, // only want the grid lines for one axis to show up
+            },
+          },
+        ],
+      },
+    };
 
-            dadosM.labels.push(registro.momento_grafico);
-            dadosM.datasets[0].data.push(registro.memoria_em_uso);
+    return configuracoesM;
+  }
 
-            dadosC.labels.push(registro.momento_grafico);
-            dadosC.datasets[0].data.push(registro.cpu_totem_em_uso);
-          }
-          console.log(JSON.stringify(dadosC));
-          console.log(JSON.stringify(dadosM));
-          console.log("CHEGOU AQUI");
+  // altere aqui como os dados serão exibidos
+  // e como são recuperados do BackEnd
+  function obterDadosGraficoPrimeiraVez(id_historico) {
+    console.log("executei obterDadosGraficoPrimeiraVez");
+    // alterarCoresBotoes(id_leitura);
 
-          plotarGraficoC(dadosC, id_historico);
-          plotarGraficoM(dadosM, id_historico);
-          div_msg.innerHTML = `<h2> Grafico dos totem: ${id_historico} </h2>`;
-        });
-      } else {
-        console.error("Nenhum dado encontrado ou erro na API");
-      }
-    })
-    .catch(function (error) {
-      console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-    });
-}
+    if (proximaAtualizacaoC != undefined || proximaAtualizacaoM != undefined) {
+      clearTimeout(proximaAtualizacaoC);
+      clearTimeout(proximaAtualizacaoM);
+    }
 
-// só mexer se quiser alterar o tempo de atualização
-// ou se souber o que está fazendo!
+    fetch(`/leituras/ultimas/${id_historico}`)
+      .then(function (response) {
 
-function atualizarGraficoC(id_historico, dadosC) {
-  console.log("executei atualizarGraficoC");
-  fetch(`/leituras/cliente/${id_historico}`, { cache: "no-store" })
-    .then(function (response) {
-      console.log(
-        "Estou tentando pegar id_leitura da CPU= ", id_historico);
-      if (response.ok) {
-        response.json().then(function (novoRegistro) {
-          console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-          console.log(`Dados atuais do gráfico: ${dadosC}`);
+        if (response.ok) {
+          response.json().then(function (resposta) {
+            console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+            resposta.reverse();
 
-          // tirando e colocando valores no gráfico
-          dadosC.labels.shift(); // apagar o primeiro
-          dadosC.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
-          dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
-          dadosC.datasets[0].data.push(novoRegistro.cpu_totem_em_uso); // incluir uma nova leitura de temperatura
 
-          console.log("meu totem é o " + id_historico);
+            console.log(resposta.cpu_totem_em_uso); // retorna undefined
+            console.log(resposta.memoria_em_uso);
+            console.log(resposta); // retorna [array(7), array(7)]
+            // div_cpu.innerHTML = resposta.memoria_em_uso;
 
-          window.grafico_linhaC.update();
+            var dadosC = {
+              labels: [],
+              datasets: [
+                {
+                  yAxisID: "y-CPU",
+                  label: "CPU",
+                  borderColor: "rgba(255,0,0,1)",
+                  backgroundColor: "rgba(255,0,0,1)",
+                  fill: false,
+                  data: [],
+                },
+              ],
+            };
 
+            var dadosM = {
+              labels: [],
+              datasets: [
+                {
+                  yAxisID: "y-Memoria",
+                  label: "Memoria",
+                  borderColor: "rgba(51, 102, 255,1)",
+                  backgroundColor: "rgba(51, 102, 255,1)",
+                  fill: false,
+                  data: [],
+                },
+              ],
+            };
+
+            for (i = 0; i < resposta.length; i++) {
+              var registro = resposta[i];
+
+              dadosM.labels.push(registro.momento_grafico);
+              dadosM.datasets[0].data.push(registro.memoria_em_uso);
+
+              dadosC.labels.push(registro.momento_grafico);
+              dadosC.datasets[0].data.push(registro.cpu_totem_em_uso);
+
+
+            }
+            console.log(JSON.stringify(dadosC));
+            console.log(JSON.stringify(dadosM));
+            console.log("CHEGOU AQUI");
+
+            plotarGraficoC(dadosC, id_historico);
+            plotarGraficoM(dadosM, id_historico);
+            div_msg.innerHTML = `<h2> Grafico dos totem: ${id_historico} </h2>`;
+          });
+        } else {
+          console.error("Nenhum dado encontrado ou erro na API");
+        }
+      })
+      .catch(function (error) {
+        console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+      });
+  }
+
+  // só mexer se quiser alterar o tempo de atualização
+  // ou se souber o que está fazendo!
+
+  function atualizarGraficoC(id_historico, dadosC) {
+    console.log("executei atualizarGraficoC");
+    fetch(`/leituras/cliente/${id_historico}`)
+      .then(function (response) {
+        console.log(
+          "Estou tentando pegar id_historico da CPU= ", id_historico);
+        if (response.ok) {
+          response.json().then(function (novoRegistro) {
+            console.log(`Dados recebidos de CPU: ${JSON.stringify(novoRegistro)}`);
+            console.log(`Dados atuais do gráfico de CPU: ${dadosC}`);
+
+            // tirando e colocando valores no gráfico
+            dadosC.labels.shift(); // apagar o primeiro
+            dadosC.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
+            dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
+            dadosC.datasets[0].data.push(novoRegistro.cpu_totem_em_uso); // incluir uma nova leitura de temperatura
+
+            // 
+
+            var cpu_dados = `${novoRegistro.cpu_totem_em_uso}`;
+            var memoria_dados = `${novoRegistro.memoria_em_uso}`;
+            var memoria_total = `${novoRegistro.memoria_total}`;
+            var memoria_media = (memoria_dados * 100) / memoria_total;
+            div_so.innerHTML = (novoRegistro.sistema_operacional);
+
+            if (memoria_media <= 20) {
+              Estado_alerta.innerHTML = `<div style="color: green; font-size: x-large;">OK</div>`;
+            } else if (memoria_media <= 50) {
+              Estado_alerta.innerHTML = `<div style="color: yellow; font-size: x-large;">Alerta</div>`;
+            } else if (memoria_media <= 80) {
+              Estado_alerta.innerHTML = `<div style="color: orange; font-size: x-large;">Atenção</div>`;
+            } else {
+              Estado_alerta.innerHTML = `<div style="color: red; font-size: x-large;">Critico</div>`;
+            }
+
+            if(cpu_dados <= 20){
+              div_cpu.innerHTML = `<div style="color: green; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
+            } else if (cpu_dados <= 50) {
+              div_cpu.innerHTML = `<div style="color: yellow; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
+            } else if (cpu_dados <= 80) {
+              div_cpu.innerHTML = `<div style="color: orange; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
+            } else {
+              div_cpu.innerHTML = `<div style="color: red; font-size: x-large;">${Number(cpu_dados).toFixed(2)}%</div>`;
+            }
+
+            if(memoria_media <= 20){
+              div_memoria.innerHTML = `<div style="color: green; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            } else if (memoria_media <= 50) {
+              div_memoria.innerHTML = `<div style="color: yellow; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            } else if (memoria_media <= 80) {
+              div_memoria.innerHTML = `<div style="color: orange; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            } else {
+              div_memoria.innerHTML = `<div style="color: red; font-size: x-large;">${Number(memoria_media).toFixed(2)}%</div>`;
+            }
+
+            console.log("meu totem é o " + id_historico);
+
+            window.grafico_linhaC.update();
+
+            proximaAtualizacaoC = setTimeout(
+              () => atualizarGraficoC(id_historico, dadosC),
+              5000
+            );
+          });
+
+        } else {
+          console.error("Nenhum dado encontrado ou erro na API");
           proximaAtualizacaoC = setTimeout(
             () => atualizarGraficoC(id_historico, dadosC),
             5000
           );
-        });
-      } else {
-        console.error("Nenhum dado encontrado ou erro na API");
-        proximaAtualizacaoC = setTimeout(
-          () => atualizarGraficoC(id_historico, dadosC),
-          5000
-        );
-      }
-    })
-    .catch(function (error) {
-      console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-    });
-}
+        }
+      })
+      .catch(function (error) {
+        console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+      });
+  }
 
-function atualizarGraficoM(id_historico, dadosM) {
-  console.log("executei atualizarGraficoM");
-  fetch(`/leituras/ultimas/${id_historico}`, { cache: "no-store" })
-    .then(function (response) {
-      console.log("Estou tentando pegar id_historico da Memoria = ", id_historico);
-      if (response.ok) {
-        response.json().then(function (novoRegistro) {
-          console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-          console.log(`Dados atuais do gráfico: ${dadosM}`);
+  function atualizarGraficoM(id_historico, dadosM) {
+    console.log("executei atualizarGraficoM");
+    fetch(`/leituras/cliente/${id_historico}`)
+      .then(function (response) {
+        console.log(
+          "Estou tentando pegar id_historico da Memoria = ", id_historico);
+        if (response.ok) {
+          response.json().then(function (novoRegistro) {
+            console.log(`Dados recebidos de CPU: ${JSON.stringify(novoRegistro)}`);
+            console.log(`Dados atuais do gráfico de CPU: ${dadosM}`);
 
-          // tirando e colocando valores no gráfico
-          dadosM.labels.shift(); // apagar o primeiro
-          dadosM.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
-          dadosM.datasets[0].data.shift(); // apagar o primeiro de umidade
-          dadosM.datasets[0].data.push(novoRegistro.memoria_em_uso); // incluir uma nova leitura de umidade
+            // tirando e colocando valores no gráfico
+            dadosM.labels.shift(); // apagar o primeiro
+            dadosM.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
+            dadosM.datasets[0].data.shift(); // apagar o primeiro de temperatura
+            dadosM.datasets[0].data.push(novoRegistro.memoria_em_uso); // incluir uma nova leitura de temperatura
 
-          console.log("meu totem é o " + id_historico);
+            console.log("meu totem é o " + id_historico);
 
-          window.grafico_linhaM.update();
+            window.grafico_linhaM.update();
 
+            proximaAtualizacaoM = setTimeout(
+              () => atualizarGraficoM(id_historico, dadosM),
+              5000
+            );
+          });
+        } else {
+          console.error("Nenhum dado encontrado ou erro na API");
           proximaAtualizacaoM = setTimeout(
             () => atualizarGraficoM(id_historico, dadosM),
             5000
           );
-        });
-      } else {
-        console.error("Nenhum dado encontrado ou erro na API");
-        proximaAtualizacaoM = setTimeout(
-          () => atualizarGraficoM(id_historico, dadosM),
-          5000
-        );
-      }
-    })
-    .catch(function (error) {
-      console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        }
+      })
+      .catch(function (error) {
+        console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+      });
+  }
+
+  // só altere aqui se souber o que está fazendo!
+  function plotarGraficoC(dadosC, id_historico) {
+    console.log("executei plotarGrafico");
+    console.log("iniciando plotagem do gráfico...");
+
+    var ctx = myChartArea.getContext("2d");
+    window.grafico_linhaC = Chart.Line(ctx, {
+      data: dadosC,
+      options: configurarGraficoC()
     });
-}
 
-// só altere aqui se souber o que está fazendo!
-function plotarGraficoC(dadosC, id_historico) {
-  console.log("executei plotarGrafico");
-  console.log("iniciando plotagem do gráfico...");
+    setTimeout(() => atualizarGraficoC(id_historico, dadosC), 5000);
+  }
 
-  var ctx = myChartArea.getContext("2d");
-  window.grafico_linhaC = Chart.Line(ctx, {
-    data: dadosC,
-    options: configurarGraficoC()
-  });
+  function plotarGraficoM(dadosM, id_historico) {
+    console.log("executei plotarGraficoM");
+    console.log("iniciando plotagem do gráfico...");
 
-  setTimeout(() => atualizarGraficoC(id_historico, dadosC), 5000);
-}
+    var ctx = myChartPie.getContext("2d");
+    window.grafico_linhaM = Chart.Line(ctx, {
+      data: dadosM,
+      options: configurarGraficoM()
+    });
 
-function plotarGraficoM(dadosM, id_historico) {
-  console.log("executei plotarGraficoM");
-  console.log("iniciando plotagem do gráfico...");
+    setTimeout(() => atualizarGraficoM(id_historico, dadosM), 5000);
+  }
 
-  var ctx = myChartPie.getContext("2d");
-  window.grafico_linhaM = Chart.Line(ctx, {
-    data: dadosM,
-    options: configurarGraficoM()
-  });
+  // Alertas
 
-  setTimeout(() => atualizarGraficoM(id_historico, dadosM), 5000);
-}
 
-// Alertas
 
- function sendData() {
-   var http = new XMLHttpRequest();
-   http.open("GET", "http://localhost:9001/api/sendData", false);
-   http.send(null);
- }
+  function sendData() {
+    var http = new XMLHttpRequest();
+    http.open("GET", "http://localhost:9001/api/sendData", false);
+    http.send(null);
+  }
 
-// Descomente abaixo se quiser inserir dados a cada X segundos
-setInterval(() => {
+  // Descomente abaixo se quiser inserir dados a cada X segundos
+  setInterval(() => {
 
-}, 5000);
+  }, 5000);
 
 </script>
-

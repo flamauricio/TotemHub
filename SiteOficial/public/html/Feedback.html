@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/feedback.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
-    <script src="../js/function.js"></script>
+    <script src="../js/functions.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/menu-responsivo.js"></script>
 
@@ -18,20 +18,22 @@
     <header>
 
         <div class="container">
-            <div class="logo">
-                <!-- <img src="img/TotemHub.svg" alt=""> -->
+            <a href="../index.html">
+                <div class="logo">
+            </a>
+            <!-- <img src="img/TotemHub.svg" alt=""> -->
             </div>
             <!--logo-->
             <nav class="desktop-menu">
                 <ul>
                     <li><a href="../index.html">Conheça nosso Site</a></li>
-                    <li><a style="color: #FFC702;" href="Feedback.html">Feedback</a></li>
+                    <li><a style="color: #FFC702;" href="feedback.html">Feedback</a></li>
                 </ul>
             </nav>
             <nav class="mobile-menu">
                 <ul>
                     <li><a href="../index.html">Conheça nosso Site</a></li>
-                    <li><a style="color: #FFC702;" href="Feedback.html">Feedback</a></li>
+                    <li><a style="color: #FFC702;" href="feedback.html">Feedback</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,47 +43,109 @@
 
         <div class="form-login">
             <h3>Qual estação você está?</h3>
-            <form action="" id="form_login" method="post" onsubmit="return entrar_login()">
+            <form id="form_publicar" method="post" onsubmit="return publicar()">
 
                 <label class="custom-selector">
-                    <select name="sample" >
-                   <option selected disabled>Selecione</option>
-                   <option value="100">Consolacão</option>
-                   <option value="101">Pinheiros</option>
-                   <option value="102">República</option>
-                     </select>  
-                    </label>
+                    <select name="estacao">
+                        <option selected disabled>Selecione</option>
+                        <option value="100">Barueri</option>
+                        <option value="101">Pinheiros</option>
+                        <option value="102">República</option>
+                    </select>
+                </label>
 
                 <h3>Como foi sua experiência conosco?</h3>
 
                 <label class="custom-selector">
-                        <select name="sample" >    
-                            <option selected disabled>Selecione</option>              
-                            <option value="1">Bom</option>
-                            <option value="2">Indiferente</option>
-                            <option value="3">Ruim</option>
-                         </select>
-                        </label>
+                    <select name="pontuacao">
+                        <option selected disabled>Selecione</option>
+                        <option value="1">Bom</option>
+                        <option value="2">Indiferente</option>
+                        <option value="3">Ruim</option>
+                    </select>
+                </label>
 
 
                 <h3>Deseja deixar alguma mensagem extra? </h3>
                 <div class="input-field">
-                    <input type="text" name="opiniao" id="opinao" placeholder="Deixe sua mensagem aqui">
+                    <input type="text" name="mensagem" id="mensagem" placeholder="Deixe sua mensagem aqui">
                     <div class="underline"></div>
                 </div>
-
-                <input type="submit" value="Enviar Feedback" id="btn_login">
+                <input value="Enviar" type="submit" id="btn_publicar">
             </form>
         </div>
-
-
     </header>
-
 </body>
 
 </html>
 
 <script>
+    function publicar() {
+        console.log("entrei!")
+
+        var formulario = new URLSearchParams(new FormData(form_publicar));
+        // var id_feedback = sessionStorage.id_leads_meuapp;s
+        fetch(`/publicacoes/cadastrar/`, {
+
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                window.location.reload();
+                alert("Feedback enviado! Obrigado <3")
+                obterPublicacoes3();
+            } else {
+                console.log('Erro ao publicar!');
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function obterPublicacoes() {
+        fetch("/publicacoes")
+            .then(resposta => {
+                if (resposta.ok) {
+                    resposta.json().then(function(resposta) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                        atualizarFeed(resposta);
+
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    console.log("Nenhum resultado encontrado ou erro na API");
+                }
+            })
+            .catch(function(error) {
+                console.error(`Erro na obtenção das publicações: ${error.message}`);
+            });
+    }
+
+    function obterPublicacoesPorUsuario(id_feedback) {
+        fetch(`/publicacoes/${id_feedback}`)
+            .then(resposta => {
+                if (resposta.ok) {
+                    resposta.json().then(function(resposta) {
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        alert(JSON.stringify(resposta))
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function(error) {
+                console.error(`Erro na obtenção das publicações do usuário: ${error.message}`);
+            });
+    }
+
+
     // let login_usuario;
     // let nome_usuario;
 

@@ -8,8 +8,6 @@
     list-style: none;
 }
 
-
-
 body {
     width: 100%;
     height: 100%;
@@ -238,7 +236,7 @@ ul li{
 /* Second Page */
 
 .about-us {
-    height: 650px;
+    height: 560px;
     overflow-x: hidden;
 }
 
@@ -294,7 +292,7 @@ section .div-grid .icons {
 /* Third Page */
 
 .just-about {
-    margin: 26vh auto;
+    margin: 10vh auto;
     height: 35vh;
 }
 

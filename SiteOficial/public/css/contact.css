@@ -63,25 +63,40 @@
 
 .form-wrap input {
     margin: 5px auto;
-    width: 40vw;
+    width: 35vw;
     border: none;
     height: 30px;
     padding-left: 5px;
+    border: solid 2px black;
+    padding: 5px;
 }
 
 textarea.txt {
     margin: 5px auto;
-    width: 40vw;
+    width: 35vw;
     outline: none;
     resize: none;
+    border: solid 2px black;
+    padding: 5px;
 }
 
-button {
-    margin: 0 30%;
-    width: 150px;
+.button {
+    margin: 0px 35%;
+    width: 140px;
     height: 30px;
-    background-color: var(--button);
+    background-color: slategray;
     border-radius: 10px;
+    height: 36px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: "PoPPins", sans-serif;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: green;
 }
 
 @media screen and (max-width: 1010px) {

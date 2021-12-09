@@ -91,10 +91,7 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 status memória de disco</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Ok -> Alerta -> Perigo</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <div id="Estado_alerta" class="h5 mb-0 font-weight-bold text-gray-800">Buscando Estado de Alerta</div>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +107,7 @@
                                                Utilização CPU (%)</div>
                                                <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                                                 <div class="col-auto">
-                                                    <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div id="div_cpu" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Buscando Dados</div>
                                                 </div>
                                                 <div class="col">
 
@@ -135,7 +132,7 @@
                                             </div>
                                             <div class="row no-gutters align-items-center" style="margin-top: 19px;">
                                                 <div class="col-auto">
-                                                    <div id="div_memoria" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div id="div_memoria" class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Buscando Dados</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -153,11 +150,9 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Card 4</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                                Sistema Operacional</div>
+                                                <br>
+                                            <div id="div_so" class="h5 mb-0 font-weight-bold text-gray-800">Buscando Dados</div>
                                         </div>
                                     </div>
                                 </div>
@@ -199,7 +194,8 @@
                     </div>
                 </div>
 
-                <footer class="sticky-footer bg-white">
+              
+                <footer class="sticky-footer bg-white" >
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                             <span>Copyright &copy; TotemHub 2021</span>
@@ -430,8 +426,24 @@ function atualizarGraficoC(id_historico, dadosC) {
           dadosC.datasets[0].data.shift(); // apagar o primeiro de temperatura
           dadosC.datasets[0].data.push(novoRegistro.cpu_totem_em_uso); // incluir uma nova leitura de temperatura
           
-          div_cpu.innerHTML = `${novoRegistro.cpu_totem_em_uso}%`;
-          div_memoria.innerHTML = `${novoRegistro.memoria_em_uso}%`;
+          // 
+          
+          var cpu_dados = `${novoRegistro.cpu_totem_em_uso}`;
+          div_cpu.innerHTML = Number(cpu_dados).toFixed(2) + "%";
+          var memoria_dados =  `${novoRegistro.memoria_em_uso}`;
+          var memoria_total = `${novoRegistro.memoria_total}`;
+          var memoria_media = (memoria_dados * 100) / memoria_total;
+          div_memoria.innerHTML = Number(memoria_media).toFixed(2) + "%";
+          div_so.innerHTML = (novoRegistro.sistema_operacional);
+          if(memoria_dados > 0.5 || memoria_dados < 0.7){
+            Estado_alerta.innerHTML = `<div style="color: green;">OK</div>`;
+          }else if (memoria_dados > 0.8 || memoria_dados < 1){
+            Estado_alerta.innerHTML = `<div style="color: yellow;">Alerta</div>`;
+          }else{
+            Estado_alerta.innerHTML = `<div style="color: red;">Critico</div>`;
+          }
+          
+
 
           console.log("meu totem é o " + id_historico);
 
@@ -522,6 +534,8 @@ function plotarGraficoM(dadosM, id_historico) {
 }
 
 // Alertas
+
+
 
  function sendData() {
    var http = new XMLHttpRequest();
